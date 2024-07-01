@@ -1,0 +1,24 @@
+
+
+
+
+// Create a mixin which takes a color name and returns styles based on that color
+
+
+@mixin color($color) {
+  @if $color == 'red' {
+    color: red;
+  } @else if $color == 'blue' {
+    color: blue;
+  } @else if $color == 'green' {
+    color: green;
+  } @else {
+    color: black;
+  }
+}
+
+
+
+
+
+
