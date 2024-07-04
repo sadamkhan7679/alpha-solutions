@@ -1,3 +1,4 @@
+// "use client";
 import { cn } from "@/lib/utils";
 import React from "react";
 import { ServiceItem } from "@/types/services";
@@ -165,25 +166,18 @@ export const ServicesGridItem = ({
   className?: string;
   color: string;
 }) => {
-  const { title, slug, summary,Icon } = service;
+  const { title, slug, summary,Icon, } = service;
 
   const serviceMeta = Object.values(SERVICES_META).find(
     (meta) => meta.slug === slug,
   );
 
-  const randomColor = colors[Math.floor(Math.random() * colors.length)];
-
-    const { bgColor, textColor } = getItemColor(randomColor);
-
-  const wrapperClassName = `cursor-pointer ${bgColor} text-black`;
-  const titleClassName = ``;
-
-  // console.log(serviceClassName);
-
   return (
     <Card className={cn(
-        "group cursor-pointer text-black services-card",
-        // bgColor,
+        "group cursor-pointer",
+        `${serviceMeta?.className}`,
+        // wrapperClassName,
+        // "bg-blue-gradient",
         className,
     )}>
       <CardHeader>
@@ -191,9 +185,12 @@ export const ServicesGridItem = ({
             "flex items-center group-hover:text-white font-bold text-xl"
         )}>
           <Icon
-            className="w-10 h-10 mr-4"
+            className="mr-2"
+            width={50}
+            height={40}
 
-          /> {title}
+          />
+          {title}
         </CardTitle>
         <CardDescription className="group-hover:text-white">{summary}</CardDescription>
       </CardHeader>

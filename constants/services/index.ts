@@ -1,3 +1,4 @@
+
 /**
  * Services
  *
@@ -20,65 +21,84 @@
 import { ServiceItem } from "@/types/services";
 import {WebDevelopmentIcon} from "@/icons/services/web-development";
 
+// Blue
+// Green
+// Emarald
+// Teal
+// Cyan
+// Sky
+// Indigo
+// Violet
+// Purple
+// Fuchsia
+// Pink
+// Rose
+
+// $blue: #00a6fb;
+// $purple: #6b46c1;
+// $green: #68d391;
+// $cyan: #63b3ed;
+// $red: #f56565;
+
 export const SERVICES_META = {
   WEB_DEVELOPMENT: {
     title: "Web Development",
-    className: "bg-service-web-development",
+    className: "services-card-blue",
     slug: "web-development",
   },
   MOBILE_DEVELOPMENT: {
     title: "Mobile Development",
-    className: "bg-service-mobile-development",
+    className: "services-card-purple",
     slug: "mobile-development",
   },
   AI_ENHANCED_SOLUTIONS: {
     title: "AI Enhanced Solutions",
-    className: "bg-service-ai-enhanced-solutions",
+    className: "services-card-green",
     slug: "ai-enhanced-solutions",
   },
   ECOMMERCE: {
     title: "E-commerce Development",
-    className: "bg-service-e-commerce",
+    className: "services-card-cyan",
     slug: "e-commerce",
   },
   HEALTHCARE: {
     title: "Healthcare Application Development",
-    className: "bg-service-healthcare",
+    className: "services-card-red",
     slug: "healthcare",
   },
   EDUCATION: {
     title: "Education Technology Solutions",
-    className: "bg-service-education",
+    className: "services-card-green",
     slug: "education",
   },
   SAAS: {
     title: "SaaS Application Development",
-    className: "bg-service-saas",
+    className: "services-card-violet",
     slug: "saas",
   },
   STARTUPS: {
     title: "Startup IT Solutions",
-    className: "bg-service-startups",
+    className: "services-card-cyan",
     slug: "startups",
   },
   REAL_ESTATE: {
     title: "Real Estate IT Solutions",
-    className: "bg-service-real-estate",
+    className: "services-card-red",
     slug: "real-estate",
   },
   FINANCE: {
     title: "Finance IT Solutions",
-    className: "bg-service-finance",
+    className: "services-card-orange",
     slug: "finance",
   },
   TRAVEL_HOSPITALITY: {
     title: "Travel and Hospitality Solutions",
-    className: "bg-service-travel-and-hospitality",
+    className: "services-card-pink",
     slug: "travel-hospitality",
   },
   FOOD_BEVERAGE: {
     title: "Food and Beverage IT Solutions",
-    className: "bg-service-food-and-beverage",
+    className: "services-card-violet",
     slug: "food-beverage",
   },
 };

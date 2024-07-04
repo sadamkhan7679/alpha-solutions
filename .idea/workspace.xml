@@ -5,33 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="36b899a9-275b-42ed-bbaa-afe048217c01" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/app/globals.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/ui/bento-grid.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/ui/card.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/ui/container.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/constants/services/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/icons/services/web-development.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modules/home/services/ServicesGrid.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modules/home/services/index.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/styles/components/index.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/types/services/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/globals.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/globals.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/globals.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/layout.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/logo-button/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/logo-button/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/theme/theme-provider.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/theme/theme-provider.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/ui/lamp-effect/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/ui/lamp-effect/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/ui/typewriter-effect.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/ui/typewriter-effect.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/constants/nav-links/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/constants/nav-links/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/home/hero/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/modules/home/hero/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/home/navbar/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/modules/home/navbar/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/home/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/home/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pnpm-lock.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pnpm-lock.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/constants/services/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/constants/services/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/icons/services/web-development.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/icons/services/web-development.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/home/services/ServicesGrid.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/modules/home/services/ServicesGrid.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/home/services/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/modules/home/services/index.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tailwind.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/tailwind.config.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/types/nav-link/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/types/nav-link/index.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,25 +58,25 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;npm.dev.executor&quot;: &quot;Run&quot;,
-    &quot;prettierjs.PrettierConfiguration.Package&quot;: &quot;C:\\Program Files\\nodejs\\node_modules\\prettier&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;settings.javascript.prettier&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;D:\\Web Development\\RazmiSoft\\website\\razmisoft\\node_modules\\typescript\\lib&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "npm.dev.executor": "Run",
+    "prettierjs.PrettierConfiguration.Package": "C:\\Program Files\\nodejs\\node_modules\\prettier",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "ts.external.directory.path": "D:\\Web Development\\RazmiSoft\\website\\razmisoft\\node_modules\\typescript\\lib",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="ReactDesignerToolWindowState">
     <option name="myId2Visible">
       <map>
@@ -138,7 +119,9 @@
       <option name="presentableId" value="Default" />
       <updated>1719758372870</updated>
       <workItem from="1719758374416" duration="22986000" />
-      <workItem from="1719790674235" duration="3906000" />
+      <workItem from="1719790674235" duration="4308000" />
+      <workItem from="1720050203199" duration="59000" />
+      <workItem from="1720050280239" duration="6312000" />
     </task>
     <servers />
   </component>

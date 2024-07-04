@@ -1,3 +1,4 @@
+// "use client";
 import React from "react";
 import { ServicesGrid, ServicesGridItem } from "./ServicesGrid";
 import { servicesList } from "@/constants/services";
