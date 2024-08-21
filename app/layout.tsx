@@ -1,35 +1,38 @@
+import React from "react";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
-import "./globals.scss";
-import Navbar from "@/modules/home/navbar";
-import { ThemeProvider } from "@/components/theme/theme-provider";
-import React from "react";
+
+import "./globals.css";
+import {ThemeProvider} from "@/components/shared/Provider";
+
 
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Razmisoft | Tailored Technology to Drive Your Success",
-  description: "Tailored Technology to Drive Your Success",
+  title: "Sadam's Portfolio",
+  description: "My personal portfolio website",
 };
 
 export default function RootLayout({
-  children,
-}: Readonly<{
+                                     children,
+                                   }: Readonly<{
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+      <html lang="en" suppressHydrationWarning>
+      <head>
+        <link rel="icon" href="/jsm-logo.png" sizes="any" />
+      </head>
       <body className={inter.className}>
-        <ThemeProvider
+      <ThemeProvider
           attribute="class"
-          defaultTheme="light"
+          defaultTheme="dark"
           enableSystem
           disableTransitionOnChange
-        >
-          <Navbar />
-          <main>{children}</main>
-        </ThemeProvider>
+      >
+        {children}
+      </ThemeProvider>
       </body>
-    </html>
+      </html>
   );
 }
