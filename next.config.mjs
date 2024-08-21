@@ -1,6 +1,10 @@
 import {withSentryConfig} from '@sentry/nextjs';
 /** @type {import('next').NextConfig} */
-const nextConfig = {};
+const nextConfig = {
+    images: {
+        domains: ['via.placeholder.com'],
+    }
+};
 
 export default withSentryConfig(withSentryConfig(nextConfig, {
 // For all available options, see:
@@ -74,4 +78,6 @@ disableLogger: true,
 // https://docs.sentry.io/product/crons/
 // https://vercel.com/docs/cron-jobs
 automaticVercelMonitors: true,
+
+
 });

@@ -9,6 +9,8 @@ import Clients from "@/components/modules/ClientFeedbacks";
 import Experience from "@/components/modules/WorkExperience";
 import Process from "@/components/modules/Process";
 import Footer from "@/components/modules/Footer";
+import ServicesList from "@/components/modules/ServicesList";
+import TeamList from "@/components/modules/Team";
 
 const Home = () => {
   return (
@@ -16,6 +18,8 @@ const Home = () => {
       <div className="max-w-7xl w-full">
         <FloatingNav navItems={navItems} />
         <Hero />
+        <ServicesList />
+        <TeamList />
         <Grid />
         <RecentProjects />
         <Clients />
