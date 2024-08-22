@@ -5,192 +5,70 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="00e75c1b-6e99-4512-b87a-f8cb667b71ec" name="Changes" comment="Updates">
-      <change afterPath="$PROJECT_DIR$/.env" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/git_toolbox_prj.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/prettier.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/api/sentry-example-api/route.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/global-error.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/sentry-example-page/page.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/modules/ClientFeedbacks/index.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/modules/Footer/index.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/modules/Hero/index.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/modules/Process/index.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/modules/RecentProjects/index.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/modules/ServicesList/ServicesCard.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/modules/ServicesList/index.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/modules/Team/TeamCard.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/modules/Team/index.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/modules/WorkExperience/index.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/shared/Provider/index.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/shared/SectionContainer/index.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/shared/logo-button/index.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/ui/button.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/ui/card.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/ui/container.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/constants/nav-links/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/constants/services/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/constants/team/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/icons/services/ai-enhanced.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/icons/services/ecommerce.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/icons/services/fintech-development.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/icons/services/healthcare.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/icons/services/lms-development.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/icons/services/mobile-development.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/icons/services/real-estate-development.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/icons/services/restuarant-development.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/icons/services/saas-development.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/icons/services/startup-development.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/icons/services/travel-development.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/icons/services/web-development.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/instrumentation.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/old-data/.eslintrc.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/old-data/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/old-data/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/old-data/app/favicon.ico" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/old-data/app/globals.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/old-data/app/layout.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/old-data/app/page.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/old-data/app/services/[slug]/page.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/old-data/components.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/old-data/components/logo-button/index.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/old-data/components/theme/theme-provider.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/old-data/components/ui/BentoGrid/index.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/old-data/components/ui/CanvasRevealEffect/index.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/old-data/components/ui/FloatingNavbar/index.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/old-data/components/ui/Globe/index.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/old-data/components/ui/GradientBg/index.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/old-data/components/ui/Grid/index.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/old-data/components/ui/GridGlobe/index.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/old-data/components/ui/InfiniteCards/index.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/old-data/components/ui/MagicButton/index.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/old-data/components/ui/MovingBorders/index.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/old-data/components/ui/Pin/index.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/old-data/components/ui/SpotLight/index.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/old-data/components/ui/TextGenerateEffect/index.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/old-data/components/ui/bento-grid.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/old-data/components/ui/button.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/old-data/components/ui/card.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/old-data/components/ui/container.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/old-data/components/ui/lamp-effect/index.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/old-data/components/ui/typewriter-effect.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/old-data/constants/nav-links/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/old-data/constants/services/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/old-data/data/confetti.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/old-data/data/globe.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/old-data/data/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/old-data/icons/services/ai-enhanced.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/old-data/icons/services/ecommerce.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/old-data/icons/services/fintech-development.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/old-data/icons/services/healthcare.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/old-data/icons/services/lms-development.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/old-data/icons/services/mobile-development.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/old-data/icons/services/real-estate-development.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/old-data/icons/services/restuarant-development.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/old-data/icons/services/saas-development.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/old-data/icons/services/startup-development.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/old-data/icons/services/travel-development.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/old-data/icons/services/web-development.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/old-data/lib/utils.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/old-data/modules/home/ClientFeedbacks/index.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/old-data/modules/home/Footer/index.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/old-data/modules/home/Hero/index.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/old-data/modules/home/Process/index.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/old-data/modules/home/RecentProjects/index.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/old-data/modules/home/WorkExperience/index.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/old-data/modules/home/navbar/index.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/old-data/modules/home/services/ServicesGrid.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/old-data/modules/home/services/index.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/old-data/next.config.mjs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/old-data/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/old-data/pages/home/index.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/old-data/pnpm-lock.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/old-data/postcss.config.mjs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/old-data/public/app.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/old-data/public/appName.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/old-data/public/b1.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/old-data/public/b4.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/old-data/public/b5.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/old-data/public/bg.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/old-data/public/c.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/old-data/public/cloud.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/old-data/public/cloudName.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/old-data/public/confetti.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/old-data/public/dock.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/old-data/public/dockerName.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/old-data/public/exp1.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/old-data/public/exp2.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/old-data/public/exp3.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/old-data/public/exp4.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/old-data/public/fm.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/old-data/public/footer-grid.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/old-data/public/git.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/old-data/public/grid.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/old-data/public/gsap.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/old-data/public/host.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/old-data/public/hostName.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/old-data/public/images/services/ai/1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/old-data/public/images/services/ecommerce/1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/old-data/public/images/services/fintech/1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/old-data/public/images/services/fintech/1.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/old-data/public/images/services/food/1.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/old-data/public/images/services/healthcare/1.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/old-data/public/images/services/lms/1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/old-data/public/images/services/mobile/1.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/old-data/public/images/services/real-estate/1.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/old-data/public/images/services/saas/1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/old-data/public/images/services/startup/1.avif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/old-data/public/images/services/travel/1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/old-data/public/images/services/web/1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/old-data/public/insta.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/old-data/public/jsm-logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/old-data/public/link.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/old-data/public/next.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/old-data/public/p1.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/old-data/public/p2.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/old-data/public/p3.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/old-data/public/p4.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/old-data/public/profile.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/old-data/public/re.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/old-data/public/s.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/old-data/public/stream.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/old-data/public/streamName.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/old-data/public/tail.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/old-data/public/three.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/old-data/public/ts.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/old-data/public/twit.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/old-data/public/vercel.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/old-data/public/wha.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/old-data/styles/components/index.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/old-data/tailwind.config.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/old-data/tsconfig.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/old-data/types/nav-link/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/old-data/types/services/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/services/ai/1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/services/ecommerce/1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/services/fintech/1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/services/fintech/1.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/services/food/1.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/services/healthcare/1.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/services/lms/1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/services/mobile/1.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/services/real-estate/1.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/services/saas/1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/services/startup/1.avif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/services/travel/1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/services/web/1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sentry.client.config.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sentry.edge.config.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sentry.server.config.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/types/Team/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/types/nav-link/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/types/services/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/utils/root/cn.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/utils/root/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/modules/Approach/ApproachItem.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/modules/Approach/index.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/modules/KeyHighlights/index.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/modules/TechStack/index.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/ui/tabs.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/approach.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/industries.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/services.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/tech-stack.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/utils.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/tools/Bootstrap.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/tools/Git.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/tools/Google-cloud-platform.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/tools/NestJS.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/tools/adobexd.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/tools/android.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/tools/apple.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/tools/aws.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/tools/azure-devops.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/tools/bitbucket-icon.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/tools/css.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/tools/docker.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/tools/express-js.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/tools/express.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/tools/figma.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/tools/firebase.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/tools/flutter.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/tools/git.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/tools/github.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/tools/gitlab.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/tools/graphql.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/tools/html.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/tools/html.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/tools/invision.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/tools/javascript.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/tools/kubernetes.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/tools/material-ui.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/tools/miro.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/tools/mongodb.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/tools/mysql.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/tools/next-js.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/tools/node-js.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/tools/node-js.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/tools/postgresql.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/tools/react.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/tools/sketch.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/tools/tailwindcss.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/tools/typescript.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/tools/typescript.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/tools/vue-js.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/tools/zeplin.svg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/globals.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/globals.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/layout.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/modules/ClientFeedbacks/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/modules/ClientFeedbacks/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/modules/ServicesList/ServicesCard.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/modules/ServicesList/ServicesCard.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/modules/ServicesList/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/modules/ServicesList/index.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/next.config.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/next.config.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/old-data/constants/services/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/old-data/constants/services/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/old-data/types/services/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/old-data/types/services/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pnpm-lock.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pnpm-lock.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/types/services/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/types/services/index.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -200,22 +78,22 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "sadamkhan7679"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;sadamkhan7679&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/sadamkhan7679/razmisoft.git",
-    "accountId": "25bf6bea-b884-4937-9add-db94d413db78"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/sadamkhan7679/razmisoft.git&quot;,
+    &quot;accountId&quot;: &quot;25bf6bea-b884-4937-9add-db94d413db78&quot;
   }
-}]]></component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "customColor": "",
-  "associatedIndex": 2
-}]]></component>
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 2
+}</component>
   <component name="ProjectId" id="2kwm0BDJlTA0TOGpxTygJagTC8M" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -237,6 +115,7 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "pnpm",
+    "npm.dev.executor": "Run",
     "prettierjs.PrettierConfiguration.Package": "C:\\Program Files\\nodejs\\node_modules\\prettier",
     "settings.editor.selected.configurable": "settings.javascript.prettier",
     "ts.external.directory.path": "D:\\Web Development\\RazmiSoft\\website\\razmisoft\\node_modules\\typescript\\lib",
@@ -248,6 +127,7 @@
       <map>
         <entry key="com.intellij.reactbuddy.reactComponents" value="false" />
         <entry key="com.intellij.reactbuddy.reactInspector" value="false" />
+        <entry key="com.intellij.reactbuddy.storybook" value="false" />
       </map>
     </option>
   </component>
@@ -258,6 +138,27 @@
       <recent name="D:\Web Development\RazmiSoft\website\razmisoft\components\ui" />
       <recent name="D:\Web Development\RazmiSoft\website\razmisoft" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Web Development\RazmiSoft\website\razmisoft\data" />
+      <recent name="D:\Web Development\RazmiSoft\website\razmisoft\old-data\data" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="dev" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="dev" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="npm.dev" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
@@ -274,7 +175,9 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1724202789956</updated>
-      <workItem from="1724202792159" duration="8072000" />
+      <workItem from="1724202792159" duration="8448000" />
+      <workItem from="1724241721134" duration="821000" />
+      <workItem from="1724277097704" duration="11099000" />
     </task>
     <task id="LOCAL-00001" summary="Updates">
       <option name="closed" value="true" />
@@ -284,7 +187,15 @@
       <option name="project" value="LOCAL" />
       <updated>1724211913599</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Updates">
+      <option name="closed" value="true" />
+      <created>1724217066409</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1724217066409</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

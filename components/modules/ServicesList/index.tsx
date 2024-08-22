@@ -8,7 +8,7 @@ const ServicesList = () => {
       sectionTitle="Services List"
       description="This is the list of services we offer"
     >
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 py-10">
+      <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 py-10">
         {servicesList.map((service) => {
           return <ServiceCard service={service} key={service.id} />;
         })}

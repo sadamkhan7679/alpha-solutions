@@ -2,6 +2,12 @@ import React from "react";
 
 export interface SVGIconProps extends React.SVGProps<SVGSVGElement> {}
 
+export type Industry = {
+  title: string;
+  slug: string;
+  description: string;
+  Icon: React.FC<SVGIconProps>;
+};
 
 export type ServiceItem = {
   id: string;

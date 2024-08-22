@@ -49,7 +49,7 @@ export const ServiceCard = ({ service, className }: ServiceCardProps) => {
             />
           )}
         </AnimatePresence>
-        <Card>
+        <Card className="bg-transparent">
           <CardTitle>
             <div className="flex items-center service-card-icon">
               {
