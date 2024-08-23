@@ -12,7 +12,13 @@ const teamSection: SectionContent = {
 const TeamList = () => {
   return (
     <SectionContainer
-      sectionTitle={teamSection.headline}
+      // sectionTitle={teamSection.headline}
+      sectionTitle={
+        <span>
+          Meet the <span className="text-purple">&nbsp;Innovators</span> Behind
+          Your <span className="text-purple">Success</span>
+        </span>
+      }
       description={teamSection.description}
     >
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 py-10">

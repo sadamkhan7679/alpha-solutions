@@ -10,7 +10,12 @@ const highlightProjectsSection: SectionContent = {
 const Projects = () => {
   return (
     <SectionContainer
-      sectionTitle={highlightProjectsSection.headline}
+      sectionTitle={
+        <span>
+          Showcasing Our
+          <span className="text-purple">&nbsp;Digital Masterpieces</span>
+        </span>
+      }
       description={highlightProjectsSection.description}
     >
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 py-10">

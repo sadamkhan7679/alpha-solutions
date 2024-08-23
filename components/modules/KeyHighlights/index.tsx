@@ -38,7 +38,7 @@ const keyHighlights: {
     },
     {
       metric: "Years of Experience",
-      value: "7",
+      value: "20+",
       Icon: Calendar,
     },
     {
@@ -48,7 +48,7 @@ const keyHighlights: {
     },
     {
       metric: "Team Members",
-      value: "30+",
+      value: "20+",
       Icon: Users,
     },
   ],
@@ -56,7 +56,7 @@ const keyHighlights: {
 
 const keyHighlightsData: KeyHighlightItem[] = [
   {
-    title: "7+",
+    title: "20+",
     description: "Years of Experience",
     Icon: <Calendar size={iconSize} />,
   },
@@ -75,7 +75,12 @@ const keyHighlightsData: KeyHighlightItem[] = [
 const KeyHighlights = () => {
   return (
     <SectionContainer
-      sectionTitle={keyHighlights.headline}
+      sectionTitle={
+        <span>
+          Transforming Ideas into
+          <span className="text-purple">&nbsp;Digital Success Stories</span>
+        </span>
+      }
       description={keyHighlights.title}
     >
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">

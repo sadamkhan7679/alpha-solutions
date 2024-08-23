@@ -25,7 +25,7 @@ type ApproachItem = {
 };
 
 const approachSection: {
-  heading: string;
+  heading: string | React.ReactNode;
   description: string;
   items: ApproachItem[];
 } = {
@@ -81,7 +81,12 @@ const approachSection: {
 const DevelopmentApproach = () => {
   return (
     <SectionContainer
-      sectionTitle={approachSection.heading}
+      sectionTitle={
+        <span>
+          Our Proven Blueprint for{" "}
+          <span className="text-purple">Digital Excellence</span>
+        </span>
+      }
       description={approachSection.description}
     >
       <div className="my-20 flex flex-col lg:flex-row items-center justify-center w-full gap-4">

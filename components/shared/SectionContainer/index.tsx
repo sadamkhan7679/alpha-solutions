@@ -5,7 +5,7 @@ import { cn } from "@/utils/root";
 type SectionContainerProps = {
   children: React.ReactNode;
   className?: string;
-  sectionTitle?: string;
+  sectionTitle?: string | React.ReactNode;
   description?: string;
 };
 
@@ -21,7 +21,7 @@ const SectionContainer = ({
     >
       {sectionTitle && <h1 className="heading mb-5">{sectionTitle}</h1>}
       {description && (
-        <p className="text-lg text-zinc-500 mb-5 text-justify">{description}</p>
+        <p className="text-lg mb-5 text-justify">{description}</p>
       )}
       <div>{children}</div>
     </section>

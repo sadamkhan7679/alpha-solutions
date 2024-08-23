@@ -5,27 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="00e75c1b-6e99-4512-b87a-f8cb667b71ec" name="Changes" comment="Updates">
-      <change afterPath="$PROJECT_DIR$/components/modules/DevelopmentApproach/index.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/modules/Experience/index.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/modules/Industries/index.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/modules/Projects/index.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/ui/timeline.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/types/root.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/modules/ClientFeedbacks/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/modules/ClientFeedbacks/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/modules/DevelopmentApproach/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/modules/DevelopmentApproach/index.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/modules/KeyHighlights/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/modules/KeyHighlights/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/modules/ServicesList/ServicesCard.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/modules/ServicesList/ServicesCard.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/modules/ServicesList/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/modules/ServicesList/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/modules/Team/TeamCard.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/modules/Team/TeamCard.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/modules/Projects/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/modules/Projects/index.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/modules/Team/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/modules/Team/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/modules/TechStack/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/modules/TechStack/index.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/shared/SectionContainer/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/shared/SectionContainer/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/ui/tabs.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/ui/tabs.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/constants/services/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/constants/services/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/services.ts" beforeDir="false" afterPath="$PROJECT_DIR$/data/services.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/types/services/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/types/services/index.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -136,7 +121,7 @@
       <workItem from="1724241721134" duration="821000" />
       <workItem from="1724277097704" duration="11099000" />
       <workItem from="1724332151786" duration="940000" />
-      <workItem from="1724373345726" duration="5245000" />
+      <workItem from="1724373345726" duration="7126000" />
     </task>
     <task id="LOCAL-00001" summary="Updates">
       <option name="closed" value="true" />
@@ -154,7 +139,15 @@
       <option name="project" value="LOCAL" />
       <updated>1724217066409</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Updates">
+      <option name="closed" value="true" />
+      <created>1724378737270</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1724378737270</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
