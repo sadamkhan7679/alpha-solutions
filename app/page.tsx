@@ -33,14 +33,14 @@ const Home = () => {
         <TechStack />
         {/*<ExperienceTimeline />*/}
         <DevelopmentApproach />
-        <Industries />
+        {/*<Industries />*/}
         {/*<Approach />*/}
-        <Projects />
+        {/*<Projects />*/}
         <TeamList />
         <ClientsTestimonials />
         <KeyHighlights />
-        <h1>CONTACT US</h1>
-        <h1>FOOTER</h1>
+        {/*<h1>CONTACT US</h1>*/}
+        {/*<h1>FOOTER</h1>*/}
 
         {/*<FloatingNav navItems={navItems} />*/}
         {/*<Hero />*/}
