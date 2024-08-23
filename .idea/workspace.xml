@@ -5,12 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="00e75c1b-6e99-4512-b87a-f8cb667b71ec" name="Changes" comment="Updates">
+      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/modules/DevelopmentApproach/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/modules/DevelopmentApproach/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/modules/KeyHighlights/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/modules/KeyHighlights/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/modules/Projects/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/modules/Projects/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/modules/Team/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/modules/Team/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/shared/SectionContainer/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/shared/SectionContainer/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/api/sentry-example-api/route.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/global-error.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/global-error.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/sentry-example-page/page.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/instrumentation.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/next.config.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/next.config.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sentry.client.config.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sentry.edge.config.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sentry.server.config.ts" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -121,7 +126,7 @@
       <workItem from="1724241721134" duration="821000" />
       <workItem from="1724277097704" duration="11099000" />
       <workItem from="1724332151786" duration="940000" />
-      <workItem from="1724373345726" duration="7126000" />
+      <workItem from="1724373345726" duration="8713000" />
     </task>
     <task id="LOCAL-00001" summary="Updates">
       <option name="closed" value="true" />
@@ -147,7 +152,15 @@
       <option name="project" value="LOCAL" />
       <updated>1724378737270</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Updates">
+      <option name="closed" value="true" />
+      <created>1724383918565</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1724383918565</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
