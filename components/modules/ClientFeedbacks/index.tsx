@@ -4,15 +4,21 @@ import React from "react";
 
 import { companies, testimonials } from "@/data";
 import { InfiniteMovingCards } from "@/components/ui/InfiniteCards";
+import { SectionContent } from "@/types/root";
+import SectionContainer from "@/components/shared/SectionContainer";
+
+const testimonialSection: SectionContent = {
+  headline: "Voices of Success: What Our Clients Say",
+  description:
+    "Don't just take our word for it – hear from the businesses we've helped transform. Our clients' success stories are the true testament to our dedication and expertise. From startups that have become industry leaders to enterprises that have reinvented themselves for the digital age, these testimonials reflect the tangible impact of our partnerships. Discover how we've turned challenges into opportunities and ideas into game-changing digital solutions.",
+};
 
 const ClientsTestimonials = () => {
   return (
-    <section id="testimonials" className="py-20">
-      <h1 className="heading">
-        Kind words from
-        <span className="text-purple"> satisfied clients</span>
-      </h1>
-
+    <SectionContainer
+      sectionTitle={testimonialSection.headline}
+      description={testimonialSection.description}
+    >
       <div className="flex flex-col items-center max-lg:mt-10">
         <div
           // remove bg-white dark:bg-black dark:bg-grid-white/[0.05], h-[40rem] to 30rem , md:h-[30rem] are for the responsive design
@@ -45,7 +51,7 @@ const ClientsTestimonials = () => {
           ))}
         </div>
       </div>
-    </section>
+    </SectionContainer>
   );
 };
 

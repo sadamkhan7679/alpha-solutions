@@ -1,5 +1,3 @@
-"use client";
-
 import { navItems } from "@/data";
 import { FloatingNav } from "@/components/ui/FloatingNavbar";
 import Hero from "@/components/modules/Hero";
@@ -15,6 +13,10 @@ import TechStack from "@/components/modules/TechStack";
 import ClientsTestimonials from "@/components/modules/ClientFeedbacks";
 import KeyHighlights from "@/components/modules/KeyHighlights";
 import Approach from "@/components/modules/Approach";
+import ExperienceTimeline from "@/components/modules/Experience";
+import DevelopmentApproach from "@/components/modules/DevelopmentApproach";
+import Industries from "@/components/modules/Industries";
+import Projects from "@/components/modules/Projects";
 
 const Home = () => {
   return (
@@ -29,9 +31,11 @@ const Home = () => {
         <Hero />
         <ServicesList />
         <TechStack />
-        <h1>INDUSTRIES</h1>
-        <Approach />
-        <h1>RECENT PROJECTS</h1>
+        {/*<ExperienceTimeline />*/}
+        <DevelopmentApproach />
+        <Industries />
+        {/*<Approach />*/}
+        <Projects />
         <TeamList />
         <ClientsTestimonials />
         <KeyHighlights />

@@ -1,4 +1,3 @@
-
 /**
  * Services
  *
@@ -19,18 +18,18 @@
  * 12. Food and Beverage
  */
 import { ServiceItem } from "@/types/services";
-import {WebDevelopmentIcon} from "@/icons/services/web-development";
-import {MobileDevelopmentIcon} from "@/icons/services/mobile-development";
-import {AIDevelopmentIcon} from "@/icons/services/ai-enhanced";
-import {ECommerceDevelopmentIcon} from "@/icons/services/ecommerce";
-import {HealthcareDevelopmentIcon} from "@/icons/services/healthcare";
-import {LmsDevelopmentIcon} from "@/icons/services/lms-development";
-import {SaasDevelopmentIcon} from "@/icons/services/saas-development";
-import {StartUpDevelopmentIcon} from "@/icons/services/startup-development";
-import {RealEstateDevelopmentIcon} from "@/icons/services/real-estate-development";
-import {FintechDevelopmentIcon} from "@/icons/services/fintech-development";
-import {TravelDevelopmentIcon} from "@/icons/services/travel-development";
-import {RestaurantDevelopmentIcon} from "@/icons/services/restuarant-development";
+import { WebDevelopmentIcon } from "@/icons/services/web-development";
+import { MobileDevelopmentIcon } from "@/icons/services/mobile-development";
+import { AIDevelopmentIcon } from "@/icons/services/ai-enhanced";
+import { ECommerceDevelopmentIcon } from "@/icons/services/ecommerce";
+import { HealthcareDevelopmentIcon } from "@/icons/services/healthcare";
+import { LmsDevelopmentIcon } from "@/icons/services/lms-development";
+import { SaasDevelopmentIcon } from "@/icons/services/saas-development";
+import { StartUpDevelopmentIcon } from "@/icons/services/startup-development";
+import { RealEstateDevelopmentIcon } from "@/icons/services/real-estate-development";
+import { FintechDevelopmentIcon } from "@/icons/services/fintech-development";
+import { TravelDevelopmentIcon } from "@/icons/services/travel-development";
+import { RestaurantDevelopmentIcon } from "@/icons/services/restuarant-development";
 
 // Blue
 // Green
@@ -126,7 +125,7 @@ export const SERVICES_META = {
   },
 };
 
-export const servicesList: ServiceItem[] = [
+export const servicesList = [
   {
     id: "1",
     title: SERVICES_META.WEB_DEVELOPMENT.title,

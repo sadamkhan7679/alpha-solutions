@@ -215,7 +215,6 @@ export const SERVICES_LIST: ServiceItem[] = [
   {
     key: SERVICES_KEYS.ECOMMERCE_DEVELOPMENT,
     title: "E-commerce Development",
-    className: "services-card-cyan",
     slug: "e-commerce",
     image: "/images/services/ecommerce/1.jpg",
     summary:

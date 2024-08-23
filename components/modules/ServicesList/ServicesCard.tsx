@@ -1,3 +1,5 @@
+"use client";
+
 import { AnimatePresence, motion } from "framer-motion";
 import Link from "next/link";
 import React, { useState } from "react";
@@ -5,7 +7,7 @@ import { cn } from "@/utils/root";
 import { ServiceItem } from "@/types/services";
 import { SERVICES_META } from "@/old-data/constants/services";
 import Image from "next/image";
-import { CardContent } from "@/components/ui/card";
+// import { CardContent } from "@/components/ui/card";
 
 type ServiceCardProps = {
   service: ServiceItem;
@@ -29,7 +31,7 @@ export const ServiceCard = ({ service, className }: ServiceCardProps) => {
       <Link
         href={service?.slug}
         className="relative group  block p-2 h-full w-full"
-        onMouseEnter={() => setHoveredIndex(service.id)}
+        onMouseEnter={() => setHoveredIndex(service.key)}
         onMouseLeave={() => setHoveredIndex(null)}
       >
         <AnimatePresence>
@@ -52,7 +54,7 @@ export const ServiceCard = ({ service, className }: ServiceCardProps) => {
         <Card className="bg-transparent">
           <CardTitle>
             <div className="flex items-center service-card-icon">
-              {
+              {service.Icon && (
                 <service.Icon
                   className="mr-2"
                   width={50}
@@ -60,7 +62,7 @@ export const ServiceCard = ({ service, className }: ServiceCardProps) => {
                   // fill="#fff"
                   // stroke="#fff"
                 />
-              }
+              )}
               {service.title}
             </div>
           </CardTitle>

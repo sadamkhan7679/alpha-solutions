@@ -16,13 +16,15 @@ const SectionContainer = ({
   description,
 }: SectionContainerProps) => {
   return (
-    <Card className={cn("py-10 px-8 mb-14 bg-transparent", className)}>
+    <section
+      className={cn("py-10 px-8 mb-14 bg-transparent container", className)}
+    >
       {sectionTitle && <h1 className="heading mb-5">{sectionTitle}</h1>}
       {description && (
-        <p className="text-lg text-zinc-500 mb-5">{description}</p>
+        <p className="text-lg text-zinc-500 mb-5 text-justify">{description}</p>
       )}
       <div>{children}</div>
-    </Card>
+    </section>
   );
 };
 

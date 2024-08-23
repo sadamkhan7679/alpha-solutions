@@ -10,17 +10,18 @@ export type Industry = {
 };
 
 export type ServiceItem = {
-  id: string;
+  id?: string;
+  key: string;
   title: string;
   summary: string;
+  image: string;
   slug: string;
   detailedDescription: string;
   keyBenefits: string[];
   technologies: string[];
   targetAudience: string[];
-  Icon: React.FC<SVGIconProps>;
+  Icon?: React.FC<SVGIconProps>;
   caseStudies: { title: string; link: string }[];
-  // icon: SVGElement;
   additionalData: {
     clientTestimonials: string[];
     serviceTags: string[];

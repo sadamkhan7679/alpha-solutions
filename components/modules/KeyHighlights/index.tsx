@@ -1,12 +1,13 @@
 import React from "react";
 import { SVGIconProps } from "@/types/services";
-import { Calendar, FolderKanban, UserRoundCheck } from "lucide-react";
+import { Calendar, FolderKanban, UserRoundCheck, Users } from "lucide-react";
 import {
   Card,
   CardDescription,
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
+import SectionContainer from "@/components/shared/SectionContainer";
 
 type KeyHighlightItem = {
   title: string;
@@ -15,6 +16,43 @@ type KeyHighlightItem = {
 };
 
 const iconSize = 96;
+
+type Highlight = {
+  metric: string;
+  value: string;
+  Icon: React.FC<React.SVGProps<SVGSVGElement>>;
+};
+
+const keyHighlights: {
+  headline: string;
+  title: string;
+  highlights: Highlight[];
+} = {
+  headline: "Transforming Ideas into Digital Success Stories",
+  title: "Our Impact by the Numbers",
+  highlights: [
+    {
+      metric: "Projects Completed",
+      value: "50+",
+      Icon: FolderKanban,
+    },
+    {
+      metric: "Years of Experience",
+      value: "7",
+      Icon: Calendar,
+    },
+    {
+      metric: "Satisfied Clients",
+      value: "50+",
+      Icon: UserRoundCheck,
+    },
+    {
+      metric: "Team Members",
+      value: "30+",
+      Icon: Users,
+    },
+  ],
+};
 
 const keyHighlightsData: KeyHighlightItem[] = [
   {
@@ -36,23 +74,26 @@ const keyHighlightsData: KeyHighlightItem[] = [
 
 const KeyHighlights = () => {
   return (
-    <div>
-      <h1>Key Highlights</h1>
-      <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
-        {keyHighlightsData.map((item, index) => (
+    <SectionContainer
+      sectionTitle={keyHighlights.headline}
+      description={keyHighlights.title}
+    >
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
+        {keyHighlights.highlights.map((item, index) => (
           <Card
             key={index}
-            className="flex flex-col items-center justify-center p-4 bg-black-200 rounded-lg"
+            className="flex flex-col items-center justify-center px-4 py-8 bg-black-200 rounded-lg"
           >
-            <CardHeader>{item.Icon}</CardHeader>
-            <CardTitle className="text-5xl">{item.title}</CardTitle>
-            <CardDescription className="text-3xl text-bold">
-              {item.description}
+            {/*@ts-ignore*/}
+            <CardHeader>{<item.Icon size={96} />}</CardHeader>
+            <CardTitle className="text-5xl mb-5">{item.value}</CardTitle>
+            <CardDescription className="text-3xl text-bold text-center">
+              {item.metric}
             </CardDescription>
           </Card>
         ))}
       </div>
-    </div>
+    </SectionContainer>
   );
 };
 

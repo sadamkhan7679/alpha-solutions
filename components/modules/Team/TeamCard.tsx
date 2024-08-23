@@ -19,8 +19,8 @@ const TeamMemberCard = ({ person }: TeamMemberCardProps) => {
       <CardHeader className="min-h-[150px]">
         <Image
           className="rounded-full absolute top-0 transform -translate-x-1/2 -translate-y-1/2"
-          width={200}
-          height={200}
+          width={150}
+          height={150}
           src={person.image}
           alt={person.name}
         />
