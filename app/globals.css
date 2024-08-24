@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+section {
+    padding-top: 120px; /* Adjust this value based on your Navbar height */
+    margin-top: -120px; /* This negative margin offsets the padding */
+    scroll-margin-top: 120px; /* This ensures correct scroll position for modern browsers */
+}
+
 @layer base {
     :root {
         --background: 0 0% 100%;

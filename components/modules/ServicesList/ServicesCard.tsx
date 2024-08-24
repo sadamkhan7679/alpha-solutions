@@ -53,31 +53,32 @@ export const ServiceCard = ({ service, className }: ServiceCardProps) => {
         </AnimatePresence>
         <Card className="bg-transparent">
           <CardTitle>
-            <div className="flex items-center service-card-icon">
+            <div className="flex items-center service-card-icon text-white">
               {service.Icon && (
-                <service.Icon
-                  className="mr-2"
-                  width={50}
-                  height={40}
-                  // fill="#fff"
-                  // stroke="#fff"
+                <Image
+                  src={service.Icon}
+                  alt={service.title}
+                  width={48}
+                  height={48}
+                  className="mr-3"
                 />
+                // <service.Icon />
               )}
               {service.title}
             </div>
           </CardTitle>
           <div>
-            <div className="relative h-60 w-full mt-3 my-5">
-              {serviceMeta?.image && (
-                <Image
-                  src={serviceMeta?.image}
-                  alt={service.title}
-                  layout="fill"
-                  fill={true}
-                  className="rounded-2xl"
-                />
-              )}
-            </div>
+            {/*<div className="relative h-60 w-full mt-3 my-5">*/}
+            {/*  {serviceMeta?.image && (*/}
+            {/*    <Image*/}
+            {/*      src={serviceMeta?.image}*/}
+            {/*      alt={service.title}*/}
+            {/*      layout="fill"*/}
+            {/*      fill={true}*/}
+            {/*      className="rounded-2xl"*/}
+            {/*    />*/}
+            {/*  )}*/}
+            {/*</div>*/}
             <p
               className={cn(
                 "mt-8 text-zinc-400 tracking-wide leading-relaxed text-sm",

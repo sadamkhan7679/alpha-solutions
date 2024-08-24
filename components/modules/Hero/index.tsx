@@ -3,6 +3,7 @@ import { FaLocationArrow } from "react-icons/fa6";
 import { Spotlight } from "@/components/ui/SpotLight";
 import { TextGenerateEffect } from "@/components/ui/TextGenerateEffect";
 import MagicButton from "@/components/ui/MagicButton";
+import { CTA } from "@/components/shared/CTA";
 
 type HeroSectionProps = {};
 
@@ -42,7 +43,7 @@ const HeroSection: React.FC<HeroSectionProps> = () => {
         />
       </div>
 
-      <div className="flex justify-center relative my-20 z-10">
+      <div className="flex justify-center relative my-20 z-10 app-container">
         <div className="max-w-[100vw] md:max-w-2xl lg:max-w-[80vw] flex flex-col items-center justify-center">
           <p className="uppercase tracking-widest text-md text-center text-blue-100 max-w-100">
             Pioneering the Digital Frontier with Innovative, Tailored Solutions
@@ -58,18 +59,12 @@ const HeroSection: React.FC<HeroSectionProps> = () => {
             className="text-center text-[40px] md:text-5xl lg:text-6xl mt-8 mb-12"
           />
 
-          <p className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl">
+          <p className="text-center md:tracking-wider mb-12 text-sm md:text-lg lg:text-2xl">
             Empowering Businesses to Soar with Cutting-Edge Web and Mobile
             Innovations
           </p>
 
-          <a href="#about">
-            <MagicButton
-              title="Let's Talk"
-              icon={<FaLocationArrow />}
-              position="right"
-            />
-          </a>
+          <CTA />
         </div>
       </div>
     </div>

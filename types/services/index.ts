@@ -13,6 +13,7 @@ export type ServiceItem = {
   id?: string;
   key: string;
   title: string;
+  headline: string;
   summary: string;
   image: string;
   slug: string;
@@ -20,7 +21,7 @@ export type ServiceItem = {
   keyBenefits: string[];
   technologies: string[];
   targetAudience: string[];
-  Icon?: React.FC<SVGIconProps>;
+  Icon?: string;
   caseStudies: { title: string; link: string }[];
   additionalData: {
     clientTestimonials: string[];

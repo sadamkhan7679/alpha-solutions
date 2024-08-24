@@ -5,6 +5,8 @@ import { SpeedInsights } from "@vercel/speed-insights/next";
 
 import "./globals.css";
 import { ThemeProvider } from "@/components/shared/Provider";
+import Navbar from "@/components/modules/Navbar";
+import { COMPANY_INFO } from "@/constants/company-info";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -21,7 +23,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
-        <link rel="icon" href="/jsm-logo.png" sizes="any" />
+        <link rel="icon" href={COMPANY_INFO.Favicon} sizes="any" />
       </head>
       <body className={inter.className}>
         <ThemeProvider
@@ -30,6 +32,7 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
+          <Navbar />
           {children}
         </ThemeProvider>
         <SpeedInsights />

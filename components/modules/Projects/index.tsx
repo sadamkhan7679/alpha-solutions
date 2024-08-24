@@ -1,6 +1,8 @@
 import { SectionContent } from "@/types/root";
 import SectionContainer from "@/components/shared/SectionContainer";
-import ProjectList from "@/components/modules/Projects/ProjectList";
+import ProjectList, {
+  ProjectListTimeline,
+} from "@/components/modules/Projects/ProjectList";
 import { cn } from "@/utils/root";
 import React from "react";
 
@@ -26,6 +28,7 @@ const Projects = () => {
       {/*  /!* Project Cards *!/*/}
       {/*</div>*/}
       <ProjectList />
+      {/*<ProjectListTimeline />*/}
     </SectionContainer>
   );
 };

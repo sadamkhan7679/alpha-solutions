@@ -1,21 +1,16 @@
 "use client";
 import React, { useEffect, useRef, useState } from "react";
-import {
-  motion,
-  useMotionValueEvent,
-  useTransform,
-  useScroll,
-} from "framer-motion";
+import { motion, useMotionValueEvent, useScroll } from "framer-motion";
 import { cn } from "@/lib/utils";
-import { projectsList } from "@/data/Projects";
 import Image from "next/image";
 import { Badge } from "@/components/ui/badge";
+import { industriesList } from "@/constants/industries";
 
-type ProjectListProps = {
-  // project: Project;
+type IndustriesListProps = {
+  // Industries: Industries;
 };
 
-const ProjectList = ({}: ProjectListProps) => {
+const IndustriesList = ({}: IndustriesListProps) => {
   const [activeCard, setActiveCard] = React.useState(0);
   const ref = useRef<any>(null);
   const { scrollYProgress } = useScroll({
@@ -24,10 +19,12 @@ const ProjectList = ({}: ProjectListProps) => {
     container: ref,
     offset: ["start start", "end start"],
   });
-  const cardLength = projectsList.length;
+  const cardLength = industriesList.length;
 
   useMotionValueEvent(scrollYProgress, "change", (latest) => {
-    const cardsBreakpoints = projectsList.map((_, index) => index / cardLength);
+    const cardsBreakpoints = industriesList.map(
+      (_, index) => index / cardLength,
+    );
     const closestBreakpointIndex = cardsBreakpoints.reduce(
       (acc, breakpoint, index) => {
         const distance = Math.abs(latest - breakpoint);
@@ -79,7 +76,7 @@ const ProjectList = ({}: ProjectListProps) => {
     >
       <div className="relative flex items-start px-4 w-full">
         <div className="w-full">
-          {projectsList.map((item, index) => (
+          {industriesList.map((item, index) => (
             <div
               key={item.title + index}
               className="my-20 min-h-[30rem] lg:min-h-[50rem]"
@@ -107,9 +104,9 @@ const ProjectList = ({}: ProjectListProps) => {
                   className="mx-auto"
                 >
                   <Image
-                    src={projectsList[activeCard].thumbnailUrl}
-                    // src={"/images/projects/6.png"}
-                    alt={projectsList[activeCard].title}
+                    src={industriesList[activeCard].image}
+                    // src={"/images/Industriess/6.png"}
+                    alt={industriesList[activeCard].title}
                     sizes="400px"
                     fill
                     style={{
@@ -128,20 +125,20 @@ const ProjectList = ({}: ProjectListProps) => {
               </motion.p>
               <motion.div {...motionVariants(index)}>
                 <ul className="mt-4 px-4">
-                  {item.features.map((feature, index) => (
+                  {item.services.map((feature, index) => (
                     <li key={feature + index} className="list-disc">
                       {feature}
                     </li>
                   ))}
                 </ul>
 
-                <div className="flex flex-wrap h-full">
-                  {item.tags.map((tag, index) => (
-                    <Badge key={tag + index} className="mr-4 mt-4">
-                      {tag}
-                    </Badge>
-                  ))}
-                </div>
+                {/*<div className="flex flex-wrap h-full">*/}
+                {/*  {item.tags.map((tag, index) => (*/}
+                {/*    <Badge key={tag + index} className="mr-4 mt-4">*/}
+                {/*      {tag}*/}
+                {/*    </Badge>*/}
+                {/*  ))}*/}
+                {/*</div>*/}
               </motion.div>
             </div>
           ))}
@@ -157,41 +154,28 @@ const ProjectList = ({}: ProjectListProps) => {
           )}
         >
           <div
-            style={{ position: "relative", width: "600px", height: "600px" }}
+            style={{ position: "relative", width: "600px", height: "400px" }}
             // Place this div at the end of the container
             className="ml-auto"
           >
             <Image
-              src={projectsList[activeCard].thumbnailUrl}
-              // src={"/images/projects/1.png"}
-              alt={projectsList[activeCard].title}
-              sizes="500px"
+              src={industriesList[activeCard].image}
+              // src={"/images/Industriess/1.png"}
+              alt={industriesList[activeCard].title}
+              sizes="400px"
               fill
-              style={{
-                objectFit: "contain",
-              }}
+              // style={{
+              //   objectFit: "contain",
+              // }}
               // fill={true}
               // className="ml-auto"
             />
           </div>
-          {/*{projectsList[activeCard].content ?? null}*/}
+          {/*{IndustriessList[activeCard].content ?? null}*/}
         </div>
       </div>
     </motion.div>
   );
 };
 
-export default ProjectList;
-
-// Project Name: Coffee Tea
-// Description: A virtual platform for candidates to prepare for interviews.
-// People can sign up to find a mentor or be a mentor. The main goal is to help candidates prepare for interviews by providing them with a mentor who can guide them through the process and give them tips on how to succeed. People can pratice mock interviews, get feedback on their resume, and learn how to answer common interview questions. The platform also has a video call integration so that people can have face-to-face conversations with their mentors. Users can pay for the service using a payment gateway.
-// Features:
-// - User authentication
-// - Mentorship matching
-// - Video call integration
-// - Payment gateway integration
-// - Mock interviews
-// - Resume feedback
-// - Interview tips
-// Tags: Next.js, TailwindCSS, Firebase, WebRTC, Stripe, TypeScript, Framer Motion
+export default IndustriesList;

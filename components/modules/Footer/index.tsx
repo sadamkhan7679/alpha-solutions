@@ -1,15 +1,124 @@
 import { FaLocationArrow } from "react-icons/fa6";
-
-import { socialMedia } from "@/data";
 import MagicButton from "@/components/ui/MagicButton";
+import Image from "next/image";
+import { COMPANY_INFO } from "@/constants/company-info";
 
 const getCurrentYear = () => {
   return new Date().getFullYear();
 };
 
+type QuickLink = {
+  title: string;
+  href: string;
+};
+
+const industriesQuickLinks = [
+  {
+    title: "Healthcare",
+    href: "#healthcare",
+  },
+  {
+    title: "E-commerce",
+    href: "#e-commerce",
+  },
+  {
+    title: "Finance",
+    href: "#finance",
+  },
+  {
+    title: "Education",
+    href: "#education",
+  },
+  {
+    title: "Real Estate",
+    href: "#real-estate",
+  },
+  {
+    title: "Travel",
+    href: "#travel",
+  },
+];
+
+const servicesQuickLinks = [
+  {
+    title: "Web Development",
+    href: "#web-development",
+  },
+  {
+    title: "Mobile Development",
+    href: "#mobile-development",
+  },
+  {
+    title: "UI/UX Design",
+    href: "#ui-ux-design",
+  },
+  {
+    title: "Digital Marketing",
+    href: "#digital-marketing",
+  },
+  {
+    title: "SEO",
+    href: "#seo",
+  },
+  {
+    title: "Content Writing",
+    href: "#content-writing",
+  },
+];
+
+const companyQuickLinks = [
+  {
+    title: "About Us",
+    href: "#about",
+  },
+  {
+    title: "Services",
+    href: "#services",
+  },
+  {
+    title: "Industries",
+    href: "#industries",
+  },
+  {
+    title: "Projects",
+    href: "#projects",
+  },
+  {
+    title: "Team",
+    href: "#team",
+  },
+  {
+    title: "Contact",
+    href: "#contact",
+  },
+];
+
+const FooterLinks = ({
+  title,
+  links,
+}: {
+  title: string;
+  links: QuickLink[];
+}) => {
+  return (
+    <div>
+      <h2 className="text-white text-lg font-semibold">{title}</h2>
+      <ul className="mt-5">
+        {links.map((link) => (
+          <li key={link.title}>
+            <a href={link.href} className="text-white-200">
+              {link.title}
+            </a>
+          </li>
+        ))}
+      </ul>
+    </div>
+  );
+};
+
 const Footer = () => {
   return (
-    <footer className="w-full pt-20 pb-10" id="contact">
+    <footer className="w-full pt-20 pb-10 app-container" id="contact">
       {/* background grid */}
       {/*<div className="w-full absolute left-0 -bottom-72 min-h-96">*/}
       {/*  <img*/}
@@ -28,7 +137,7 @@ const Footer = () => {
           Reach out to me today and let&apos;s discuss how I can help you
           achieve your goals.
         </p>
-        <a href="mailto:sadamhussain942@gmail.com">
+        <a href={`mailto:${COMPANY_INFO.Email}`}>
           <MagicButton
             title="Let's get in touch"
             icon={<FaLocationArrow />}
@@ -36,20 +145,34 @@ const Footer = () => {
           />
         </a>
       </div>
-      <div className="flex mt-16 md:flex-row flex-col justify-between items-center">
-        <p className="md:text-base text-sm md:font-normal font-light">
-          Copyright © {getCurrentYear()} Sadam Hussain
-        </p>
+      <div className="w-full grid grid-cols-3 lg:grid-cols-4 place-items-end border-y-2 border-white py-10 mt-10">
+        <div className="h-full flex flex-col items-start content-between">
+          <Image src="/logo.svg" alt="logo" width={300} height={100} />
+          <p className="text-white text-lg font-semibold">
+            A digital agency that loves crafting beautiful websites and
+            applications.
+          </p>
 
-        <div className="flex items-center md:gap-3 gap-6 mt-4 md:mt-0">
-          {socialMedia.map((info) => (
-            <div
-              key={info.id}
-              className="w-10 h-10 cursor-pointer flex justify-center items-center backdrop-filter backdrop-blur-lg saturate-180 bg-opacity-75 bg-black-200 rounded-lg border border-black-300"
-            >
-              <img src={info.img} alt="icons" width={20} height={20} />
-            </div>
-          ))}
+          <p className="text-md text-white-200">
+            Address: 1234 Street Name, City Name, United States
+          </p>
+        </div>
+        <div>
+          <FooterLinks title="Industries" links={industriesQuickLinks} />
+        </div>
+        <div>
+          <FooterLinks title="Services" links={servicesQuickLinks} />
+        </div>
+        <div>
+          <FooterLinks title="Company" links={companyQuickLinks} />
+        </div>
+      </div>
+      <div className="flex justify-between items-center py-5">
+        <div className="text-white-200 text-md">
+          Copyright
+          <span>
+            {getCurrentYear()} &copy; {COMPANY_INFO.Name} | All Rights Reserved
+          </span>
         </div>
       </div>
     </footer>

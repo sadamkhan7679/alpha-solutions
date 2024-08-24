@@ -8,7 +8,7 @@ const nextConfig = {
         ignoreDuringBuilds: true,
     },
     images: {
-        domains: ['via.placeholder.com',"upload.wikimedia.org"],
+        domains: ['via.placeholder.com',"upload.wikimedia.org","images.unsplash.com"],
     }
 };
 

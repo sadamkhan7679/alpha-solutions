@@ -17,7 +17,6 @@
  * 11. Travel and Hospitality
  * 12. Food and Beverage
  */
-import { ServiceItem } from "@/types/services";
 import { WebDevelopmentIcon } from "@/icons/services/web-development";
 import { MobileDevelopmentIcon } from "@/icons/services/mobile-development";
 import { AIDevelopmentIcon } from "@/icons/services/ai-enhanced";
