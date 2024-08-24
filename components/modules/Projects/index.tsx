@@ -1,5 +1,8 @@
 import { SectionContent } from "@/types/root";
 import SectionContainer from "@/components/shared/SectionContainer";
+import ProjectList from "@/components/modules/Projects/ProjectList";
+import { cn } from "@/utils/root";
+import React from "react";
 
 const highlightProjectsSection: SectionContent = {
   headline: "Showcasing Our Digital Masterpieces",
@@ -17,10 +20,12 @@ const Projects = () => {
         </span>
       }
       description={highlightProjectsSection.description}
+      container={false}
     >
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 py-10">
-        {/* Project Cards */}
-      </div>
+      {/*<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 py-10">*/}
+      {/*  /!* Project Cards *!/*/}
+      {/*</div>*/}
+      <ProjectList />
     </SectionContainer>
   );
 };

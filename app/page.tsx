@@ -35,7 +35,7 @@ const Home = () => {
         <DevelopmentApproach />
         {/*<Industries />*/}
         {/*<Approach />*/}
-        {/*<Projects />*/}
+        <Projects />
         <TeamList />
         <ClientsTestimonials />
         <KeyHighlights />

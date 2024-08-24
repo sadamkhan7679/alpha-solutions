@@ -4,10 +4,43 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="00e75c1b-6e99-4512-b87a-f8cb667b71ec" name="Changes" comment="Updates">
-      <change beforePath="$PROJECT_DIR$/app/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/layout.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pnpm-lock.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pnpm-lock.yaml" afterDir="false" />
+    <list default="true" id="00e75c1b-6e99-4512-b87a-f8cb667b71ec" name="Changes" comment="Add Speed Insights">
+      <change afterPath="$PROJECT_DIR$/components/modules/Projects/ProjectList.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/ui/badge.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/Projects.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/tools.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/projects/1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/projects/10.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/projects/2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/projects/3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/projects/4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/projects/5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/projects/6.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/projects/7.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/projects/8.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/projects/9.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/projects/audits-iq/audits-iq (2).png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/projects/audits-iq/audits-iq (3).png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/projects/audits-iq/audits-iq (4).png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/projects/audits-iq/audits-iq.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/projects/chalet-retreat/chalet-retreat (2).png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/projects/chalet-retreat/chalet-retreat (3).png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/projects/chalet-retreat/chalet-retreat (4).png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/projects/chalet-retreat/chalet-retreat.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/projects/coffee-tea/coffe-tea (2).png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/projects/coffee-tea/coffe-tea.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/projects/oogo/oogo (2).png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/projects/oogo/oogo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/types/projects/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/globals.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/globals.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/modules/Projects/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/modules/Projects/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/modules/ServicesList/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/modules/ServicesList/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/modules/TechStack/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/modules/TechStack/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/shared/SectionContainer/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/shared/SectionContainer/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tech-stack.ts" beforeDir="false" afterPath="$PROJECT_DIR$/data/tech-stack.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tailwind.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/tailwind.config.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,7 +116,7 @@
       <recent name="D:\Web Development\RazmiSoft\website\razmisoft\old-data\data" />
     </key>
   </component>
-  <component name="RunManager" selected="npm.build">
+  <component name="RunManager" selected="npm.dev">
     <configuration name="build" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
@@ -106,8 +139,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="npm.build" />
         <item itemvalue="npm.dev" />
+        <item itemvalue="npm.build" />
       </list>
     </recent_temporary>
   </component>
@@ -131,7 +164,8 @@
       <workItem from="1724277097704" duration="11099000" />
       <workItem from="1724332151786" duration="940000" />
       <workItem from="1724373345726" duration="9200000" />
-      <workItem from="1724418431778" duration="75000" />
+      <workItem from="1724418431778" duration="1130000" />
+      <workItem from="1724453004920" duration="15959000" />
     </task>
     <task id="LOCAL-00001" summary="Updates">
       <option name="closed" value="true" />
@@ -181,7 +215,15 @@
       <option name="project" value="LOCAL" />
       <updated>1724385346491</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Add Speed Insights">
+      <option name="closed" value="true" />
+      <created>1724418595238</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1724418595239</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -190,6 +232,7 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Updates" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updates" />
+    <MESSAGE value="Add Speed Insights" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add Speed Insights" />
   </component>
 </project>

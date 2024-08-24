@@ -3,6 +3,7 @@
 import { ServiceCard } from "@/components/modules/ServicesList/ServicesCard";
 import SectionContainer from "@/components/shared/SectionContainer";
 import { SERVICES_LIST } from "@/data/services";
+import { Fragment } from "react";
 
 const ServicesList = () => {
   return (
@@ -12,7 +13,11 @@ const ServicesList = () => {
     >
       <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 py-10">
         {SERVICES_LIST.map((service) => {
-          return <ServiceCard service={service} key={service.id} />;
+          return (
+            <Fragment key={service.id}>
+              <ServiceCard service={service} />
+            </Fragment>
+          );
         })}
       </div>
     </SectionContainer>

@@ -7,6 +7,7 @@ type SectionContainerProps = {
   className?: string;
   sectionTitle?: string | React.ReactNode;
   description?: string;
+  container?: boolean;
 };
 
 const SectionContainer = ({
@@ -14,16 +15,19 @@ const SectionContainer = ({
   className,
   sectionTitle,
   description,
+  container = true,
 }: SectionContainerProps) => {
   return (
-    <section
-      className={cn("py-10 px-8 mb-14 bg-transparent container", className)}
-    >
-      {sectionTitle && <h1 className="heading mb-5">{sectionTitle}</h1>}
-      {description && (
-        <p className="text-lg mb-5 text-justify">{description}</p>
-      )}
-      <div>{children}</div>
+    <section className={cn("relative mb-14 bg-transparent")}>
+      <div className={cn("app-container mx-auto")}>
+        {sectionTitle && <h1 className="heading mb-5">{sectionTitle}</h1>}
+        {description && (
+          <p className="text-lg mb-5 text-justify">{description}</p>
+        )}
+      </div>
+      <div className={cn(container ? "app-container mx-auto" : null)}>
+        {children}
+      </div>
     </section>
   );
 };

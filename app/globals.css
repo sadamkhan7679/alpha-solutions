@@ -104,6 +104,10 @@
             }
         }
     }
+
+    .app-container {
+        @apply mx-auto px-12 md:px-24 lg:px-48 xl:px-64;
+    }
 }
 
 

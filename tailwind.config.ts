@@ -26,6 +26,14 @@ const config = {
       },
     },
     extend: {
+      spacing: {
+        100: "30rem",
+        104: "32rem",
+        108: "34rem",
+        112: "36rem",
+        116: "38rem",
+        120: "40rem",
+      },
       colors: {
         black: {
           DEFAULT: "#000",
