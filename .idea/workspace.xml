@@ -6,13 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="00e75c1b-6e99-4512-b87a-f8cb667b71ec" name="Changes" comment="Updates">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/modules/ClientFeedbacks/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/modules/ClientFeedbacks/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/modules/Hero/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/modules/Hero/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/modules/Industries/IndustiesList.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/modules/Industries/IndustiesList.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/modules/Projects/ProjectList.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/modules/Projects/ProjectList.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/modules/Team/TeamCard.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/modules/Team/TeamCard.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/modules/TechStack/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/modules/TechStack/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/ui/TextGenerateEffect/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/ui/TextGenerateEffect/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/ui/InfiniteCards/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/ui/InfiniteCards/index.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -152,7 +146,7 @@
       <workItem from="1724373345726" duration="9200000" />
       <workItem from="1724418431778" duration="1130000" />
       <workItem from="1724453004920" duration="16803000" />
-      <workItem from="1724508744282" duration="34037000" />
+      <workItem from="1724508744282" duration="34359000" />
     </task>
     <task id="LOCAL-00001" summary="Updates">
       <option name="closed" value="true" />
@@ -250,7 +244,15 @@
       <option name="project" value="LOCAL" />
       <updated>1724549706438</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Updates">
+      <option name="closed" value="true" />
+      <created>1724550331187</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1724550331187</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
