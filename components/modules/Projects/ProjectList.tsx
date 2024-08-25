@@ -116,6 +116,7 @@ const ProjectList = ({}: ProjectListProps) => {
                     style={{
                       objectFit: "contain",
                     }}
+                    loading="lazy"
                     // fill={true}
                     // className="ml-auto"
                   />
@@ -159,6 +160,7 @@ const ProjectList = ({}: ProjectListProps) => {
               style={{
                 objectFit: "contain",
               }}
+              loading="lazy"
               // fill={true}
               // className="ml-auto"
             />

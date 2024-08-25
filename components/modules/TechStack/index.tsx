@@ -37,7 +37,12 @@ const TechStack = () => {
                     {tool.title}
                   </CardTitle>
                   <CardContent className="relative h-16 w-16 md:h-20 md:w-20  lg:h-28 lg:w-28">
-                    <Image src={tool.image} alt={tool.title} fill={true} />
+                    <Image
+                      src={tool.image}
+                      alt={tool.title}
+                      fill={true}
+                      loading="lazy"
+                    />
                   </CardContent>
                 </Card>
               ))}

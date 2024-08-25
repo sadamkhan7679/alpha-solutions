@@ -113,6 +113,7 @@ const IndustriesList = ({}: IndustriesListProps) => {
                     style={{
                       objectFit: "contain",
                     }}
+                    loading="lazy"
                     // fill={true}
                     // className="ml-auto"
                   />
@@ -145,6 +146,7 @@ const IndustriesList = ({}: IndustriesListProps) => {
               alt={industriesList[activeCard].title}
               sizes="400px"
               fill
+              loading="lazy"
               // style={{
               //   objectFit: "contain",
               // }}

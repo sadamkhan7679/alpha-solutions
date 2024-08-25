@@ -1,6 +1,7 @@
 import React from "react";
 import { Spotlight } from "@/components/ui/SpotLight";
 import { TextGenerateEffect } from "@/components/ui/TextGenerateEffect";
+import MagicButton from "@/components/ui/MagicButton";
 import { CTA } from "@/components/shared/CTA";
 
 type HeroSectionProps = {};

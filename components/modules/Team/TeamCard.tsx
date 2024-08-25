@@ -23,6 +23,7 @@ const TeamMemberCard = ({ person }: TeamMemberCardProps) => {
           height={150}
           src={person.image}
           alt={person.name}
+          loading="lazy"
         />
       </CardHeader>
       <CardContent className="text-center">
