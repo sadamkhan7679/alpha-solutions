@@ -1,8 +1,6 @@
 import { SectionContent } from "@/types/root";
 import SectionContainer from "@/components/shared/SectionContainer";
-import ProjectList, {
-  ProjectListTimeline,
-} from "@/components/modules/Projects/ProjectList";
+import ProjectList from "@/components/modules/Projects/ProjectList";
 import { cn } from "@/utils/root";
 import React from "react";
 

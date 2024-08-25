@@ -5,6 +5,7 @@ import { cn } from "@/lib/utils";
 import Image from "next/image";
 import { Badge } from "@/components/ui/badge";
 import { industriesList } from "@/constants/industries";
+import ListItems from "@/components/shared/ListItems";
 
 type IndustriesListProps = {
   // Industries: Industries;
@@ -117,28 +118,8 @@ const IndustriesList = ({}: IndustriesListProps) => {
                   />
                 </div>
               </div>
-              <motion.p
-                {...motionVariants(index)}
-                className="text-kg text-slate-300 max-w-lg mt-10"
-              >
-                {item.description}
-              </motion.p>
               <motion.div {...motionVariants(index)}>
-                <ul className="mt-4 px-4">
-                  {item.services.map((feature, index) => (
-                    <li key={feature + index} className="list-disc">
-                      {feature}
-                    </li>
-                  ))}
-                </ul>
-
-                {/*<div className="flex flex-wrap h-full">*/}
-                {/*  {item.tags.map((tag, index) => (*/}
-                {/*    <Badge key={tag + index} className="mr-4 mt-4">*/}
-                {/*      {tag}*/}
-                {/*    </Badge>*/}
-                {/*  ))}*/}
-                {/*</div>*/}
+                <ListItems summary={item.description} items={item.services} />
               </motion.div>
             </div>
           ))}

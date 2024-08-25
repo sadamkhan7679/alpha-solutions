@@ -41,6 +41,7 @@ export interface Project {
   id: string;
   title: string;
   type: ProjectType;
+  slug: string;
   status: ProjectStatus;
   client: string;
   duration: {

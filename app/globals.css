@@ -10,65 +10,65 @@ section {
 
 @layer base {
     :root {
-        --background: 0 0% 100%;
-        --foreground: 240 10% 3.9%;
+        --background: #FFFFFF;
+        --foreground: #09090B;
 
-        --card: 0 0% 100%;
-        --card-foreground: 240 10% 3.9%;
+        --card: #FFFFFF;
+        --card-foreground: #09090B;
 
-        --popover: 0 0% 100%;
-        --popover-foreground: 240 10% 3.9%;
+        --popover: #FFFFFF;
+        --popover-foreground: #09090B;
 
-        --primary: 240 5.9% 10%;
-        --primary-foreground: 0 0% 98%;
+        --primary: #18181B;
+        --primary-foreground: #FAFAFA;
 
-        --secondary: 240 4.8% 95.9%;
-        --secondary-foreground: 240 5.9% 10%;
+        --secondary: #F4F4F5;
+        --secondary-foreground: #18181B;
 
-        --muted: 240 4.8% 95.9%;
-        --muted-foreground: 240 3.8% 46.1%;
+        --muted: #F4F4F5;
+        --muted-foreground: #71717A;
 
-        --accent: 240 4.8% 95.9%;
-        --accent-foreground: 240 5.9% 10%;
+        --accent: #F4F4F5;
+        --accent-foreground: #18181B;
 
-        --destructive: 0 84.2% 60.2%;
-        --destructive-foreground: 0 0% 98%;
+        --destructive: #EF4444;
+        --destructive-foreground: #FAFAFA;
 
-        --border: 240 5.9% 90%;
-        --input: 240 5.9% 90%;
-        --ring: 240 10% 3.9%;
+        --border: #E4E4E7;
+        --input: #E4E4E7;
+        --ring: #09090B;
 
         --radius: 0.5rem;
     }
 
     .dark {
-        --background: 240 10% 3.9%;
-        --foreground: 0 0% 98%;
+        --background: #09090B;
+        --foreground: #FAFAFA;
 
-        --card: 240 10% 3.9%;
-        --card-foreground: 0 0% 98%;
+        --card: #09090B;
+        --card-foreground: #FAFAFA;
 
-        --popover: 240 10% 3.9%;
-        --popover-foreground: 0 0% 98%;
+        --popover: #09090B;
+        --popover-foreground: #FAFAFA;
 
-        --primary: 0 0% 98%;
-        --primary-foreground: 240 5.9% 10%;
+        --primary: #FAFAFA;
+        --primary-foreground: #18181B;
 
-        --secondary: 240 3.7% 15.9%;
-        --secondary-foreground: 0 0% 98%;
+        --secondary: #27272A;
+        --secondary-foreground: #FAFAFA;
 
-        --muted: 240 3.7% 15.9%;
-        --muted-foreground: 240 5% 64.9%;
+        --muted: #27272A;
+        --muted-foreground: #A1A1AA;
 
-        --accent: 240 3.7% 15.9%;
-        --accent-foreground: 0 0% 98%;
+        --accent: #27272A;
+        --accent-foreground: #FAFAFA;
 
-        --destructive: 0 62.8% 30.6%;
-        --destructive-foreground: 0 0% 98%;
+        --destructive: #7F1D1D;
+        --destructive-foreground: #FAFAFA;
 
-        --border: 240 3.7% 15.9%;
-        --input: 240 3.7% 15.9%;
-        --ring: 240 4.9% 83.9%;
+        --border: #27272A;
+        --input: #27272A;
+        --ring: #D4D4D8;
     }
 }
 
@@ -96,8 +96,32 @@ section {
     }
 
 
+    .text-color {
+        @apply text-black-100 dark:text-white;
+    }
+
+
+    /*Typography*/
+    .section-heading {
+        @apply font-bold text-4xl md:text-5xl text-color text-justify;
+    }
+    .text-heading {
+        @apply font-bold text-4xl md:text-5xl text-color text-justify;
+    }
+    .text-subheading {
+        @apply font-semibold text-2xl md:text-3xl text-color text-justify;
+    }
+    .text-body {
+        @apply font-normal text-base md:text-lg text-color text-justify;
+    }
+
+    .text-caption {
+        @apply font-normal text-sm md:text-base text-color text-justify;
+    }
+
+
     .heading {
-        @apply font-bold text-4xl md:text-5xl;
+        @apply font-bold text-4xl md:text-5xl text-color text-justify;
     }
 
 
@@ -113,6 +137,10 @@ section {
 
     .app-container {
         @apply mx-auto px-12 md:px-24 lg:px-48 xl:px-64;
+    }
+
+    .app-divider {
+        @apply border-b-2 border-black-100 dark:border-white my-5
     }
 }
 

@@ -29,7 +29,7 @@ export const ServiceCard = ({ service, className }: ServiceCardProps) => {
       )}
     >
       <Link
-        href={service?.slug}
+        href={`services/${service?.slug}`}
         className="relative group  block p-2 h-full w-full"
         onMouseEnter={() => setHoveredIndex(service.key)}
         onMouseLeave={() => setHoveredIndex(null)}
@@ -81,7 +81,7 @@ export const ServiceCard = ({ service, className }: ServiceCardProps) => {
             {/*</div>*/}
             <p
               className={cn(
-                "mt-8 text-zinc-400 tracking-wide leading-relaxed text-sm",
+                "mt-8 text-zinc-400 tracking-wide leading-relaxed text-caption",
                 className,
               )}
             >

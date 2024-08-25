@@ -9,7 +9,7 @@ type HeroSectionProps = {};
 
 const HeroSection: React.FC<HeroSectionProps> = () => {
   return (
-    <div className="pb-20 pt-36 mb-28">
+    <div className="pb-20 pt-24 mb-28">
       {/**
        *  UI: Spotlights
        *  Link: https://ui.aceternity.com/components/spotlight

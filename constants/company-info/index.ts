@@ -1,5 +1,5 @@
 export const COMPANY_INFO = {
-  Name: "Razmisoft",
+  Name: "RazmiSoft",
   Tagline: "Tailored Technology to Drive Your Success",
   Address: "1234 Main St, New York, NY 10001",
   Phone: "+1 (123) 456-7890",

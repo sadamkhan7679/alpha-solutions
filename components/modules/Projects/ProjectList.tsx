@@ -10,6 +10,7 @@ import { cn } from "@/lib/utils";
 import { projectsList } from "@/data/Projects";
 import Image from "next/image";
 import { Badge } from "@/components/ui/badge";
+import ListItems from "@/components/shared/ListItems";
 
 type ProjectListProps = {
   // project: Project;
@@ -120,20 +121,8 @@ const ProjectList = ({}: ProjectListProps) => {
                   />
                 </div>
               </div>
-              <motion.p
-                {...motionVariants(index)}
-                className="text-kg text-slate-300 max-w-lg mt-10"
-              >
-                {item.description}
-              </motion.p>
               <motion.div {...motionVariants(index)}>
-                <ul className="mt-4 px-4">
-                  {item.features.map((feature, index) => (
-                    <li key={feature + index} className="list-disc">
-                      {feature}
-                    </li>
-                  ))}
-                </ul>
+                <ListItems summary={item.description} items={item.features} />
 
                 <div className="flex flex-wrap h-full">
                   {item.tags.map((tag, index) => (

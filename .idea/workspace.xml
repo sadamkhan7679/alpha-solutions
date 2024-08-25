@@ -4,66 +4,48 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="00e75c1b-6e99-4512-b87a-f8cb667b71ec" name="Changes" comment="Add Projects Section">
-      <change afterPath="$PROJECT_DIR$/components/modules/Industries/IndustiesList.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/modules/Navbar/index.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/shared/CTA/index.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/ui/navbar-menu.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/constants/company-info/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/constants/industries/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/favicon/android-chrome-192x192.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/favicon/android-chrome-512x512.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/favicon/apple-touch-icon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/favicon/favicon-16x16.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/favicon/favicon-32x32.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/favicon/favicon.ico" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/favicon/site.webmanifest" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/industries/consultation-services.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/industries/ecommerce.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/industries/education.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/industries/entertainment.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/industries/finance.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/industries/food-beverage.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/industries/healthcare.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/industries/real-estate.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/industries/sales-marketing.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/industries/social-platforms.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/industries/travel-hospitality.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/logo.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/logo2.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/logo3.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/services/ai.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/services/azuredevops.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/services/blockchain.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/services/desktop-app-development.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/services/ecommerce.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/services/figma.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/services/interview.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/services/mobile-app.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/services/mobile.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/services/web-development.svg" afterDir="false" />
+    <list default="true" id="00e75c1b-6e99-4512-b87a-f8cb667b71ec" name="Changes" comment="Add Industries, Footer and CTA Section">
+      <change afterPath="$PROJECT_DIR$/.env" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/case-studies/[slug]/page.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/case-studies/page.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/contact/page.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/error.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/loading.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/not-found.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/services/[slug]/page.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/services/page.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/sitemap.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/pages/ContactPage/index.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/pages/NotFoundPage/index.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/pages/Services/ServiceDetailPage.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/pages/Services/ServiceItem.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/pages/Services/index.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/shared/ListItems/index.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/shared/TagsList/index.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/ui/avatar.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/ui/input.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/ui/label.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/ui/textarea.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/pages-meta.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/globals.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/globals.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/layout.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/modules/DevelopmentApproach/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/modules/DevelopmentApproach/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/modules/Footer/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/modules/Footer/index.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/modules/Hero/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/modules/Hero/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/modules/Industries/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/modules/Industries/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/modules/Industries/IndustiesList.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/modules/Industries/IndustiesList.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/modules/Projects/ProjectList.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/modules/Projects/ProjectList.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/modules/Projects/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/modules/Projects/index.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/modules/ServicesList/ServicesCard.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/modules/ServicesList/ServicesCard.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/modules/ServicesList/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/modules/ServicesList/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/shared/logo-button/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/shared/logo-button/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/ui/MagicButton/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/ui/MagicButton/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/constants/nav-links/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/constants/nav-links/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/constants/services/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/constants/services/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/services.ts" beforeDir="false" afterPath="$PROJECT_DIR$/data/services.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/next.config.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/next.config.mjs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/projects/cybermart/cybermart (2).png" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/projects/cybermart/cybermart (2).png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/projects/cybermart/cybermart.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/projects/cybermart/cybermart.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/types/nav-link/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/types/nav-link/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/types/services/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/types/services/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/shared/SectionContainer/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/shared/SectionContainer/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/ui/button.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/ui/button.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/ui/card.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/ui/card.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/constants/company-info/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/constants/company-info/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/Projects.ts" beforeDir="false" afterPath="$PROJECT_DIR$/data/Projects.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pnpm-lock.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pnpm-lock.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tailwind.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/tailwind.config.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/types/projects/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/types/projects/index.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -191,7 +173,7 @@
       <workItem from="1724373345726" duration="9200000" />
       <workItem from="1724418431778" duration="1130000" />
       <workItem from="1724453004920" duration="16803000" />
-      <workItem from="1724508744282" duration="17423000" />
+      <workItem from="1724508744282" duration="27381000" />
     </task>
     <task id="LOCAL-00001" summary="Updates">
       <option name="closed" value="true" />
@@ -265,7 +247,15 @@
       <option name="project" value="LOCAL" />
       <updated>1724469951209</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Add Industries, Footer and CTA Section">
+      <option name="closed" value="true" />
+      <created>1724531927010</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1724531927010</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -276,16 +266,22 @@
     <MESSAGE value="Updates" />
     <MESSAGE value="Add Speed Insights" />
     <MESSAGE value="Add Projects Section" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add Projects Section" />
+    <MESSAGE value="Add Industries, Footer and CTA Section" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add Industries, Footer and CTA Section" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/data/Projects.ts</url>
-          <line>499</line>
+          <line>503</line>
           <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/components/pages/Services/ServiceItem.tsx</url>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="2" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

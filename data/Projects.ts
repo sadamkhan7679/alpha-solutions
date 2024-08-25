@@ -12,6 +12,7 @@ export const projectsList: Project[] = [
   {
     id: "CR001",
     title: "Chalet-Retreat: Luxury Vacation Rental Platform",
+    slug: "chalet-retreat",
     type: ProjectType.WEB,
     status: ProjectStatus.COMPLETED,
     client: "Chalet-Retreat Inc.",
@@ -132,6 +133,7 @@ export const projectsList: Project[] = [
   {
     id: "OOGO001",
     title: "OOGO - Order On the Go: Multi-Vendor E-commerce Marketplace",
+    slug: "oogo",
     type: ProjectType.WEB,
     status: ProjectStatus.COMPLETED,
     client: "OOGO Technologies LLC, UAE",
@@ -254,6 +256,7 @@ export const projectsList: Project[] = [
   {
     id: "CT001",
     title: "Coffee Tea: Virtual Interview Preparation Platform",
+    slug: "coffee-tea",
     type: ProjectType.WEB,
     status: ProjectStatus.COMPLETED,
     client: "Coffee Tea Inc.",
@@ -380,6 +383,7 @@ export const projectsList: Project[] = [
   {
     id: "AIQ001",
     title: "Audits-IQ: The Mobile Auditing and Inspections Solution",
+    slug: "audits-iq",
     type: ProjectType.MOBILE,
     status: ProjectStatus.COMPLETED,
     client: "Audits-IQ Inc.",
@@ -500,6 +504,7 @@ export const projectsList: Project[] = [
   {
     id: "CM001",
     title: "CyberMart: A Multi-Vendor E-Commerce Platform",
+    slug: "cybermart",
     type: ProjectType.WEB,
     status: ProjectStatus.COMPLETED,
     client: "CyberMart Inc.",
