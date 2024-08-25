@@ -5,7 +5,6 @@ import Link from "next/link";
 import React, { useState } from "react";
 import { cn } from "@/utils/root";
 import { ServiceItem } from "@/types/services";
-import { SERVICES_META } from "@/old-data/constants/services";
 import Image from "next/image";
 // import { CardContent } from "@/components/ui/card";
 
@@ -16,10 +15,6 @@ type ServiceCardProps = {
 
 export const ServiceCard = ({ service, className }: ServiceCardProps) => {
   let [hoveredIndex, setHoveredIndex] = useState<string | null>(null);
-
-  const serviceMeta = Object.values(SERVICES_META).find(
-    (meta) => meta.slug === service.slug,
-  );
 
   return (
     <div

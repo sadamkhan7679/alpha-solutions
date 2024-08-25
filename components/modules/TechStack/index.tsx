@@ -24,14 +24,9 @@ const TechStack = () => {
               {item.title}
             </TabsTrigger>
           ))}
-
-          {/*<TabsTrigger value="account">Account</TabsTrigger>*/}
-          {/*<TabsTrigger value="password">Password</TabsTrigger>*/}
         </TabsList>
         {TECH_STACK_LIST.map((item, index) => (
           <TabsContent key={index} value={item.category}>
-            {/*<h2>{item.title}</h2>*/}
-            {/*<p>{item.description}</p>*/}
             <div className="grid grid-cols-3 md:grid-cols-5 lg:grid-cols-6 gap-6 w-full">
               {item.tools.map((tool, index) => (
                 <Card
@@ -44,12 +39,6 @@ const TechStack = () => {
                   <CardContent className="relative h-16 w-16 md:h-20 md:w-20  lg:h-28 lg:w-28">
                     <Image src={tool.image} alt={tool.title} fill={true} />
                   </CardContent>
-
-                  {/*<a href={tool.link} target="_blank" rel="noreferrer">*/}
-                  {/*  <img src={tool.image} alt={tool.title} />*/}
-                  {/*  /!*<h3>{tool.title}</h3>*!/*/}
-                  {/*  /!*<p>{tool.description}</p>*!/*/}
-                  {/*</a>*/}
                 </Card>
               ))}
             </div>

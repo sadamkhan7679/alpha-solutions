@@ -1,6 +1,5 @@
 import React from "react";
-
-export interface SVGIconProps extends React.SVGProps<SVGSVGElement> {}
+import { SVGIconProps } from "@/types/root";
 
 export type Industry = {
   title: string;

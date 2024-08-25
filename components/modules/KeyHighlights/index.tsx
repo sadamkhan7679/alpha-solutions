@@ -1,6 +1,5 @@
 import React from "react";
-import { SVGIconProps } from "@/types/services";
-import { Calendar, FolderKanban, UserRoundCheck, Users } from "lucide-react";
+
 import {
   Card,
   CardDescription,
@@ -8,14 +7,10 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import SectionContainer from "@/components/shared/SectionContainer";
-
-type KeyHighlightItem = {
-  title: string;
-  description: string;
-  Icon: JSX.Element;
-};
-
-const iconSize = 96;
+import { TeamIcon } from "@/icons/common/TeamIcon";
+import { UserIcon } from "@/icons/common/UserIcon";
+import { CalenderIcon } from "@/icons/common/CalenderIcon";
+import { FolderIcon } from "@/icons/common/FolderIcon";
 
 type Highlight = {
   metric: string;
@@ -34,43 +29,25 @@ const keyHighlights: {
     {
       metric: "Projects Completed",
       value: "50+",
-      Icon: FolderKanban,
+      Icon: FolderIcon,
     },
     {
       metric: "Years of Experience",
       value: "20+",
-      Icon: Calendar,
+      Icon: CalenderIcon,
     },
     {
       metric: "Satisfied Clients",
       value: "50+",
-      Icon: UserRoundCheck,
+      Icon: UserIcon,
     },
     {
       metric: "Team Members",
       value: "20+",
-      Icon: Users,
+      Icon: TeamIcon,
     },
   ],
 };
-
-const keyHighlightsData: KeyHighlightItem[] = [
-  {
-    title: "20+",
-    description: "Years of Experience",
-    Icon: <Calendar size={iconSize} />,
-  },
-  {
-    title: "100+",
-    description: "Projects Completed",
-    Icon: <FolderKanban size={iconSize} />,
-  },
-  {
-    title: "100%",
-    description: "Client Satisfaction",
-    Icon: <UserRoundCheck size={iconSize} />,
-  },
-];
 
 const KeyHighlights = () => {
   return (

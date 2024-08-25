@@ -1,14 +1,5 @@
 "use client";
-import React, { useEffect, useRef, useState } from "react";
-import {
-  Telescope,
-  NotebookPen,
-  Figma,
-  SquareCode,
-  TabletSmartphone,
-  Rocket,
-  Construction,
-} from "lucide-react";
+import React from "react";
 import {
   Timeline,
   TimelineContent,
@@ -18,7 +9,13 @@ import {
   TimelineLine,
 } from "@/components/ui/timeline";
 import SectionContainer from "@/components/shared/SectionContainer";
-import { motion, useScroll, useTransform } from "framer-motion";
+import { TelescopeIcon } from "@/icons/common/TelescopeIcon";
+import { NotebookPenIcon } from "@/icons/common/NotebookPenIcon";
+import { FigmaIcon } from "@/icons/common/FigmaIcon";
+import { SquareCodeIcon } from "@/icons/common/SquareCodeIcon";
+import { TabletSmartphoneIcon } from "@/icons/common/TabletSmartphoneIcon";
+import { RocketIcon } from "@/icons/common/RocketIcon";
+import { ConstructionIcon } from "@/icons/common/ConstructionIcon";
 
 type ApproachItem = {
   title: string;
@@ -39,43 +36,43 @@ const approachSection: {
       title: "Unearthing Your Vision",
       description:
         "We begin by diving deep into your project goals, target audience, and unique challenges. Our team collaborates with you to define the scope, features, and objectives of your app, ensuring a solid foundation for success.",
-      Icon: Telescope,
+      Icon: TelescopeIcon,
     },
     {
       title: "Mapping the Digital Landscape",
       description:
         "With insights gathered, we craft a comprehensive roadmap. This includes defining the technology stack, creating user personas, outlining the information architecture, and establishing project milestones. We set the stage for a smooth development journey.",
-      Icon: NotebookPen,
+      Icon: NotebookPenIcon,
     },
     {
       title: "Bringing Ideas to Life",
       description:
         "Our designers create intuitive wireframes and stunning visual designs that align with your brand. We develop interactive prototypes to test user flows and gather early feedback, refining the user experience before a single line of code is written.",
-      Icon: Figma,
+      Icon: FigmaIcon,
     },
     {
       title: "Building Your Digital Masterpiece",
       description:
         "Our skilled developers bring the designs to life, writing clean, efficient code for both front-end and back-end components. We follow agile methodologies, allowing for flexibility and continuous improvement throughout the development process.",
-      Icon: SquareCode,
+      Icon: SquareCodeIcon,
     },
     {
       title: "Perfecting Every Pixel and Function",
       description:
         "Rigorous testing is conducted to ensure your app functions flawlessly across all devices and scenarios. We perform thorough bug fixes, usability testing, and performance optimization to deliver a polished, high-quality product.",
-      Icon: TabletSmartphone,
+      Icon: TabletSmartphoneIcon,
     },
     {
       title: "Launching Your Digital Presence",
       description:
         "We carefully manage the deployment process, ensuring a smooth transition from development to live environments. Our team handles all technical aspects of the launch, including server configuration, database migration, and app store submissions.",
-      Icon: Rocket,
+      Icon: RocketIcon,
     },
     {
       title: "Nurturing Your Digital Growth",
       description:
         "Our commitment doesn't end at launch. We provide ongoing support, monitor performance, and implement updates to keep your app secure and relevant. We're here to help your digital solution evolve and thrive in the ever-changing tech landscape.",
-      Icon: Construction,
+      Icon: ConstructionIcon,
     },
   ],
 };
@@ -184,7 +181,7 @@ const DevelopmentApproach = () => {
                 <TimelineDot
                   status="custom"
                   // @ts-ignore
-                  customIcon={<item.Icon size={24} />}
+                  customIcon={<item.Icon size={24} className="text-white" />}
                   className="w-20 h-20 rounded-2xl border-none"
                 />
                 <TimelineLine done />

@@ -1,7 +1,7 @@
-import { FaLocationArrow } from "react-icons/fa6";
 import MagicButton from "@/components/ui/MagicButton";
 import Image from "next/image";
 import { COMPANY_INFO } from "@/constants/company-info";
+import { DirectionIcon } from "@/icons/common/directionIcon";
 
 const getCurrentYear = () => {
   return new Date().getFullYear();
@@ -140,7 +140,7 @@ const Footer = () => {
         <a href={`mailto:${COMPANY_INFO.Email}`}>
           <MagicButton
             title="Let's get in touch"
-            icon={<FaLocationArrow />}
+            icon={<DirectionIcon width={24} height={24} />}
             position="right"
           />
         </a>

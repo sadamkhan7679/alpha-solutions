@@ -1,8 +1,10 @@
 import React from "react";
 import { VariantProps, cva } from "class-variance-authority";
-import { Check, Circle, X } from "lucide-react";
 
 import { cn } from "@/lib/utils";
+import { CircleIcon } from "@/icons/common/CircleIcon";
+import { CheckIcon } from "@/icons/common/CheckIcon";
+import { XIcon } from "@/icons/common/XIcon";
 
 const timelineVariants = cva("grid", {
   variants: {
@@ -97,9 +99,9 @@ const TimelineDot = React.forwardRef<HTMLDivElement, TimelineDotProps>(
       ref={ref}
       {...props}
     >
-      <Circle className="size-2.5" />
-      <Check className="size-3" />
-      <X className="size-3" />
+      <CircleIcon className="size-2.5" />
+      <CheckIcon className="size-3" />
+      <XIcon className="size-3" />
       {customIcon}
     </div>
   ),

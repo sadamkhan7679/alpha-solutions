@@ -1,4 +1,4 @@
-import { CircleChevronRight } from "lucide-react";
+import { ArrowIcon } from "@/icons/common/arrowIcon";
 
 type ListItemsProps = {
   heading?: string;
@@ -18,7 +18,7 @@ const ListItems = ({ heading, summary, items }: ListItemsProps) => {
             key={index + item}
             className="text-caption flex items-center w-full flex-wrap mb-5"
           >
-            <CircleChevronRight className="mr-5" /> {item}
+            <ArrowIcon className="mr-5" width={24} height={24} /> {item}
           </li>
         ))}
       </ul>
