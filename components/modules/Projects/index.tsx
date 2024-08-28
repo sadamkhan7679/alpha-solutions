@@ -16,7 +16,7 @@ const Projects = () => {
       sectionTitle={
         <span>
           Showcasing Our
-          <span className="text-purple">&nbsp;Digital Masterpieces</span>
+          <span className="text-primary">&nbsp;Digital Masterpieces</span>
         </span>
       }
       description={highlightProjectsSection.description}

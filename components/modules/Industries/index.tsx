@@ -14,9 +14,9 @@ const Industries = () => {
       sectionTitle={
         <span>
           Driving
-          <span className="text-purple">
+          <span className="text-primary">
             &nbsp;Digital Innovation
-          </span> Across <span className="text-purple">Sectors</span>
+          </span> Across <span className="text-primary">Sectors</span>
         </span>
       }
       description={industriesServedSection.description}

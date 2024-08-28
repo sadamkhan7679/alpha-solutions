@@ -87,7 +87,7 @@ const ProjectList = ({}: ProjectListProps) => {
             >
               <motion.h2
                 {...motionVariants(index)}
-                className="text-2xl font-bold text-slate-100"
+                className="text-2xl font-bold text-primary"
               >
                 {item.title}
               </motion.h2>

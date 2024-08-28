@@ -8,6 +8,7 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import Image from "next/image";
+import { Button } from "@/components/ui/button";
 
 type TeamMemberCardProps = {
   person: TeamMember;
@@ -15,7 +16,7 @@ type TeamMemberCardProps = {
 
 const TeamMemberCard = ({ person }: TeamMemberCardProps) => {
   return (
-    <Card className="relative flex flex-col content-between items-center mt-[100px]">
+    <Card className="relative bg-primary flex flex-col content-between items-center mt-[100px]">
       <CardHeader className="min-h-[150px]">
         <Image
           className="rounded-full absolute top-0 transform -translate-x-1/2 -translate-y-1/2"
@@ -27,12 +28,16 @@ const TeamMemberCard = ({ person }: TeamMemberCardProps) => {
         />
       </CardHeader>
       <CardContent className="text-center">
-        <CardTitle>{person.name}</CardTitle>
-        <CardDescription>{person.title}</CardDescription>
-        <CardDescription>{person.description}</CardDescription>
+        <CardTitle className="text-primary-foreground">{person.name}</CardTitle>
+        <CardDescription className="text-primary-foreground">
+          {person.title}
+        </CardDescription>
+        <CardDescription className="text-primary-foreground">
+          {person.description}
+        </CardDescription>
       </CardContent>
       <CardFooter>
-        <button>View Profile</button>
+        <Button variant="secondary">View Profile</Button>
       </CardFooter>
     </Card>
   );

@@ -34,7 +34,7 @@ export default function RootLayout({
         >
           <main
             // className="relative bg-black-100 flex justify-center items-center flex-col mx-auto sm:px-10 px-5 overflow-clip"
-            className="relative bg-black-100 overflow-clip min-h-screen"
+            className="relative bg-body overflow-clip min-h-screen"
           >
             <Navbar />
             <div className="flex flex-col items-center justify-center w-full pt-20">

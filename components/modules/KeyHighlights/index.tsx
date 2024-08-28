@@ -55,7 +55,7 @@ const KeyHighlights = () => {
       sectionTitle={
         <span>
           Transforming Ideas into
-          <span className="text-purple">&nbsp;Digital Success Stories</span>
+          <span className="text-primary">&nbsp;Digital Success Stories</span>
         </span>
       }
       description={keyHighlights.title}
@@ -64,12 +64,22 @@ const KeyHighlights = () => {
         {keyHighlights.highlights.map((item, index) => (
           <Card
             key={index}
-            className="flex flex-col items-center justify-center px-4 py-8 bg-black-200 rounded-lg"
+            className="flex flex-col items-center justify-center px-4 py-8 rounded-lg bg-primary"
           >
             {/*@ts-ignore*/}
-            <CardHeader>{<item.Icon size={96} />}</CardHeader>
-            <CardTitle className="text-5xl mb-5">{item.value}</CardTitle>
-            <CardDescription className="text-3xl text-bold text-center">
+            <CardHeader>
+              {
+                <item.Icon
+                  width={96}
+                  height={96}
+                  className="text-primary-foreground"
+                />
+              }
+            </CardHeader>
+            <CardTitle className="text-5xl text-primary-foreground mb-5">
+              {item.value}
+            </CardTitle>
+            <CardDescription className="text-3xl text-bold text-center text-primary-foreground">
               {item.metric}
             </CardDescription>
           </Card>

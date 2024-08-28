@@ -46,9 +46,9 @@ export const ServiceCard = ({ service, className }: ServiceCardProps) => {
             />
           )}
         </AnimatePresence>
-        <Card className="bg-transparent">
+        <Card className="bg-primary dark:bg-transparent">
           <CardTitle>
-            <div className="flex items-center service-card-icon text-white">
+            <div className="flex items-center service-card-icon text-white text-xl">
               {service.Icon && (
                 <Image
                   src={service.Icon}
@@ -76,7 +76,7 @@ export const ServiceCard = ({ service, className }: ServiceCardProps) => {
             {/*</div>*/}
             <p
               className={cn(
-                "mt-8 text-zinc-400 tracking-wide leading-relaxed text-caption",
+                "mt-8 tracking-wide text-white leading-relaxed",
                 className,
               )}
             >
@@ -99,7 +99,7 @@ export const Card = ({
   return (
     <div
       className={cn(
-        "rounded-2xl h-full w-full p-4 overflow-hidden bg-black border border-transparent dark:border-white/[0.2] group-hover:border-slate-700 relative z-20",
+        "rounded-2xl h-full w-full p-4 overflow-hidden shadow-2xl bg-black border border-white dark:border-white/[0.2] group-hover:border-white/[0.2] relative z-20",
         className,
       )}
     >

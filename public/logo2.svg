@@ -3,8 +3,8 @@
      viewBox="0 0 150 150">
     <defs>
         <linearGradient id="gradient-1" x1="49.99999999999999%" y1="0%" x2="50.00000000000001%" y2="100%">
-            <stop offset="0.00" stop-color="#CBACF9"/>
-            <stop offset="1.00" stop-color="#6078eb"/>
+            <stop offset="0.00" stop-color="#0060FA"/>
+            <stop offset="1.00" stop-color="#00a6fb"/>
         </linearGradient>
     </defs>
     <rect data-name="background" width="100%" height="100%" fill="transparent"/>

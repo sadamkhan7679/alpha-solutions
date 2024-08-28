@@ -2,7 +2,7 @@ export const SERVICES_META = {
   // sectionTitle: "Cutting-Edge Solutions for Every Digital Need",
   sectionTitle: (
     <span>
-      <span className="text-purple">Cutting-Edge Solutions</span> for Every
+      <span className="text-primary">Cutting-Edge Solutions</span> for Every
       Digital Need
     </span>
   ),

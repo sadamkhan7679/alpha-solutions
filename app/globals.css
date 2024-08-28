@@ -8,6 +8,17 @@ section {
     scroll-margin-top: 120px; /* This ensures correct scroll position for modern browsers */
 }
 
+
+
+/*
+Primary color: #00a6fb
+Secondary color: #f48c06
+Body
+
+light color: #001219
+dark color: #fff
+*/
+
 @layer base {
     :root {
         --background: #FFFFFF;
@@ -19,11 +30,19 @@ section {
         --popover: #FFFFFF;
         --popover-foreground: #09090B;
 
-        --primary: #18181B;
+        /*--primary: #18181B;*/
+        /*--primary-foreground: #FAFAFA;*/
+        --primary-light: #ADE4FF;
+        --primary: #00a6fb;
+        --primary-dark: #0060FA;
         --primary-foreground: #FAFAFA;
 
-        --secondary: #F4F4F5;
-        --secondary-foreground: #18181B;
+        /*--secondary: #F4F4F5;*/
+        /*--secondary-foreground: #18181B;*/
+        --secondary-light: #f48c06;
+        --secondary: #f48c06;
+        --secondary-dark: #ba5e06;
+        --secondary-foreground: #FAFAFA;
 
         --muted: #F4F4F5;
         --muted-foreground: #71717A;
@@ -51,10 +70,18 @@ section {
         --popover: #09090B;
         --popover-foreground: #FAFAFA;
 
-        --primary: #FAFAFA;
-        --primary-foreground: #18181B;
+        /*--primary: #FAFAFA;*/
+        /*--primary-foreground: #18181B;*/
+        --primary-light: #001219;
+        --primary: #00a6fb;
+        --primary-dark: #003459;
+        --primary-foreground: #FAFAFA;
 
-        --secondary: #27272A;
+        /*--secondary: #27272A;*/
+        /*--secondary-foreground: #FAFAFA;*/
+        --secondary-light: #f48c06;
+        --secondary: #f48c06;
+        --secondary-dark: #ba5e06;
         --secondary-foreground: #FAFAFA;
 
         --muted: #27272A;
@@ -85,6 +112,22 @@ section {
 }
 
 @layer utilities {
+    /* Background */
+
+    .bg-body {
+        @apply bg-background;
+    }
+
+    .bg-primary-gradient {
+        background: linear-gradient(90deg, var(--primary-light), var(--primary));
+    }
+
+    .bg-secondary-gradient {
+        background: linear-gradient(90deg, var(--secondary-light), var(--secondary));
+    }
+
+
+
     /* Chrome, Safari and Opera */
     .no-scrollbar::-webkit-scrollbar {
         display: none;
@@ -119,11 +162,9 @@ section {
         @apply font-normal text-sm md:text-base text-color text-justify;
     }
 
-
     .heading {
         @apply font-bold text-4xl md:text-5xl text-color text-justify;
     }
-
 
 
     .service-card-icon {

@@ -35,7 +35,7 @@ export const TextGenerateEffect = ({
               // className="dark:text-white text-black opacity-0"
               className={cn(
                 "text-black opacity-0",
-                idx > 3 ? "dark:text-purple" : "dark:text-white",
+                idx > 3 ? "dark:text-primary" : "dark:text-white",
                 className,
               )}
             >

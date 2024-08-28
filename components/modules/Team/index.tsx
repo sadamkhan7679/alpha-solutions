@@ -15,8 +15,8 @@ const TeamList = () => {
       // sectionTitle={teamSection.headline}
       sectionTitle={
         <span>
-          Meet the <span className="text-purple">&nbsp;Innovators</span> Behind
-          Your <span className="text-purple">Success</span>
+          Meet the <span className="text-primary">&nbsp;Innovators</span> Behind
+          Your <span className="text-primary">Success</span>
         </span>
       }
       description={teamSection.description}

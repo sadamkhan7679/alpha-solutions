@@ -160,7 +160,7 @@ const DevelopmentApproach = () => {
       sectionTitle={
         <span>
           Our Proven Blueprint for{" "}
-          <span className="text-purple">Digital Excellence</span>
+          <span className="text-primary">Digital Excellence</span>
         </span>
       }
       description={approachSection.description}
@@ -174,20 +174,26 @@ const DevelopmentApproach = () => {
               <TimelineItem key={item.title}>
                 <TimelineHeading
                   side={isEven ? "left" : "right"}
-                  className="text-xl md:text-3xl"
+                  className="text-xl md:text-3xl text-primary dark:text-white"
                 >
                   {item.title}
                 </TimelineHeading>
                 <TimelineDot
                   status="custom"
                   // @ts-ignore
-                  customIcon={<item.Icon size={24} className="text-white" />}
+                  customIcon={
+                    <item.Icon
+                      width={48}
+                      height={48}
+                      className="text-primary dark:text-white"
+                    />
+                  }
                   className="w-20 h-20 rounded-2xl border-none"
                 />
-                <TimelineLine done />
+                <TimelineLine done className="bg-primary dark:bg-white" />
                 <TimelineContent
                   side={isEven ? "left" : "right"}
-                  className="py-10 text-justify text-md md:text-xl text-white"
+                  className="py-10 text-justify text-md md:text-xl text-black dark:text-white"
                 >
                   {item.description}
                 </TimelineContent>
