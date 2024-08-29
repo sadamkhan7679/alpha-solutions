@@ -18,11 +18,14 @@ enum ToolsItem {
   TailwindCSS = "TailwindCSS",
   BOOTSTRAP = "BOOTSTRAP",
   MATERIAL_UI = "MATERIAL_UI",
+  VUE = "VUE",
+  Angular = "Angular",
   // Backend
   NodeJS = "NodeJS",
   ExpressJS = "ExpressJS",
   NestJS = "NestJS",
   GraphQL = "GraphQL",
+  Laravel = "Laravel",
   // Database
   MongoDB = "MongoDB",
   PostgreSQL = "PostgreSQL",
@@ -95,6 +98,16 @@ export const TOOLS: Record<ToolsItem, TechStackTool> = {
     description: "Redux description",
     image: "/images/tools/redux.svg",
   },
+  VUE: {
+    title: "Vue.js",
+    description: "Vue.js description",
+    image: "/images/tools/vue-js.png",
+  },
+  Angular: {
+    title: "Angular",
+    description: "Angular description",
+    image: "/images/tools/angular.png",
+  },
   // UI Styling
   TailwindCSS: {
     title: "Tailwind CSS",
@@ -132,6 +145,11 @@ export const TOOLS: Record<ToolsItem, TechStackTool> = {
     title: "GraphQL",
     description: "GraphQL description",
     image: "/images/tools/graphql.png",
+  },
+  Laravel: {
+    title: "Laravel",
+    description: "Laravel description",
+    image: "/images/tools/laravel.png",
   },
 
   // Database

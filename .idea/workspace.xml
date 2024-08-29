@@ -5,13 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="00e75c1b-6e99-4512-b87a-f8cb667b71ec" name="Changes" comment="Updates">
-      <change afterPath="$PROJECT_DIR$/public/team/ansar-khan.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/team/malik-merchant.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/team/sadam-khan.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/tools/angular.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/tools/laravel.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/tools/vue-js.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/modules/Team/TeamCard.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/modules/Team/TeamCard.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/constants/team/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/constants/team/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tech-stack.ts" beforeDir="false" afterPath="$PROJECT_DIR$/data/tech-stack.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tools.ts" beforeDir="false" afterPath="$PROJECT_DIR$/data/tools.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -152,7 +151,7 @@
       <workItem from="1724418431778" duration="1130000" />
       <workItem from="1724453004920" duration="16803000" />
       <workItem from="1724508744282" duration="34359000" />
-      <workItem from="1724889241749" duration="1081000" />
+      <workItem from="1724889241749" duration="1494000" />
     </task>
     <task id="LOCAL-00001" summary="Updates">
       <option name="closed" value="true" />
