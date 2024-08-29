@@ -2,45 +2,24 @@ import { TeamMember } from "@/types/Team";
 
 export const TEAM_MEMBERS: TeamMember[] = [
   {
-    name: "John Doe",
+    name: "Malik Merchant",
     title: "CEO",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    image: "https://via.placeholder.com/150",
+      "Malik is a seasoned entrepreneur with a passion for technology and innovation. He founded our agency with the vision of creating a digital-first company that helps businesses thrive in the digital age.",
+    image: "/team/malik-merchant.png",
   },
   {
-    name: "Jane Doe",
+    name: "Ansar Mehmood",
     title: "CTO",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    image: "https://via.placeholder.com/150",
+      "Ansar is a tech wizard with a knack for solving complex problems. He leads our development team, ensuring that our projects are delivered on time and to the highest standards.",
+    image: "/team/ansar-khan.png",
   },
   {
-    name: "John Smith",
-    title: "CFO",
+    name: "Sadam Khan",
+    title: "Software Development Manager",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    image: "https://via.placeholder.com/150",
-  },
-  {
-    name: "Jane Smith",
-    title: "COO",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    image: "https://via.placeholder.com/150",
-  },
-  {
-    name: "John Johnson",
-    title: "CMO",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    image: "https://via.placeholder.com/150",
-  },
-  {
-    name: "Jane Johnson",
-    title: "CIO",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    image: "https://via.placeholder.com/150",
+      "Sadam is a software development expert with a passion for building cutting-edge solutions. He oversees our development projects, ensuring that our team delivers top-quality work every time.",
+    image: "/team/sadam-khan.jpg",
   },
 ];
