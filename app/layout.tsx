@@ -11,7 +11,7 @@ import { COMPANY_INFO } from "@/constants/company-info";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Razmisoft | Tailored Technology to Drive Your Success",
+  title: "Alpha Solutions | Tailored Technology to Drive Your Success",
   description: "Tailored Technology to Drive Your Success",
 };
 
