@@ -10,24 +10,44 @@ import {
 } from "@/components/ui/carousel";
 import { SERVICES_LIST } from "@/data/services";
 import Image from "next/image";
-import React from "react";
-import {
-  Card,
-  CardTitle,
-} from "@/components/modules/ServicesList/ServicesCard";
-import {
-  CardContent,
-  CardDescription,
-  CardFooter,
-  CardHeader,
-} from "@/components/ui/card";
+import React, { useEffect } from "react";
 import { Button } from "@/components/ui/button";
+import { motion, useAnimation } from "framer-motion";
+import { useInView } from "react-intersection-observer";
 
 type OurServicesProps = {};
 
 const OurServices = ({}: OurServicesProps) => {
+  const controls = useAnimation();
+  const [ref, inView] = useInView({
+    threshold: 0.1, // Adjust threshold
+    rootMargin: "0px", // Temporarily remove rootMargin
+    // threshold: 0, // Detects any amount of the element in view
+    // rootMargin: "-100px 0px", // Triggers 100px before the section comes fully into view
+    triggerOnce: false,
+  });
+
+  useEffect(() => {
+    // console.log("inView sectionTitle", sectionTitle, inView);
+
+    if (inView) {
+      controls.start({ y: -300, opacity: 1 });
+    } else {
+      // Reset animation when out of view
+      controls.start({ y: 400, opacity: 0 });
+    }
+  }, [ref, inView, controls]);
+
+  const getAnimation = (direction: string) => {
+    return {
+      initial: { y: 400, opacity: 0 },
+      animate: controls,
+      transition: { duration: 1 },
+    };
+  };
+
   return (
-    <div className="app-container relative -mb-24" id="services">
+    <div className="app-container relative -mb-24" id="services" ref={ref}>
       <div
         className="w-full min-h-104 px-10 lg:px-20 flex items-center content-center my-section rounded-2xl "
         style={{
@@ -57,7 +77,12 @@ const OurServices = ({}: OurServicesProps) => {
           <div></div>
         </div>
       </div>
-      <div className="relative transform -translate-x-0 -translate-y-1/2">
+      <motion.div
+        className="relative transform -translate-x-0 -translate-y-1/2"
+        initial={{ y: 400, opacity: 0 }}
+        animate={controls}
+        transition={{ duration: 1 }}
+      >
         <Carousel
           opts={{
             align: "start",
@@ -106,7 +131,7 @@ const OurServices = ({}: OurServicesProps) => {
           <CarouselPrevious />
           <CarouselNext />
         </Carousel>
-      </div>
+      </motion.div>
     </div>
   );
 };
