@@ -5,24 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6ce73afc-e424-4bf7-81d3-650b5cb1d2d2" name="Changes" comment="Logo and Info Update">
-      <change afterPath="$PROJECT_DIR$/components/modules/AboutSection/AboutUs.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/modules/AboutSection/ContentSection.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/modules/AboutSection/WhatWeDo.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/modules/AboutSection/WhoAreWe.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/modules/AboutSection/WhyChooseUs.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/modules/OurServices/index.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/shared/CtaBanner/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/globals.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/globals.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/modules/Footer/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/modules/Footer/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/shared/ListItems/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/shared/ListItems/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/shared/logo-button/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/shared/logo-button/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/constants/company-info/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/constants/company-info/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/icons/logo/full-logo.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/icons/logo/full-logo.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/layout.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pnpm-lock.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pnpm-lock.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tailwind.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/tailwind.config.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,41 +17,41 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "sadamkhan7679"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;sadamkhan7679&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/sadamkhan7679/alpha-solutions.git",
-    "accountId": "25bf6bea-b884-4937-9add-db94d413db78"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/sadamkhan7679/alpha-solutions.git&quot;,
+    &quot;accountId&quot;: &quot;25bf6bea-b884-4937-9add-db94d413db78&quot;
   }
-}]]></component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 6
-}]]></component>
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 6
+}</component>
   <component name="ProjectId" id="2lM7NXi559eDeTdURpIAJuFSiGP" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "prettierjs.PrettierConfiguration.Package": "C:\\Program Files\\nodejs\\node_modules\\prettier",
-    "settings.editor.selected.configurable": "settings.javascript.prettier",
-    "ts.external.directory.path": "D:\\Web Development\\AlphaSolutions\\website\\alpha-solutions\\node_modules\\typescript\\lib",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;prettierjs.PrettierConfiguration.Package&quot;: &quot;C:\\Program Files\\nodejs\\node_modules\\prettier&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;settings.javascript.prettier&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;D:\\Web Development\\AlphaSolutions\\website\\alpha-solutions\\node_modules\\typescript\\lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="ReactDesignerToolWindowState">
     <option name="myId2Visible">
       <map>
@@ -94,6 +79,7 @@
       <option name="presentableId" value="Default" />
       <updated>1724978052838</updated>
       <workItem from="1724978055276" duration="14201000" />
+      <workItem from="1725038794623" duration="61000" />
     </task>
     <task id="LOCAL-00001" summary="Logo and Info Update">
       <option name="closed" value="true" />
@@ -119,7 +105,6 @@
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/icons/logo/full-logo.tsx</url>
           <line>10</line>
-          <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="1" />
         </line-breakpoint>
       </breakpoints>
