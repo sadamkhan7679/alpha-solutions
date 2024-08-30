@@ -33,6 +33,7 @@ const config = {
         112: "36rem",
         116: "38rem",
         120: "40rem",
+        section: "5rem",
       },
       colors: {
         black: {

@@ -3,7 +3,8 @@ import { SVGIconProps } from "@/types/root";
 export const CompanyLogo = ({
   width = 320,
   height = 80,
-  fill = "#ffffff",
+  // fill = "#ffffff",
+  fill = "currentColor",
   ...props
 }: SVGIconProps) => {
   return (

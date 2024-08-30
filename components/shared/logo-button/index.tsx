@@ -17,7 +17,7 @@ const LogoButton: React.FC<LogoButtonProps> = ({ clickable = true }) => {
       {/*  height={50}*/}
       {/*  className="cursor-pointer"*/}
       {/*/>*/}
-      <CompanyLogo className="cursor-pointer" />
+      <CompanyLogo className="cursor-pointer  highlighted-text" />
     </Link>
   );
 };

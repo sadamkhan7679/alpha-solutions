@@ -4,19 +4,25 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6ce73afc-e424-4bf7-81d3-650b5cb1d2d2" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/icons/logo/full-logo.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/git_toolbox_prj.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/razmisoft.iml" beforeDir="false" />
+    <list default="true" id="6ce73afc-e424-4bf7-81d3-650b5cb1d2d2" name="Changes" comment="Logo and Info Update">
+      <change afterPath="$PROJECT_DIR$/components/modules/AboutSection/AboutUs.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/modules/AboutSection/ContentSection.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/modules/AboutSection/WhatWeDo.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/modules/AboutSection/WhoAreWe.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/modules/AboutSection/WhyChooseUs.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/modules/OurServices/index.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/shared/CtaBanner/index.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/layout.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/globals.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/globals.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/modules/Footer/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/modules/Footer/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/shared/ListItems/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/shared/ListItems/index.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/shared/logo-button/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/shared/logo-button/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/constants/company-info/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/constants/company-info/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/icons/logo/full-logo.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/icons/logo/full-logo.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pnpm-lock.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pnpm-lock.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/logo.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/logo.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/logo2.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/logo3.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tailwind.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/tailwind.config.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -87,19 +93,32 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1724978052838</updated>
-      <workItem from="1724978055276" duration="2114000" />
+      <workItem from="1724978055276" duration="14201000" />
     </task>
+    <task id="LOCAL-00001" summary="Logo and Info Update">
+      <option name="closed" value="true" />
+      <created>1724981332853</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1724981332853</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Logo and Info Update" />
+    <option name="LAST_COMMIT_MESSAGE" value="Logo and Info Update" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/icons/logo/full-logo.tsx</url>
-          <line>9</line>
+          <line>10</line>
           <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="1" />
         </line-breakpoint>

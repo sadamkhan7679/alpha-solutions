@@ -1,9 +1,9 @@
 export const COMPANY_INFO = {
-  Name: "RazmiSoft",
+  Name: "Alpha Solutions",
   Tagline: "Tailored Technology to Drive Your Success",
   Address: "1234 Main St, New York, NY 10001",
   Phone: "+1 (123) 456-7890",
-  Email: "support@razmisoft.com",
+  Email: "support@alpha-solutions.dev",
   Social: {
     Facebook: "https://www.facebook.com/",
     Twitter: "https://twitter.com/",

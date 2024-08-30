@@ -2,6 +2,8 @@ import MagicButton from "@/components/ui/MagicButton";
 import Image from "next/image";
 import { COMPANY_INFO } from "@/constants/company-info";
 import { DirectionIcon } from "@/icons/common/directionIcon";
+import { CompanyLogo } from "@/icons/logo/full-logo";
+import React from "react";
 
 const getCurrentYear = () => {
   return new Date().getFullYear();
@@ -147,8 +149,8 @@ const Footer = () => {
       </div>
       <div className="w-full grid grid-cols-3 lg:grid-cols-4 place-items-end border-y-2 border-white py-10 mt-10">
         <div className="h-full flex flex-col items-start content-between">
-          <Image src="/logo.svg" alt="logo" width={300} height={100} />
-          <p className="text-white text-lg font-semibold">
+          <CompanyLogo className="cursor-pointer highlighted-text" />
+          <p className="text-white text-lg font-semibold mt-10">
             A digital agency that loves crafting beautiful websites and
             applications.
           </p>

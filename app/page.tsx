@@ -8,6 +8,10 @@ import KeyHighlights from "@/components/modules/KeyHighlights";
 import DevelopmentApproach from "@/components/modules/DevelopmentApproach";
 import Industries from "@/components/modules/Industries";
 import Projects from "@/components/modules/Projects";
+import WhyChooseUs from "@/components/modules/AboutSection/WhyChooseUs";
+import AboutUs from "@/components/modules/AboutSection/AboutUs";
+import CtaBanner from "@/components/shared/CtaBanner";
+import OurServices from "@/components/modules/OurServices";
 
 const PageSections = [
   {
@@ -15,9 +19,21 @@ const PageSections = [
     Component: Hero,
   },
   {
-    id: "services",
-    Component: ServicesList,
+    id: "about",
+    Component: AboutUs,
   },
+  {
+    id: "cta-banner",
+    Component: CtaBanner,
+  },
+  // {
+  //   id: "our-services",
+  //   Component: OurServices,
+  // },
+  // {
+  //   id: "services",
+  //   Component: ServicesList,
+  // },
   {
     id: "tech-stack",
     Component: TechStack,
@@ -67,7 +83,7 @@ const Home = () => {
       className="w-full"
     >
       {PageSections.map(({ id, Component }) => (
-        <div key={id} id={id}>
+        <div key={id} id={id} className="w-full">
           <Component />
         </div>
       ))}

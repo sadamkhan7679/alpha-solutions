@@ -16,7 +16,7 @@ const ListItems = ({ heading, summary, items }: ListItemsProps) => {
         {items.map((item, index) => (
           <li
             key={index + item}
-            className="text-caption flex items-center w-full flex-wrap mb-5"
+            className="text-caption flex items-start w-full mb-5"
           >
             <ArrowIcon className="mr-5" width={24} height={24} /> {item}
           </li>
