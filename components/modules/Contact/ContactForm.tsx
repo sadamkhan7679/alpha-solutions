@@ -171,7 +171,7 @@ export const ContactForm = () => {
                 disabled={isSendingEmail}
                 render={({ field }) => (
                   <FormItem>
-                    <FormLabel>{label}</FormLabel>
+                    <FormLabel className="text-white">{label}</FormLabel>
                     <FormControl>
                       <FormFieldComponent
                         placeholder={placeholder}
@@ -192,7 +192,11 @@ export const ContactForm = () => {
               />
             );
           })}
-          <LoadingButton type="submit" loading={isSendingEmail}>
+          <LoadingButton
+            type="submit"
+            loading={isSendingEmail}
+            variant="secondary"
+          >
             Send Message
           </LoadingButton>
         </form>

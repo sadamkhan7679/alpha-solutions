@@ -384,7 +384,7 @@ export const projectsList: Project[] = [
     id: "AIQ001",
     title: "Audits-IQ: The Mobile Auditing and Inspections Solution",
     slug: "audits-iq",
-    type: ProjectType.MOBILE,
+    type: ProjectType.HYBRID,
     status: ProjectStatus.COMPLETED,
     client: "Audits-IQ Inc.",
     duration: {

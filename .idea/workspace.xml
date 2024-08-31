@@ -5,20 +5,28 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2a9c9d9f-0453-4f05-8473-26aef33e7bce" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/components/modules/Contact/EmailTemplate.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/shared/Loader/index.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/shared/LoadingButton/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/pages/CaseStudies/CaseStudyItem.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/shared/TestimonialCard/index.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/api/send-email/route.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/api/send-email/route.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/layout.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/loading.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/loading.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/case-studies/[slug]/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/case-studies/[slug]/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/case-studies/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/case-studies/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/contact/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/contact/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/not-found.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/not-found.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/services/[slug]/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/services/[slug]/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/services/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/services/page.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/modules/Contact/ContactForm.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/modules/Contact/ContactForm.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/modules/Home/DevelopmentApproach/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/modules/Home/DevelopmentApproach/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/modules/Home/Footer/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/modules/Home/Footer/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/modules/Home/Projects/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/modules/Home/Projects/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/modules/Layouts/PagesContainer.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/modules/Layouts/PagesContainer.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/modules/Navbar/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/modules/Navbar/index.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/pages/ContactPage/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/pages/ContactPage/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pnpm-lock.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pnpm-lock.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tailwind.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/tailwind.config.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/types/root.ts" beforeDir="false" afterPath="$PROJECT_DIR$/types/root.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/pages/NotFoundPage/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/pages/NotFoundPage/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/shared/SectionContainer/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/shared/SectionContainer/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/constants/nav-links/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/constants/nav-links/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/Projects.ts" beforeDir="false" afterPath="$PROJECT_DIR$/data/Projects.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/pages-meta.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/pages-meta.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -108,7 +116,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1725124510386</updated>
-      <workItem from="1725124512684" duration="6508000" />
+      <workItem from="1725124512684" duration="12093000" />
     </task>
     <servers />
   </component>

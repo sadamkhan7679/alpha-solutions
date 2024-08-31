@@ -24,6 +24,7 @@ type PagesContainerProps = {
   sectionTitle?: ReactNode;
   description?: ReactNode;
   links?: Link[];
+  sectionContainerProps?: Omit<SectionContainerProps, "children">;
 };
 
 export const PagesContainer = ({
@@ -32,11 +33,12 @@ export const PagesContainer = ({
   sectionTitle,
   description,
   links,
+  sectionContainerProps,
 }: PagesContainerProps) => {
   return (
     <div className="relative mt-20 w-full">
       <div
-        className="mx-auto app-container min-h-[50vh] w-full flex flex-col items-start justify-center"
+        className="mx-auto app-container min-h-[50vh] w-full flex flex-col items-start justify-center mb-16"
         style={{
           backgroundImage: `url('/images/banners/services-banner.png')`,
           backgroundSize: "cover",
@@ -50,7 +52,11 @@ export const PagesContainer = ({
           {heading}
         </Typography>
       </div>
-      <SectionContainer sectionTitle={sectionTitle} description={description}>
+      <SectionContainer
+        sectionTitle={sectionTitle}
+        description={description}
+        {...sectionContainerProps}
+      >
         {children}
       </SectionContainer>
     </div>

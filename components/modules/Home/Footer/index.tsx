@@ -183,9 +183,6 @@ const Footer = () => {
               <CardContent>
                 <ContactForm />
               </CardContent>
-              <CardFooter>
-                <Button variant="secondary">Send message</Button>
-              </CardFooter>
             </Card>
           </div>
         </div>
@@ -221,7 +218,7 @@ const Footer = () => {
           <FooterLinks title="Company" links={companyQuickLinks} />
         </div>
       </div>
-      <div className="flex justify-center lg:justify-between items-center py-5 bg-primary-dark">
+      <div className="flex justify-center lg:justify-between items-center py-5 app-container bg-primary-dark">
         <div className="text-white text-md">
           Copyright
           <span>

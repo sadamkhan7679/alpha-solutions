@@ -16,6 +16,7 @@ import { SquareCodeIcon } from "@/icons/common/SquareCodeIcon";
 import { TabletSmartphoneIcon } from "@/icons/common/TabletSmartphoneIcon";
 import { RocketIcon } from "@/icons/common/RocketIcon";
 import { ConstructionIcon } from "@/icons/common/ConstructionIcon";
+import { tree } from "next/dist/build/templates/app-page";
 
 type ApproachItem = {
   title: string;
@@ -87,7 +88,8 @@ const DevelopmentApproach = () => {
             <span className="text-secondary">Digital Excellence</span>
           </span>
         }
-        container={false}
+        headingsContainer
+        childrenContainer
         description={
           <span className="text-white">{approachSection.description}</span>
         }

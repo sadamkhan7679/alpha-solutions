@@ -2,6 +2,8 @@ import { SectionContent } from "@/types/root";
 import SectionContainer from "@/components/shared/SectionContainer";
 import React from "react";
 import ProjectList from "@/components/modules/Home/Projects/ProjectList";
+import Link from "next/link";
+import { Button } from "@/components/ui/button";
 
 const highlightProjectsSection: SectionContent = {
   headline: "Showcasing Our Digital Masterpieces",
@@ -19,7 +21,15 @@ const Projects = () => {
         </span>
       }
       description={highlightProjectsSection.description}
-      container={false}
+      headingsContainer
+      childrenContainer={false}
+      ActionComponent={
+        <Link href="/case-studies">
+          <Button variant="secondary" size="lg">
+            View All Projects
+          </Button>
+        </Link>
+      }
     >
       <ProjectList />
     </SectionContainer>

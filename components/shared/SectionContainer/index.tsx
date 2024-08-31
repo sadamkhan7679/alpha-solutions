@@ -7,7 +7,9 @@ export type SectionContainerProps = {
   className?: string;
   sectionTitle?: string | React.ReactNode;
   description?: string | React.ReactNode;
-  container?: boolean;
+  headingsContainer?: boolean;
+  childrenContainer?: boolean;
+  ActionComponent?: React.ReactNode;
 };
 
 const SectionContainer = ({
@@ -15,19 +17,33 @@ const SectionContainer = ({
   className,
   sectionTitle,
   description,
-  container = true,
+  headingsContainer = true,
+  childrenContainer = true,
+  ActionComponent,
 }: SectionContainerProps) => {
   return (
     <section className={cn("relative mb-14 bg-transparent", className)}>
-      <div className={cn("mx-auto", container ? "app-container" : null)}>
-        {sectionTitle && (
-          <SectionHeading className="text-black">{sectionTitle}</SectionHeading>
+      <div
+        className={cn(
+          "mx-auto flex flex-col lg:flex-row justify-between ",
+          headingsContainer ? "app-container" : null,
         )}
-        {description && (
-          <p className="text-lg mb-5 text-justify">{description}</p>
+      >
+        <div>
+          {sectionTitle && (
+            <SectionHeading className="text-black">
+              {sectionTitle}
+            </SectionHeading>
+          )}
+          {description && (
+            <p className="text-lg mb-5 text-justify">{description}</p>
+          )}
+        </div>
+        {ActionComponent && (
+          <div className="mt-8 lg:mt-0">{ActionComponent}</div>
         )}
       </div>
-      <div className={cn(container ? "app-container mx-auto" : null)}>
+      <div className={cn(childrenContainer ? "app-container mx-auto" : null)}>
         {children}
       </div>
     </section>

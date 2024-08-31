@@ -52,7 +52,7 @@ const PageSections = [
     Component: Industries,
   },
   {
-    id: "projects",
+    id: "case-studies",
     Component: Projects,
   },
   {
