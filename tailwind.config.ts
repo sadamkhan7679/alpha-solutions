@@ -178,6 +178,20 @@ const config = {
             transform: "translate(calc(-50% - 0.5rem))",
           },
         },
+        scaleUp: {
+          "0%": {
+            transform: "scale(0.95)",
+            opacity: "0.75",
+          },
+          "50%": {
+            transform: "scale(1.05)",
+            opacity: "1",
+          },
+          "100%": {
+            transform: "scale(0.95)",
+            opacity: "0.75",
+          },
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
@@ -191,6 +205,7 @@ const config = {
         fifth: "moveInCircle 20s ease infinite",
         scroll:
           "scroll var(--animation-duration, 40s) var(--animation-direction, forwards) linear infinite",
+        scaleUp: "scaleUp 2s ease infinite",
       },
     },
   },

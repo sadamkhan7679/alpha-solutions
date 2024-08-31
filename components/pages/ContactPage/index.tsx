@@ -1,14 +1,5 @@
-import {
-  Card,
-  CardHeader,
-  CardContent,
-  CardFooter,
-} from "@/components/ui/card";
+import { Card, CardHeader, CardContent } from "@/components/ui/card";
 import { Avatar } from "@/components/ui/avatar";
-import { Label } from "@/components/ui/label";
-import { Input } from "@/components/ui/input";
-import { Textarea } from "@/components/ui/textarea";
-import { Button } from "@/components/ui/button";
 import { COMPANY_INFO } from "@/constants/company-info";
 import { ContactForm } from "@/components/modules/Contact/ContactForm";
 
@@ -44,9 +35,6 @@ const ContactPage = () => {
           <CardContent>
             <ContactForm />
           </CardContent>
-          <CardFooter>
-            <Button className="">Send message</Button>
-          </CardFooter>
         </Card>
       </div>
     </div>

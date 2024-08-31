@@ -8,6 +8,8 @@ import "./globals.css";
 import { ThemeProvider } from "@/components/shared/Provider";
 import Navbar from "@/components/modules/Navbar";
 import { COMPANY_INFO } from "@/constants/company-info";
+import { Toaster } from "@/components/ui/toaster";
+import Loader from "@/components/shared/Loader";
 
 const inter = Inter({ subsets: ["latin"], display: "swap" });
 const poppins = Poppins({
@@ -50,6 +52,7 @@ export default function RootLayout({
         </ThemeProvider>
         <SpeedInsights />
         <Analytics />
+        <Toaster />
       </body>
     </html>
   );

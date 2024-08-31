@@ -4,32 +4,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6ce73afc-e424-4bf7-81d3-650b5cb1d2d2" name="Changes" comment="Logo and Info Update">
-      <change afterPath="$PROJECT_DIR$/components/modules/Contact/ContactForm.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/modules/Layouts/BreadCrumbLinks.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/modules/Layouts/PagesContainer.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/icons/services/ConsultingIcon.tsx" afterDir="false" />
+    <list default="true" id="2a9c9d9f-0453-4f05-8473-26aef33e7bce" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/components/modules/Contact/EmailTemplate.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/shared/Loader/index.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/shared/LoadingButton/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/contact/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/contact/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/services/[slug]/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/services/[slug]/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/services/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/services/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/modules/Home/Footer/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/modules/Home/Footer/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/modules/Home/Hero/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/modules/Home/Hero/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/modules/Home/OurServices/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/modules/Home/OurServices/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/modules/ServicesList/ServicesCard.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/modules/ServicesList/ServicesCard.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/api/send-email/route.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/api/send-email/route.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/layout.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/loading.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/loading.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/modules/Contact/ContactForm.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/modules/Contact/ContactForm.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/pages/ContactPage/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/pages/ContactPage/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/pages/Services/ServiceDetailPage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/pages/Services/ServiceDetailPage.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/pages/Services/ServiceItem.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/pages/Services/ServiceItem.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/pages/Services/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/pages/Services/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/shared/SectionContainer/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/shared/SectionContainer/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/shared/TagsList/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/shared/TagsList/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/constants/industries/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/constants/industries/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/pages-meta.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/pages-meta.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/services.ts" beforeDir="false" afterPath="$PROJECT_DIR$/data/services.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pnpm-lock.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pnpm-lock.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/services-images/cloud services.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/services-images/cloud-services.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/generate-files.ts" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/generate-files.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tailwind.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/tailwind.config.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/types/root.ts" beforeDir="false" afterPath="$PROJECT_DIR$/types/root.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,47 +28,23 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory">{
-  &quot;lastFilter&quot;: {
-    &quot;state&quot;: &quot;OPEN&quot;,
-    &quot;assignee&quot;: &quot;sadamkhan7679&quot;
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "sadamkhan7679"
   }
-}</component>
-  <component name="GitToolBoxStore">
-    <option name="recentBranches">
-      <RecentBranches>
-        <option name="branchesForRepo">
-          <list>
-            <RecentBranchesForRepo>
-              <option name="branches">
-                <list>
-                  <RecentBranch>
-                    <option name="branchName" value="design-update" />
-                    <option name="lastUsedInstant" value="1725052228" />
-                  </RecentBranch>
-                  <RecentBranch>
-                    <option name="branchName" value="main" />
-                    <option name="lastUsedInstant" value="1725052227" />
-                  </RecentBranch>
-                </list>
-              </option>
-              <option name="repositoryRootUrl" value="file://$PROJECT_DIR$" />
-            </RecentBranchesForRepo>
-          </list>
-        </option>
-      </RecentBranches>
-    </option>
-  </component>
-  <component name="GithubPullRequestsUISettings">{
-  &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/sadamkhan7679/alpha-solutions.git&quot;,
-    &quot;accountId&quot;: &quot;25bf6bea-b884-4937-9add-db94d413db78&quot;
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/sadamkhan7679/alpha-solutions.git",
+    "accountId": "25bf6bea-b884-4937-9add-db94d413db78"
   }
-}</component>
-  <component name="ProjectColorInfo">{
-  &quot;associatedIndex&quot;: 6
-}</component>
-  <component name="ProjectId" id="2lM7NXi559eDeTdURpIAJuFSiGP" />
+}]]></component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "customColor": "",
+  "associatedIndex": 6
+}]]></component>
+  <component name="ProjectId" id="2lQuEU0q6ft6ucwyBNbQbDQqDe6" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -92,9 +57,8 @@
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
+    "nodejs_package_manager_path": "pnpm",
     "npm.dev.executor": "Run",
-    "npm.generate:files.executor": "Run",
     "prettierjs.PrettierConfiguration.Package": "C:\\Program Files\\nodejs\\node_modules\\prettier",
     "settings.editor.selected.configurable": "settings.javascript.prettier",
     "ts.external.directory.path": "D:\\Web Development\\AlphaSolutions\\website\\alpha-solutions\\node_modules\\typescript\\lib",
@@ -109,12 +73,7 @@
       </map>
     </option>
   </component>
-  <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\Web Development\AlphaSolutions\website\alpha-solutions\components\modules\Home" />
-    </key>
-  </component>
-  <component name="RunManager" selected="npm.generate:files">
+  <component name="RunManager">
     <configuration name="dev" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
@@ -125,19 +84,8 @@
       <envs />
       <method v="2" />
     </configuration>
-    <configuration name="generate:files" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
-      <package-json value="$PROJECT_DIR$/package.json" />
-      <command value="run" />
-      <scripts>
-        <script value="generate:files" />
-      </scripts>
-      <node-interpreter value="project" />
-      <envs />
-      <method v="2" />
-    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="npm.generate:files" />
         <item itemvalue="npm.dev" />
       </list>
     </recent_temporary>
@@ -155,42 +103,16 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="6ce73afc-e424-4bf7-81d3-650b5cb1d2d2" name="Changes" comment="" />
-      <created>1724978052838</created>
+      <changelist id="2a9c9d9f-0453-4f05-8473-26aef33e7bce" name="Changes" comment="" />
+      <created>1725124510386</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1724978052838</updated>
-      <workItem from="1724978055276" duration="14201000" />
-      <workItem from="1725038794623" duration="19538000" />
-      <workItem from="1725115462750" duration="7381000" />
+      <updated>1725124510386</updated>
+      <workItem from="1725124512684" duration="6508000" />
     </task>
-    <task id="LOCAL-00001" summary="Logo and Info Update">
-      <option name="closed" value="true" />
-      <created>1724981332853</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1724981332853</updated>
-    </task>
-    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
-  </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="Logo and Info Update" />
-    <option name="LAST_COMMIT_MESSAGE" value="Logo and Info Update" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/icons/logo/full-logo.tsx</url>
-          <line>10</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>
