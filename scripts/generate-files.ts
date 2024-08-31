@@ -3,14 +3,24 @@ const generateIconFiles = async () => {
   const path = require("path");
 
   // Check, Circle, X
-  const icons = ["Check", "Circle", "X"];
+  const icons = [
+    "AI",
+    "Blockchain",
+    "Cloud",
+    "CMS",
+    "DesktopApp",
+    "Ecommerce",
+    "Mobile",
+    "WebApp",
+    "WebDesign",
+  ];
 
   const iconTemplate = (iconName: string) => {
     return `
 import { SVGIconProps } from "@/types/root";
 export const ${iconName} = ({
-  width = 48,
-  height = 48,
+  width = 200,
+  height = 200,
   ...props
 }: SVGIconProps) => {
   return (
@@ -18,7 +28,7 @@ export const ${iconName} = ({
       xmlns="http://www.w3.org/2000/svg"
       width={width}
       height={height}
-      viewBox="0 0 24 24"
+      viewBox="0 0 200 200"
       fill="none"
       stroke="currentColor"
       strokeWidth={2.5}
@@ -35,14 +45,14 @@ export const ${iconName} = ({
   try {
     // First, create all the files
     for (const icon of icons) {
-      const filePath = "icons/common/" + icon + "Icon.tsx";
+      const filePath = "icons/services/" + icon + "Icon.tsx";
       await fs.writeFile(filePath, "");
       console.log(`Created file: ${filePath}`);
     }
 
     // Then, write the content to each file
     for (const icon of icons) {
-      const filePath = "icons/common/" + icon + "Icon.tsx";
+      const filePath = "icons/services/" + icon + "Icon.tsx";
       await fs.writeFile(filePath, iconTemplate(`${icon}Icon`));
       console.log(`Wrote content to: ${filePath}`);
     }

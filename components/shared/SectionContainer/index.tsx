@@ -1,12 +1,15 @@
 import React from "react";
 import { cn } from "@/utils/root";
+import SectionHeading from "@/components/shared/SectionHeading";
 
-type SectionContainerProps = {
+export type SectionContainerProps = {
   children: React.ReactNode;
   className?: string;
   sectionTitle?: string | React.ReactNode;
-  description?: string;
-  container?: boolean;
+  description?: string | React.ReactNode;
+  headingsContainer?: boolean;
+  childrenContainer?: boolean;
+  ActionComponent?: React.ReactNode;
 };
 
 const SectionContainer = ({
@@ -14,17 +17,33 @@ const SectionContainer = ({
   className,
   sectionTitle,
   description,
-  container = true,
+  headingsContainer = true,
+  childrenContainer = true,
+  ActionComponent,
 }: SectionContainerProps) => {
   return (
-    <section className={cn("relative mb-14 bg-transparent")}>
-      <div className={cn("app-container mx-auto")}>
-        {sectionTitle && <h1 className="heading mb-5">{sectionTitle}</h1>}
-        {description && (
-          <p className="text-lg mb-5 text-justify">{description}</p>
+    <section className={cn("relative mb-14 bg-transparent", className)}>
+      <div
+        className={cn(
+          "mx-auto flex flex-col lg:flex-row justify-between ",
+          headingsContainer ? "app-container" : null,
+        )}
+      >
+        <div>
+          {sectionTitle && (
+            <SectionHeading className="text-black">
+              {sectionTitle}
+            </SectionHeading>
+          )}
+          {description && (
+            <p className="text-lg mb-5 text-justify">{description}</p>
+          )}
+        </div>
+        {ActionComponent && (
+          <div className="mt-8 lg:mt-0">{ActionComponent}</div>
         )}
       </div>
-      <div className={cn(container ? "app-container mx-auto" : null)}>
+      <div className={cn(childrenContainer ? "app-container mx-auto" : null)}>
         {children}
       </div>
     </section>
