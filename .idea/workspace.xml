@@ -5,45 +5,31 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6ce73afc-e424-4bf7-81d3-650b5cb1d2d2" name="Changes" comment="Logo and Info Update">
-      <change afterPath="$PROJECT_DIR$/components/modules/Home/Hero/index.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/modules/Home/Industries/IndustriesData.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/modules/Home/Industries/IndustriesTabs.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/pages/HomePage/index.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/shared/SectionHeading/index.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/shared/Typography/index.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/modules/Contact/ContactForm.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/modules/Layouts/BreadCrumbLinks.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/modules/Layouts/PagesContainer.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/icons/services/ConsultingIcon.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/globals.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/globals.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/layout.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/modules/AboutSection/AboutUs.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/modules/Home/AboutSection/AboutUs.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/modules/AboutSection/ContentSection.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/modules/Home/AboutSection/ContentSection.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/modules/AboutSection/WhatWeDo.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/modules/Home/AboutSection/WhatWeDo.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/modules/AboutSection/WhoAreWe.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/modules/Home/AboutSection/WhoAreWe.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/modules/AboutSection/WhyChooseUs.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/modules/Home/AboutSection/WhyChooseUs.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/modules/ClientFeedbacks/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/modules/Home/ClientFeedbacks/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/modules/DevelopmentApproach/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/modules/Home/DevelopmentApproach/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/modules/Footer/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/modules/Home/Footer/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/modules/Industries/IndustiesList.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/modules/Home/Industries/IndustiesList.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/modules/Industries/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/modules/Home/Industries/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/modules/KeyHighlights/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/modules/Home/KeyHighlights/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/modules/Navbar/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/modules/Navbar/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/modules/OurServices/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/modules/Home/OurServices/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/modules/Projects/ProjectList.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/modules/Home/Projects/ProjectList.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/modules/Projects/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/modules/Home/Projects/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/modules/Team/TeamCard.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/modules/Home/Team/TeamCard.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/modules/Team/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/modules/Home/Team/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/modules/TechStack/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/modules/Home/TechStack/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/shared/CTA/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/shared/CTA/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/shared/CtaBanner/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/shared/CtaBanner/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/shared/ListItems/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/shared/ListItems/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/contact/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/contact/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/services/[slug]/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/services/[slug]/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/services/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/services/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/modules/Home/Footer/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/modules/Home/Footer/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/modules/Home/Hero/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/modules/Home/Hero/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/modules/Home/OurServices/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/modules/Home/OurServices/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/modules/ServicesList/ServicesCard.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/modules/ServicesList/ServicesCard.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/pages/ContactPage/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/pages/ContactPage/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/pages/Services/ServiceDetailPage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/pages/Services/ServiceDetailPage.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/pages/Services/ServiceItem.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/pages/Services/ServiceItem.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/pages/Services/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/pages/Services/index.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/shared/SectionContainer/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/shared/SectionContainer/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/shared/logo-button/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/shared/logo-button/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/ui/InfiniteCards/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/ui/InfiniteCards/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/ui/tabs.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/ui/tabs.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/shared/TagsList/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/shared/TagsList/index.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/constants/industries/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/constants/industries/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/projects/coffee-tea/coffe-tea (2).png" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/projects/coffee-tea/coffe-tea (2).png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/projects/coffee-tea/coffe-tea.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/projects/coffee-tea/coffe-tea.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tailwind.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/tailwind.config.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/pages-meta.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/pages-meta.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/services.ts" beforeDir="false" afterPath="$PROJECT_DIR$/data/services.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pnpm-lock.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pnpm-lock.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/services-images/cloud services.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/services-images/cloud-services.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/generate-files.ts" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/generate-files.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -108,6 +94,7 @@
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "npm.dev.executor": "Run",
+    "npm.generate:files.executor": "Run",
     "prettierjs.PrettierConfiguration.Package": "C:\\Program Files\\nodejs\\node_modules\\prettier",
     "settings.editor.selected.configurable": "settings.javascript.prettier",
     "ts.external.directory.path": "D:\\Web Development\\AlphaSolutions\\website\\alpha-solutions\\node_modules\\typescript\\lib",
@@ -127,7 +114,7 @@
       <recent name="D:\Web Development\AlphaSolutions\website\alpha-solutions\components\modules\Home" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="npm.generate:files">
     <configuration name="dev" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
@@ -138,8 +125,19 @@
       <envs />
       <method v="2" />
     </configuration>
+    <configuration name="generate:files" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="generate:files" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="npm.generate:files" />
         <item itemvalue="npm.dev" />
       </list>
     </recent_temporary>
@@ -164,6 +162,7 @@
       <updated>1724978052838</updated>
       <workItem from="1724978055276" duration="14201000" />
       <workItem from="1725038794623" duration="19538000" />
+      <workItem from="1725115462750" duration="7381000" />
     </task>
     <task id="LOCAL-00001" summary="Logo and Info Update">
       <option name="closed" value="true" />

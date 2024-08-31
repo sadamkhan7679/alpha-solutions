@@ -10,17 +10,11 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Button } from "@/components/ui/button";
 import { COMPANY_INFO } from "@/constants/company-info";
+import { ContactForm } from "@/components/modules/Contact/ContactForm";
 
 const ContactPage = () => {
   return (
     <div className="space-y-8 space-x-2">
-      <div className="space-y-2">
-        <h2 className="section-heading">Get in touch</h2>
-        <p className="text-body">
-          Feel free to leave any enquiries below, or give us a call to speak
-          with our helpful sales team.
-        </p>
-      </div>
       <div className="space-y-4">
         <Card>
           <CardHeader>
@@ -48,18 +42,7 @@ const ContactPage = () => {
             <h3 className="section-heading">Leave a Message</h3>
           </CardHeader>
           <CardContent>
-            <div className="space-y-2">
-              <Label htmlFor="name">Name</Label>
-              <Input id="name" placeholder="Enter your name" />
-              <Label htmlFor="email">Email</Label>
-              <Input id="email" placeholder="Enter your email" type="email" />
-              <Label htmlFor="message">Message</Label>
-              <Textarea
-                id="message"
-                placeholder="Enter your message"
-                className="min-h-[200px]"
-              />
-            </div>
+            <ContactForm />
           </CardContent>
           <CardFooter>
             <Button className="">Send message</Button>

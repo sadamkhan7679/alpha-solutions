@@ -2,7 +2,7 @@ import React from "react";
 import { cn } from "@/utils/root";
 import SectionHeading from "@/components/shared/SectionHeading";
 
-type SectionContainerProps = {
+export type SectionContainerProps = {
   children: React.ReactNode;
   className?: string;
   sectionTitle?: string | React.ReactNode;
@@ -19,7 +19,7 @@ const SectionContainer = ({
 }: SectionContainerProps) => {
   return (
     <section className={cn("relative mb-14 bg-transparent", className)}>
-      <div className={cn("app-container mx-auto")}>
+      <div className={cn("mx-auto", container ? "app-container" : null)}>
         {sectionTitle && (
           <SectionHeading className="text-black">{sectionTitle}</SectionHeading>
         )}

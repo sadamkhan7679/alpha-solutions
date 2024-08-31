@@ -8,7 +8,7 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
-import { SERVICES_LIST } from "@/data/services";
+import { SERVICES_ICONS, SERVICES_LIST } from "@/data/services";
 import Image from "next/image";
 import React, { useEffect } from "react";
 import { Button } from "@/components/ui/button";
@@ -97,32 +97,29 @@ const OurServices = ({}: OurServicesProps) => {
         >
           <CarouselContent>
             {SERVICES_LIST.map((service) => {
+              const ServiceIcon =
+                SERVICES_ICONS[service.key as keyof typeof SERVICES_ICONS];
+
               return (
                 <CarouselItem
                   key={service.slug}
                   className="md:basis-1/2 lg:basis-1/3"
                 >
                   <div className="pt-20 h-full">
-                    <div className="bg-black border border-transparent dark:border-white/[0.2] w-full mt-0 p-0 rounded-2xl h-full">
+                    <div className="bg-secondary border border-transparent dark:border-white/[0.2] w-full mt-0 p-0 rounded-2xl h-full">
                       {/*<div className="w-full flex content-center relative transform -translate-x-0 -translate-y-1/2">*/}
                       <div className="w-full flex flex-col items-center text-center relative transform -translate-x-0 -translate-y-1/2">
                         <div
                           //className="rounded-full border-2 app-border w-24 h-24 p-5 service-card-icon-light"
 
                           className={cn(
-                            "rounded-full border-2 app-border w-24 h-24 p-5 service-card-icon-light",
+                            "rounded-full border-8 app-border w-24 h-24 p-5 text-primary flex items-center justify-center",
                             service.Icon && "bg-white",
+                            "border-secondary",
                           )}
                         >
-                          {service.Icon && (
-                            <Image
-                              className="filter service-card-icon-light"
-                              width={96}
-                              height={96}
-                              src={service.Icon}
-                              alt={service.title}
-                              loading="lazy"
-                            />
+                          {ServiceIcon && (
+                            <ServiceIcon width={60} height={60} />
                           )}
                         </div>
                       </div>

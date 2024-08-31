@@ -6,11 +6,7 @@ type ServiceDetailPageProps = {
 };
 
 const ServiceDetailPage = ({ service }: ServiceDetailPageProps) => {
-  return (
-    <div className="app-container">
-      <ServiceItemCard service={service} isDetail />
-    </div>
-  );
+  return <ServiceItemCard service={service} isDetail />;
 };
 
 export default ServiceDetailPage;

@@ -6,6 +6,7 @@ import React, { useState } from "react";
 import { cn } from "@/utils/root";
 import { ServiceItem } from "@/types/services";
 import Image from "next/image";
+import { SERVICES_ICONS } from "@/data/services";
 // import { CardContent } from "@/components/ui/card";
 
 type ServiceCardProps = {
@@ -15,6 +16,9 @@ type ServiceCardProps = {
 
 export const ServiceCard = ({ service, className }: ServiceCardProps) => {
   let [hoveredIndex, setHoveredIndex] = useState<string | null>(null);
+
+  const ServiceIcon =
+    SERVICES_ICONS[service.key as keyof typeof SERVICES_ICONS];
 
   return (
     <div
@@ -49,16 +53,17 @@ export const ServiceCard = ({ service, className }: ServiceCardProps) => {
         <Card className="bg-transparent">
           <CardTitle>
             <div className="flex items-center service-card-icon text-white">
-              {service.Icon && (
-                <Image
-                  src={service.Icon}
-                  alt={service.title}
-                  width={48}
-                  height={48}
-                  className="mr-3"
-                />
-                // <service.Icon />
-              )}
+              {/*{service.Icon && (*/}
+              {/*  <Image*/}
+              {/*    src={service.Icon}*/}
+              {/*    alt={service.title}*/}
+              {/*    width={48}*/}
+              {/*    height={48}*/}
+              {/*    className="mr-3"*/}
+              {/*  />*/}
+              {/*  // <service.Icon />*/}
+              {/*)}*/}
+              {ServiceIcon && <ServiceIcon width={48} height={48} />}
               {service.title}
             </div>
           </CardTitle>

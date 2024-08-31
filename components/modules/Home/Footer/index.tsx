@@ -20,6 +20,7 @@ import { Typography } from "@/components/shared/Typography";
 import { CTA } from "@/components/shared/CTA";
 import { ChevronRight } from "lucide-react";
 import { motion } from "framer-motion";
+import { ContactForm } from "@/components/modules/Contact/ContactForm";
 
 const getCurrentYear = () => {
   return new Date().getFullYear();
@@ -173,42 +174,19 @@ const Footer = () => {
             </div>
           </div>
           <div className="col-span-6 lg:col-span-2 py-10 lg:py-0">
-            <form>
-              <Card className="lg:rounded-none bg-navyBlue border-0 shadow-none">
-                <CardHeader>
-                  <Typography variant="h4" className="text-white">
-                    Leave a Message
-                  </Typography>
-                </CardHeader>
-                <CardContent>
-                  <div className="space-y-2">
-                    <Label htmlFor="name" className="text-white">
-                      Name
-                    </Label>
-                    <Input id="name" placeholder="Enter your name" />
-                    <Label htmlFor="email" className="text-white">
-                      Email
-                    </Label>
-                    <Input
-                      id="email"
-                      placeholder="Enter your email"
-                      type="email"
-                    />
-                    <Label htmlFor="message" className="text-white">
-                      Message
-                    </Label>
-                    <Textarea
-                      id="message"
-                      placeholder="Enter your message"
-                      className="min-h-[100px]"
-                    />
-                  </div>
-                </CardContent>
-                <CardFooter>
-                  <Button variant="secondary">Send message</Button>
-                </CardFooter>
-              </Card>
-            </form>
+            <Card className="lg:rounded-none bg-navyBlue border-0 shadow-none">
+              <CardHeader>
+                <Typography variant="h4" className="text-white">
+                  Leave a Message
+                </Typography>
+              </CardHeader>
+              <CardContent>
+                <ContactForm />
+              </CardContent>
+              <CardFooter>
+                <Button variant="secondary">Send message</Button>
+              </CardFooter>
+            </Card>
           </div>
         </div>
       </div>
@@ -253,67 +231,6 @@ const Footer = () => {
       </div>
     </footer>
   );
-
-  // return (
-  //   <footer className="w-full pt-20 pb-10 app-container" id="contact">
-  //     {/* background grid */}
-  //     {/*<div className="w-full absolute left-0 -bottom-72 min-h-96">*/}
-  //     {/*  <img*/}
-  //     {/*    src="/footer-grid.svg"*/}
-  //     {/*    alt="grid"*/}
-  //     {/*    className="w-full h-full opacity-50 "*/}
-  //     {/*  />*/}
-  //     {/*</div>*/}
-  //
-  //     <div className="flex flex-col items-center">
-  //       <h1 className="heading lg:max-w-[45vw]">
-  //         Ready to take <span className="text-purple">your</span> digital
-  //         presence to the next level?
-  //       </h1>
-  //       <p className="text-white-200 md:mt-10 my-5 text-center">
-  //         Reach out to me today and let&apos;s discuss how I can help you
-  //         achieve your goals.
-  //       </p>
-  //       <a href={`mailto:${COMPANY_INFO.Email}`}>
-  //         <MagicButton
-  //           title="Let's get in touch"
-  //           icon={<DirectionIcon width={24} height={24} />}
-  //           position="right"
-  //         />
-  //       </a>
-  //     </div>
-  //     <div className="w-full grid grid-cols-3 lg:grid-cols-4 place-items-end border-y-2 border-white py-10 mt-10">
-  //       <div className="h-full flex flex-col items-start content-between">
-  //         <CompanyLogo className="cursor-pointer highlighted-text" />
-  //         <p className="text-white text-lg font-semibold mt-10">
-  //           A digital agency that loves crafting beautiful websites and
-  //           applications.
-  //         </p>
-  //
-  //         <p className="text-md text-white-200">
-  //           Address: 1234 Street Name, City Name, United States
-  //         </p>
-  //       </div>
-  //       <div>
-  //         <FooterLinks title="Industries" links={industriesQuickLinks} />
-  //       </div>
-  //       <div>
-  //         <FooterLinks title="Services" links={servicesQuickLinks} />
-  //       </div>
-  //       <div>
-  //         <FooterLinks title="Company" links={companyQuickLinks} />
-  //       </div>
-  //     </div>
-  //     <div className="flex justify-between items-center py-5">
-  //       <div className="text-white-200 text-md">
-  //         Copyright
-  //         <span>
-  //           {getCurrentYear()} &copy; {COMPANY_INFO.Name} | All Rights Reserved
-  //         </span>
-  //       </div>
-  //     </div>
-  //   </footer>
-  // );
 };
 
 export default Footer;
