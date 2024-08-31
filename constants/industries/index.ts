@@ -1,4 +1,4 @@
-interface Industry {
+export interface Industry {
   title: string;
   description: string;
   summary: string;

@@ -1,6 +1,6 @@
 import React from "react";
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Inter, Poppins } from "next/font/google";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import { Analytics } from "@vercel/analytics/react";
 
@@ -9,7 +9,12 @@ import { ThemeProvider } from "@/components/shared/Provider";
 import Navbar from "@/components/modules/Navbar";
 import { COMPANY_INFO } from "@/constants/company-info";
 
-const inter = Inter({ subsets: ["latin"] });
+const inter = Inter({ subsets: ["latin"], display: "swap" });
+const poppins = Poppins({
+  subsets: ["latin"],
+  display: "swap",
+  weight: ["400", "500", "700", "900"],
+});
 
 export const metadata: Metadata = {
   title: "Alpha Solutions | Tailored Technology to Drive Your Success",
@@ -26,19 +31,19 @@ export default function RootLayout({
       <head>
         <link rel="icon" href={COMPANY_INFO.Favicon} sizes="any" />
       </head>
-      <body className={inter.className}>
+      <body className={poppins.className}>
         <ThemeProvider
           attribute="class"
-          defaultTheme="dark"
+          defaultTheme="light"
           enableSystem
           disableTransitionOnChange
         >
           <main
             // className="relative bg-black-100 flex justify-center items-center flex-col mx-auto sm:px-10 px-5 overflow-clip"
-            className="relative bg-black-100 overflow-clip min-h-screen"
+            className="relative bg-white dark:bg-black-100 overflow-clip min-h-screen"
           >
             <Navbar />
-            <div className="flex flex-col items-center justify-center w-full pt-20">
+            <div className="flex flex-col items-center justify-center w-full">
               {children}
             </div>
           </main>

@@ -1,22 +1,23 @@
-import Hero from "@/components/modules/Hero";
-import Footer from "@/components/modules/Footer";
-import ServicesList from "@/components/modules/ServicesList";
-import TeamList from "@/components/modules/Team";
-import TechStack from "@/components/modules/TechStack";
-import ClientsTestimonials from "@/components/modules/ClientFeedbacks";
-import KeyHighlights from "@/components/modules/KeyHighlights";
-import DevelopmentApproach from "@/components/modules/DevelopmentApproach";
-import Industries from "@/components/modules/Industries";
-import Projects from "@/components/modules/Projects";
-import WhyChooseUs from "@/components/modules/AboutSection/WhyChooseUs";
-import AboutUs from "@/components/modules/AboutSection/AboutUs";
 import CtaBanner from "@/components/shared/CtaBanner";
-import OurServices from "@/components/modules/OurServices";
+import HeroSection from "@/components/modules/Home/Hero";
+import AboutUs from "@/components/modules/Home/AboutSection/AboutUs";
+import TechStack from "@/components/modules/Home/TechStack";
+import DevelopmentApproach from "@/components/modules/Home/DevelopmentApproach";
+import Industries from "@/components/modules/Home/Industries";
+import Projects from "@/components/modules/Home/Projects";
+import TeamList from "@/components/modules/Home/Team";
+import ClientsTestimonials from "@/components/modules/Home/ClientFeedbacks";
+import KeyHighlights from "@/components/modules/Home/KeyHighlights";
+import Footer from "@/components/modules/Home/Footer";
 
 const PageSections = [
+  // {
+  //   id: "home",
+  //   Component: Hero,
+  // },
   {
-    id: "home",
-    Component: Hero,
+    id: "hero",
+    Component: HeroSection,
   },
   {
     id: "about",
@@ -62,10 +63,10 @@ const PageSections = [
     id: "clients-testimonials",
     Component: ClientsTestimonials,
   },
-  {
-    id: "key-highlights",
-    Component: KeyHighlights,
-  },
+  // {
+  //   id: "key-highlights",
+  //   Component: KeyHighlights,
+  // },
   // {
   //   id: "contact",
   //   Component: () => <h1>CONTACT US</h1>,

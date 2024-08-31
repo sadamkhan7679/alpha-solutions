@@ -1,11 +1,12 @@
 import React from "react";
 import { cn } from "@/utils/root";
+import SectionHeading from "@/components/shared/SectionHeading";
 
 type SectionContainerProps = {
   children: React.ReactNode;
   className?: string;
   sectionTitle?: string | React.ReactNode;
-  description?: string;
+  description?: string | React.ReactNode;
   container?: boolean;
 };
 
@@ -17,9 +18,11 @@ const SectionContainer = ({
   container = true,
 }: SectionContainerProps) => {
   return (
-    <section className={cn("relative mb-14 bg-transparent")}>
+    <section className={cn("relative mb-14 bg-transparent", className)}>
       <div className={cn("app-container mx-auto")}>
-        {sectionTitle && <h1 className="heading mb-5">{sectionTitle}</h1>}
+        {sectionTitle && (
+          <SectionHeading className="text-black">{sectionTitle}</SectionHeading>
+        )}
         {description && (
           <p className="text-lg mb-5 text-justify">{description}</p>
         )}
