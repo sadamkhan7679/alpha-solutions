@@ -13,7 +13,7 @@ const TagsList = ({ tags }: TagsListProps) => {
       className={cn("flex flex-wrap gap-4 my-5 w-full")}
     >
       {tags.map((tag) => (
-        <Badge key={tag} className="">
+        <Badge key={tag} className="bg-primary text-white">
           {tag}
         </Badge>
       ))}

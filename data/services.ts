@@ -1,4 +1,15 @@
 import { ServiceItem } from "@/types/services";
+import { WebAppIcon } from "@/icons/services/WebAppIcon";
+import { MobileIcon } from "@/icons/services/MobileIcon";
+import { DesktopAppIcon } from "@/icons/services/DesktopAppIcon";
+import { AIIcon } from "@/icons/services/AIIcon";
+import { EcommerceIcon } from "@/icons/services/EcommerceIcon";
+import { WebDesignIcon } from "@/icons/services/WebDesignIcon";
+import { BlockchainIcon } from "@/icons/services/BlockchainIcon";
+import { CloudIcon } from "@/icons/services/CloudIcon";
+import { ConsultingIcon } from "@/icons/services/ConsultingIcon";
+import { FC } from "react";
+import { SVGIconProps } from "@/types/root";
 
 export const SERVICES_KEYS = {
   WEB_DEVELOPMENT: "WEB_DEVELOPMENT",
@@ -12,13 +23,28 @@ export const SERVICES_KEYS = {
   CLOUD_SERVICES: "CLOUD_SERVICES",
 };
 
+export const SERVICES_ICONS: Record<
+  keyof typeof SERVICES_KEYS,
+  FC<SVGIconProps>
+> = {
+  WEB_DEVELOPMENT: WebAppIcon,
+  MOBILE_DEVELOPMENT: MobileIcon,
+  DESKTOP_DEVELOPMENT: DesktopAppIcon,
+  AI_ENHANCED_SOLUTIONS: AIIcon,
+  ECOMMERCE_DEVELOPMENT: EcommerceIcon,
+  CONSULTING_SERVICES: ConsultingIcon,
+  UI_UX_DESIGN: WebDesignIcon,
+  BLOCKCHAIN_DEVELOPMENT: BlockchainIcon,
+  CLOUD_SERVICES: CloudIcon,
+};
+
 export const SERVICES_LIST: ServiceItem[] = [
   {
     key: SERVICES_KEYS.WEB_DEVELOPMENT,
     title: "Web Development",
     slug: "web-development",
     Icon: "/services/web-development.svg",
-    image: "/images/services/web/1.jpg",
+    image: "/assets/services-images/web.png",
     headline: "Crafting Digital Experiences, One Pixel at a Time",
     summary:
       "From responsive websites to complex web applications, we bring your digital vision to life. Our cutting-edge web solutions are tailored to engage your audience and drive results, ensuring your business stands out in the digital landscape.",
@@ -88,7 +114,7 @@ export const SERVICES_LIST: ServiceItem[] = [
     key: SERVICES_KEYS.MOBILE_DEVELOPMENT,
     title: "Mobile Development",
     slug: "mobile-development",
-    image: "/images/services/mobile/1.webp",
+    image: "/assets/services-images/mobile.png",
     Icon: "/services/mobile-app.svg",
     headline: "Putting Your Business in Your Customers' Pockets",
     summary:
@@ -157,7 +183,7 @@ export const SERVICES_LIST: ServiceItem[] = [
     key: SERVICES_KEYS.DESKTOP_DEVELOPMENT,
     title: "Desktop Development",
     slug: "desktop-development",
-    image: "/images/services/desktop/1.jpg",
+    image: "/assets/services-images/desktop.png",
     Icon: "/services/desktop-app-development.svg",
     headline: "Powerful Solutions for the Modern Workspace",
     summary:
@@ -227,7 +253,7 @@ export const SERVICES_LIST: ServiceItem[] = [
     key: SERVICES_KEYS.AI_ENHANCED_SOLUTIONS,
     title: "AI Enhanced Solutions",
     slug: "ai-enhanced-solutions",
-    image: "/images/services/ai/1.jpg",
+    image: "/assets/services-images/ai.png",
     Icon: "/services/ai.svg",
     headline: "Harnessing the Power of AI to Propel Your Business Forward",
     summary:
@@ -296,7 +322,7 @@ export const SERVICES_LIST: ServiceItem[] = [
     key: SERVICES_KEYS.ECOMMERCE_DEVELOPMENT,
     title: "E-commerce Development",
     slug: "e-commerce",
-    image: "/images/services/ecommerce/1.jpg",
+    image: "/assets/services-images/e-commerce.png",
     Icon: "/services/ecommerce.svg",
     headline: "Turning Clicks into Customers",
     summary:
@@ -367,7 +393,7 @@ export const SERVICES_LIST: ServiceItem[] = [
     key: SERVICES_KEYS.CONSULTING_SERVICES,
     title: "Consulting Services",
     slug: "consulting-services",
-    image: "/images/services/consulting/1.jpg",
+    image: "/assets/services-images/consulting.png",
     Icon: "/services/interview.svg",
     headline: "Guiding Your Digital Transformation Journey",
     summary:
@@ -422,7 +448,7 @@ export const SERVICES_LIST: ServiceItem[] = [
     key: SERVICES_KEYS.UI_UX_DESIGN,
     title: "UI/UX Design",
     slug: "ui-ux-design",
-    image: "/images/services/ui-ux/1.jpg",
+    image: "/assets/services-images/ui-ux.png",
     Icon: "/services/figma.svg",
     headline: "Designing Experiences That Users Love",
     summary:
@@ -479,7 +505,7 @@ export const SERVICES_LIST: ServiceItem[] = [
     key: SERVICES_KEYS.BLOCKCHAIN_DEVELOPMENT,
     title: "Blockchain Development",
     slug: "blockchain-development",
-    image: "/images/services/blockchain/1.jpg",
+    image: "/assets/services-images/blockchain.png",
     Icon: "/services/blockchain.svg",
     headline: "Building Trust in a Decentralized World",
     summary:
@@ -549,7 +575,7 @@ export const SERVICES_LIST: ServiceItem[] = [
     key: SERVICES_KEYS.CLOUD_SERVICES,
     title: "Cloud Services",
     slug: "cloud-services",
-    image: "/images/services/cloud/1.jpg",
+    image: "/assets/services-images/cloud-services.png",
     Icon: "/services/azuredevops.svg",
     headline: "Elevate Your Business to the Cloud",
     summary:

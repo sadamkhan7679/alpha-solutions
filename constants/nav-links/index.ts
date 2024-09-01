@@ -61,7 +61,7 @@ export const navLinks: NavLink[] = [
   // },
   {
     label: Sections.Services,
-    href: "/services",
+    href: "services",
   },
   // {
   //   label: Sections.TechStack,
@@ -69,7 +69,7 @@ export const navLinks: NavLink[] = [
   // },
   {
     label: Sections.Approach,
-    href: "/approach",
+    href: "approach",
   },
   // {
   //   label: Sections.Industries,
@@ -77,11 +77,11 @@ export const navLinks: NavLink[] = [
   // },
   {
     label: Sections.Projects,
-    href: "/projects",
+    href: "case-studies",
   },
   {
     label: Sections.Team,
-    href: "/team",
+    href: "team",
   },
   // {
   //   label: Sections.ClientsTestimonials,

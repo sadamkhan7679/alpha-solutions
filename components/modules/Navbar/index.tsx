@@ -2,15 +2,21 @@
 import { cn } from "@/lib/utils";
 
 import React, { useState, useEffect } from "react";
-import Link from "next/link";
 import { NavLink, navLinks } from "@/constants/nav-links";
 import { CTA } from "@/components/shared/CTA";
 import LogoButton from "@/components/shared/logo-button";
+import { usePathname } from "next/navigation";
+import Link from "next/link";
+import { Button } from "@/components/ui/button";
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [activeLink, setActiveLink] = useState<NavLink | null>(null);
+
+  const pathname = usePathname();
+
+  console.log(pathname);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -54,6 +60,14 @@ const Navbar = () => {
     }
   };
 
+  const getNavLink = (link: NavLink) => {
+    if (pathname === "/") {
+      return `#${link.href}`;
+    }
+
+    return `${link.href}`;
+  };
+
   return (
     <nav
       // className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${isScrolled ? "bg-dark shadow-md" : "bg-transparent"}`}
@@ -70,27 +84,34 @@ const Navbar = () => {
         className={cn(
           "mx-auto px-4 app-container",
           isScrolled
-            ? "shadow-md bg-black border-b border-transparent dark:border-white/[0.2]"
+            ? "shadow-md bg-primary border-b border-transparent dark:border-white/[0.2]"
             : "bg-transparent",
         )}
       >
         <div className="flex justify-between items-center py-2">
           <div className="text-2xl font-bold">
-            <LogoButton />
+            <LogoButton
+              className={isScrolled ? "text-white" : "text-primary"}
+            />
           </div>
-          <div className="hidden md:flex items-center space-x-6">
+          <ul className="hidden md:flex items-center space-x-6">
             {navLinks.map((link) => (
-              <a
-                key={link.href}
-                href={`#${link.label.toLowerCase()}`}
-                onClick={() => handleLinkClick(link)}
-                className={`text-lg hover:text-blue-500 font-semibold transition-colors ${activeLink === link ? "text-purple" : ""}`}
-              >
-                {link.label}
-              </a>
+              <Link href={getNavLink(link)} key={link.label}>
+                <li
+                  className={cn(
+                    "text-lg font-semibold transition-colors",
+                    isScrolled ? "text-white" : "text-primary",
+                    activeLink === link &&
+                      isScrolled &&
+                      "text-white bg-secondary px-4 py-2 rounded-xl",
+                  )}
+                >
+                  {link.label}
+                </li>
+              </Link>
             ))}
             <CTA />
-          </div>
+          </ul>
           <div className="md:hidden">
             <button
               onClick={() => setIsMenuOpen(!isMenuOpen)}
@@ -116,23 +137,23 @@ const Navbar = () => {
       </div>
       {isMenuOpen && (
         <div className="md:hidden">
-          <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+          <ul className="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-primary-dark">
             {navLinks.map((link) => (
-              <a
-                key={link.label}
-                href={`#${link.href.toLowerCase()}`}
-                onClick={() => handleLinkClick(link)}
-                className={`block px-3 py-2 rounded-md text-base font-medium hover:text-blue-500 hover:bg-gray-50 transition-colors ${
-                  activeLink === link
-                    ? "text-blue-500 bg-gray-50"
-                    : "text-gray-700"
-                }`}
-              >
-                {link.label}
-              </a>
+              <Link href={getNavLink(link)} key={link.label}>
+                <li
+                  className={cn(
+                    "block px-3 py-2 rounded-md text-base font-medium hover:text-blue-500 hover:bg-gray-50 transition-colors",
+                    activeLink === link
+                      ? "text-white bg-secondary"
+                      : "text-secondary",
+                  )}
+                >
+                  {link.label}
+                </li>
+              </Link>
             ))}
-            <CTA />
-          </div>
+            <CTA className="hidden" />
+          </ul>
         </div>
       )}
     </nav>

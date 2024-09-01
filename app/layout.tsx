@@ -1,10 +1,6 @@
 import React from "react";
 import type { Metadata } from "next";
-<<<<<<< Updated upstream
-import { Inter } from "next/font/google";
-=======
-import { Poppins } from "next/font/google";
->>>>>>> Stashed changes
+import { Inter, Poppins } from "next/font/google";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import { Analytics } from "@vercel/analytics/react";
 
@@ -12,19 +8,15 @@ import "./globals.css";
 import { ThemeProvider } from "@/components/shared/Provider";
 import Navbar from "@/components/modules/Navbar";
 import { COMPANY_INFO } from "@/constants/company-info";
-<<<<<<< Updated upstream
-
-const inter = Inter({ subsets: ["latin"] });
-=======
 import { Toaster } from "@/components/ui/toaster";
-import { HeadComponent } from "@/components/shared/Head";
+import Loader from "@/components/shared/Loader";
 
+const inter = Inter({ subsets: ["latin"], display: "swap" });
 const poppins = Poppins({
   subsets: ["latin"],
   display: "swap",
   weight: ["400", "500", "700", "900"],
 });
->>>>>>> Stashed changes
 
 export const metadata: Metadata = {
   title: COMPANY_INFO.Title,
@@ -50,24 +42,26 @@ export default function RootLayout({
       {/*</head>*/}
       <body className={poppins.className}>
 >>>>>>> Stashed changes
+      <body className={poppins.className}>
         <ThemeProvider
           attribute="class"
-          defaultTheme="dark"
+          defaultTheme="light"
           enableSystem
           disableTransitionOnChange
         >
           <main
             // className="relative bg-black-100 flex justify-center items-center flex-col mx-auto sm:px-10 px-5 overflow-clip"
-            className="relative bg-black-100 overflow-clip min-h-screen"
+            className="relative bg-white dark:bg-black-100 overflow-clip min-h-screen"
           >
             <Navbar />
-            <div className="flex flex-col items-center justify-center w-full pt-20">
+            <div className="flex flex-col items-center justify-center w-full">
               {children}
             </div>
           </main>
         </ThemeProvider>
         <SpeedInsights />
         <Analytics />
+        <Toaster />
       </body>
     </html>
   );

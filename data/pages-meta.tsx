@@ -1,8 +1,9 @@
 export const SERVICES_META = {
+  title: "Our Services",
   // sectionTitle: "Cutting-Edge Solutions for Every Digital Need",
   sectionTitle: (
     <span>
-      <span className="text-purple">Cutting-Edge Solutions</span> for Every
+      <span className="text-primary">Cutting-Edge Solutions</span> for Every
       Digital Need
     </span>
   ),
@@ -15,7 +16,7 @@ export const PROJECTS_META = {
   sectionTitle: (
     <span>
       Showcasing Our{" "}
-      <span className="text-purple">&nbsp;Digital Masterpieces</span>
+      <span className="text-primary">&nbsp;Digital Masterpieces</span>
     </span>
   ),
   description:

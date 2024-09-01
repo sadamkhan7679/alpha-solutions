@@ -13,6 +13,9 @@ import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { CTA } from "@/components/shared/CTA";
 import TagsList from "@/components/shared/TagsList";
+import { SERVICES_ICONS } from "@/data/services";
+import { Typography } from "@/components/shared/Typography";
+import { cn } from "@/lib/utils";
 
 type ServiceItemProps = {
   service: ServiceItem;
@@ -20,21 +23,23 @@ type ServiceItemProps = {
 };
 
 const ServiceItemCard = ({ service, isDetail = false }: ServiceItemProps) => {
+  const ServiceIcon =
+    SERVICES_ICONS[service.key as keyof typeof SERVICES_ICONS];
+
   return (
-    <Card className="w-full px-6 mb-10">
-      <CardHeader className="flex flex-row items-center w-full app-divider">
-        {service.Icon && (
-          <Image
-            src={service.Icon}
-            alt={service.title}
-            width={48}
-            height={48}
-            className="mr-3"
-          />
+    <Card className="w-full px-6 mb-10 broder-4 border-primary">
+      <CardHeader
+        className={cn(
+          "flex flex-row items-center w-full text-primary",
+          "border-b-4 border-primary",
+        )}
+      >
+        {ServiceIcon && (
+          <ServiceIcon width={60} height={60} className="mr-5" />
           // <service.Icon />
         )}
         <CardTitle className="flex flex-col">
-          <span>{service.title}</span>
+          <Typography variant="h3">{service.title}</Typography>
           <span className="text-sm mt-2">{service.headline}</span>
         </CardTitle>
       </CardHeader>
@@ -45,6 +50,7 @@ const ServiceItemCard = ({ service, isDetail = false }: ServiceItemProps) => {
             <ListItems
               summary={service.detailedDescription}
               items={service.keyBenefits}
+              itemClassName={cn("text-primary")}
             />
             {!isDetail && (
               <Link href={`/services/${service.slug}`}>
