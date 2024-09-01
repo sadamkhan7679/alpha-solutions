@@ -39,12 +39,6 @@ export default function RootLayout({
       {/*  <title>{COMPANY_INFO.Title}</title>*/}
       {/*</head>*/}
       <body className={poppins.className}>
-        <GoogleTagManager
-          gtmId={process.env.NEXT_PUBLIC_GOOGLE_TAG_MANAGER_ID as string}
-        />
-        <GoogleAnalytics
-          gaId={process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS_ID as string}
-        />
         <ThemeProvider
           attribute="class"
           defaultTheme="light"
@@ -66,6 +60,12 @@ export default function RootLayout({
         <Analytics />
         <Toaster />
         <JsonLdData />
+        <GoogleTagManager
+          gtmId={process.env.NEXT_PUBLIC_GOOGLE_TAG_MANAGER_ID as string}
+        />
+        <GoogleAnalytics
+          gaId={process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS_ID as string}
+        />
       </body>
     </html>
   );

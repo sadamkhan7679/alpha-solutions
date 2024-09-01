@@ -1,6 +1,7 @@
 import type { MetadataRoute } from "next";
 import { SERVICES_LIST } from "@/data/services";
 import { projectsList } from "@/data/Projects";
+import { industriesList } from "@/constants/industries";
 
 const BaseUrl = process.env.NEXT_PUBLIC_BASE_URL as string;
 
@@ -29,6 +30,15 @@ const caseStudiesRoutes: SiteMapRoute[] = projectsList.map((project) => {
   };
 });
 
+const industriesRoutes: SiteMapRoute[] = industriesList.map((industry) => {
+  return {
+    url: `${BaseUrl}/industries/${industry.slug}`,
+    lastModified: new Date(),
+    changeFrequency: "monthly",
+    priority: 0.8,
+  };
+});
+
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseRoutes: SiteMapRoute[] = [
     {
@@ -49,6 +59,31 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "monthly",
       priority: 0.8,
     },
+    {
+      url: `${BaseUrl}/industries`,
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.8,
+    },
+    {
+      url: `${BaseUrl}/about`,
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.8,
+    },
+    {
+      url: `${BaseUrl}/team`,
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.8,
+    },
+    {
+      url: `${BaseUrl}/approach`,
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.8,
+    },
+
     {
       url: `${BaseUrl}/contact`,
       lastModified: new Date(),
