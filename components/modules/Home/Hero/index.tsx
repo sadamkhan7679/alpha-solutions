@@ -52,13 +52,13 @@ const HeroSection: FC<HeroSectionProps> = () => {
         backgroundPosition: "center",
       }}
     >
-      <div className="h-full">
+      <div className="h-72 md:h-full">
         <motion.div
-          className="flex flex-col justify-evenly items-start h-full"
+          className="flex flex-col justify-between md:justify-evenly items-start md:h-full mt-10 md:mt-0"
           {...getAnimation("right")}
         >
           <div
-            className={cn("w-40 h-20 mt-10")}
+            className={cn("w-20 h-12 md:w-40 md:h-20 mt-5 md:mt-10")}
             style={{
               backgroundImage: `url('/assets/hero-banner/3.png')`,
               backgroundSize: "cover",
@@ -73,7 +73,7 @@ const HeroSection: FC<HeroSectionProps> = () => {
             </Typography>
             <Typography
               variant="h2"
-              className="text-primary-dark text-5xl mt-5 mb-16"
+              className="text-primary-dark mt-5 mb-5 md:mb-16"
             >
               Crafting captivating digital experiences that engage, inspire, and
               propel your business forward
@@ -87,11 +87,11 @@ const HeroSection: FC<HeroSectionProps> = () => {
         </motion.div>
       </div>
       <motion.div
-        className="h-full flex flex-col items-center content-center w-full"
+        className="md:h-full flex flex-col items-start md:items-center content-center w-full"
         {...getAnimation("left")}
       >
         <div
-          className={cn("w-4/5 h-4/5")}
+          className={cn("w-full h-full md:w-4/5 md:h-4/5")}
           style={{
             backgroundImage: `url('/assets/hero-banner/6.png')`,
             backgroundSize: "contain",
@@ -100,7 +100,7 @@ const HeroSection: FC<HeroSectionProps> = () => {
           }}
         />
         <div
-          className={cn("w-40 h-20 mt-10")}
+          className={cn("w-20 h-12 md:w-40 md:h-20 mt-5 md:mt-10 self-end")}
           style={{
             backgroundImage: `url('/assets/hero-banner/3.png')`,
             backgroundSize: "cover",

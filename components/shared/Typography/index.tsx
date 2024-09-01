@@ -21,13 +21,24 @@ export const Typography = ({
 }: TypographyProps) => {
   const Tag = variant;
 
+  // const defaultClasses = {
+  //   h1: "text-2xl md:text-5xl lg:text-6xl font-bold",
+  //   h2: "text-4xl lg:text-5xl font-bold",
+  //   h3: "text-3xl lg:text-4xl font-bold",
+  //   h4: "text-2xl lg:text-3xl font-bold",
+  //   h5: "text-xl lg:text-2xl font-bold",
+  //   h6: "text-md lg:text-xl font-bold",
+  //   p: "text-base",
+  //   span: "text-base",
+  // };
+
   const defaultClasses = {
-    h1: "text-5xl lg:text-6xl font-bold",
-    h2: "text-4xl lg:text-5xl font-bold",
-    h3: "text-3xl lg:text-4xl font-bold",
-    h4: "text-2xl lg:text-3xl font-bold",
-    h5: "text-xl lg:text-2xl font-bold",
-    h6: "text-md lg:text-xl font-bold",
+    h1: "text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold",
+    h2: "text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold",
+    h3: "text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold",
+    h4: "text-lg sm:text-xl md:text-2xl lg:text-3xl font-bold",
+    h5: "text-base sm:text-lg md:text-xl lg:text-2xl font-bold",
+    h6: "text-sm sm:text-base md:text-lg lg:text-xl font-bold",
     p: "text-base",
     span: "text-base",
   };

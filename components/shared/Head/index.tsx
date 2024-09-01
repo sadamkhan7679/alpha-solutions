@@ -1,6 +1,7 @@
 import Head from "next/head";
 import React from "react";
 import { COMPANY_INFO, jsonLdData } from "@/constants/company-info";
+import type { Metadata } from "next";
 
 type HeadProps = {
   title?: string;
@@ -45,6 +46,54 @@ export const HeadComponent: React.FC<HeadProps> = ({
     </Head>
   );
 };
+
+export function generateMetadata({
+  title = COMPANY_INFO.Title,
+  description = COMPANY_INFO.Description,
+  keywords = COMPANY_INFO.Keywords,
+  image = "/og-image.jpg",
+  type = COMPANY_INFO.Type,
+}: {
+  title: string;
+  description: string;
+  keywords?: string[];
+  image?: string;
+  type?: string;
+}): Metadata {
+  return {
+    title,
+    description,
+    keywords: keywords?.join(", "),
+    authors: [{ name: COMPANY_INFO.Author }],
+    icons: [
+      { rel: "icon", url: COMPANY_INFO.Favicon },
+      { rel: "apple-touch-icon", url: COMPANY_INFO.Favicon },
+    ],
+    manifest: "/manifest.json",
+    openGraph: {
+      title,
+      description,
+      siteName: COMPANY_INFO.Name,
+      url: COMPANY_INFO.URL,
+      images: [{ url: image }],
+    },
+    twitter: {
+      card: "summary_large_image",
+      site: COMPANY_INFO.Twitter,
+      creator: COMPANY_INFO.Twitter,
+      title,
+      description,
+      images: [image],
+    },
+    alternates: {
+      canonical: COMPANY_INFO.URL,
+    },
+    robots: {
+      index: true,
+      follow: true,
+    },
+  };
+}
 
 export const JsonLdData = () => {
   return (

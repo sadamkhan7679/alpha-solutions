@@ -25,7 +25,7 @@ const Projects = () => {
       childrenContainer={false}
       ActionComponent={
         <Link href="/case-studies">
-          <Button variant="secondary" size="lg">
+          <Button variant="secondary" size="lg" className="mb-5 md:mb-0">
             View All Projects
           </Button>
         </Link>

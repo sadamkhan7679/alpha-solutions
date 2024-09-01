@@ -63,12 +63,12 @@ const ContentSection = ({
       <div
         // className="app-container flex flex-col lg:flex-row gap-10"
         className={cn(
-          "flex flex-col lg:flex-row gap-20 border-y-2 app-border",
+          "flex flex-col lg:flex-row gap-0 md:gap-20 border-y-2 app-border",
           className,
         )}
       >
         <motion.div
-          className="w-full lg:w-1/2 py-20"
+          className="w-full lg:w-1/2 py-10 md:py-20"
           {...getAnimation("left")}
           // initial={{ x: -400, opacity: 0 }}
           // animate={leftControls}
@@ -92,7 +92,7 @@ const ContentSection = ({
           // className="w-full h-112 relative lg:w-1/2 mt-10 lg:mt-0 self-center"
           {...getAnimation("right")}
           className={cn(
-            "w-full h-112 relative lg:w-1/2 mt-10 lg:mt-0 self-center",
+            "w-full h-72 md:h-112 relative mb-5 md:mb-0 lg:w-1/2 mt-2 md:mt-10 lg:mt-0 self-start md:self-center",
             imageClassName,
           )}
           // initial={{ x: 400, opacity: 0 }}

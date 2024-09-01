@@ -58,7 +58,7 @@ const OurServices = ({}: OurServicesProps) => {
           backgroundPosition: "center",
         }}
       >
-        <div className="pt-10 pb-40 lg:pt-20 lg:pb-40 w-full flex flex-col lg:flex-row items-center justify-between">
+        <div className="pt-10 pb-60 md:pb-40 lg:pt-20 lg:pb-40 w-full flex flex-col lg:flex-row items-center justify-between">
           <div className="w-full lg:w-1/2">
             <Typography variant="h5" className="text-white flex items-center">
               <Aperture width={24} height={24} className="mr-3" />

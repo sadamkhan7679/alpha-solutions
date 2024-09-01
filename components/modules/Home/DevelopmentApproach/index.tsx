@@ -126,7 +126,7 @@ const DevelopmentApproach = () => {
             })}
           </Timeline>
 
-          <Timeline positions="left" className="max-w-6xl block lg:hidden">
+          <Timeline positions="left" className="max-w-7xl block lg:hidden">
             {approachSection.items.map((item, index) => {
               const isEven = index % 2 === 0;
 
@@ -142,12 +142,12 @@ const DevelopmentApproach = () => {
                     status="custom"
                     // @ts-ignore
                     customIcon={<item.Icon size={24} className="text-white" />}
-                    className="w-20 h-40 rounded-2xl border-none"
+                    className="w-10 h-20 md:w-20 md:h-40 rounded-2xl border-none"
                   />
                   <TimelineLine done className="bg-white" />
                   <TimelineContent
                     side={"right"}
-                    className="py-10 pr-12 text-justify text-md md:text-xl text-white"
+                    className="py-10 text-justify text-md md:text-xl text-white"
                   >
                     {item.description}
                   </TimelineContent>

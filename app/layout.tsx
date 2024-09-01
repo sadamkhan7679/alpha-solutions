@@ -9,7 +9,11 @@ import { ThemeProvider } from "@/components/shared/Provider";
 import Navbar from "@/components/modules/Navbar";
 import { COMPANY_INFO } from "@/constants/company-info";
 import { Toaster } from "@/components/ui/toaster";
-import { HeadComponent, JsonLdData } from "@/components/shared/Head";
+import {
+  generateMetadata,
+  HeadComponent,
+  JsonLdData,
+} from "@/components/shared/Head";
 import { GoogleAnalytics, GoogleTagManager } from "@next/third-parties/google";
 
 const inter = Inter({ subsets: ["latin"], display: "swap" });
@@ -19,10 +23,13 @@ const poppins = Poppins({
   weight: ["400", "500", "700", "900"],
 });
 
-export const metadata: Metadata = {
+export const metadata: Metadata = generateMetadata({
   title: COMPANY_INFO.Title,
   description: COMPANY_INFO.Description,
-};
+  keywords: COMPANY_INFO.Keywords,
+  image: COMPANY_INFO.Image,
+  type: COMPANY_INFO.Type,
+});
 
 export default function RootLayout({
   children,
@@ -31,10 +38,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      {/*<head>*/}
-      {/*<link rel="icon" href={COMPANY_INFO.Favicon} sizes="any" />*/}
-      <HeadComponent />
-      {/*</head>*/}
+      <head>
+        <title>{COMPANY_INFO.Title}</title>
+      </head>
       <body className={poppins.className}>
         <GoogleTagManager
           gtmId={process.env.NEXT_PUBLIC_GOOGLE_TAG_MANAGER_ID as string}
