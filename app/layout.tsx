@@ -9,7 +9,8 @@ import { ThemeProvider } from "@/components/shared/Provider";
 import Navbar from "@/components/modules/Navbar";
 import { COMPANY_INFO } from "@/constants/company-info";
 import { Toaster } from "@/components/ui/toaster";
-import Loader from "@/components/shared/Loader";
+import { HeadComponent, JsonLdData } from "@/components/shared/Head";
+import { GoogleAnalytics, GoogleTagManager } from "@next/third-parties/google";
 
 const inter = Inter({ subsets: ["latin"], display: "swap" });
 const poppins = Poppins({
@@ -30,19 +31,17 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-<<<<<<< Updated upstream
-      <head>
-        <link rel="icon" href={COMPANY_INFO.Favicon} sizes="any" />
-      </head>
-      <body className={inter.className}>
-=======
       {/*<head>*/}
       {/*<link rel="icon" href={COMPANY_INFO.Favicon} sizes="any" />*/}
       <HeadComponent />
       {/*</head>*/}
       <body className={poppins.className}>
->>>>>>> Stashed changes
-      <body className={poppins.className}>
+        <GoogleTagManager
+          gtmId={process.env.NEXT_PUBLIC_GOOGLE_TAG_MANAGER_ID as string}
+        />
+        <GoogleAnalytics
+          gaId={process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS_ID as string}
+        />
         <ThemeProvider
           attribute="class"
           defaultTheme="light"
@@ -62,6 +61,7 @@ export default function RootLayout({
         <SpeedInsights />
         <Analytics />
         <Toaster />
+        <JsonLdData />
       </body>
     </html>
   );

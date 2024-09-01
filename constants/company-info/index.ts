@@ -1,3 +1,56 @@
+export const seoKeywords = [
+  "Web development services",
+  "Mobile app development",
+  "React.js development",
+  "Next.js agency",
+  "TypeScript experts",
+  "JavaScript developers",
+  "Node.js development",
+  "MongoDB solutions",
+  "MySQL database services",
+  "AI-enhanced applications",
+  "UI/UX design services",
+  "Cloud services for businesses",
+  "Full-stack development",
+  "Custom software development",
+  "E-commerce website development",
+  "Progressive Web Apps (PWAs)",
+  "Responsive web design",
+  "Cross-platform mobile apps",
+  "Enterprise software solutions",
+  "Agile development methodology",
+  "API integration services",
+  "DevOps solutions",
+  "Scalable web applications",
+  "Performance optimization",
+  "SEO-friendly web development",
+  "Blockchain integration",
+  "IoT app development",
+  "Artificial Intelligence solutions",
+  "Machine Learning integration",
+  "Big data analytics",
+  "Chatbot development",
+  "Single Page Applications (SPAs)",
+  "Microservices architecture",
+  "Serverless computing",
+  "Cloud migration services",
+  "Hybrid mobile app development",
+  "Frontend optimization",
+  "Backend development experts",
+  "Web application security",
+  "Content Management Systems (CMS)",
+  "Real-time data processing",
+  "Data visualization services",
+  "Test-driven development (TDD)",
+  "Continuous Integration/Continuous Deployment (CI/CD)",
+  "Web accessibility compliance",
+  "Payment gateway integration",
+  "Social media integration",
+  "Geolocation-based services",
+  "Push notification services",
+  "Third-party API development",
+];
+
 export const COMPANY_INFO = {
   Name: "Alpha Solutions",
   ShortName: "Alpha",
@@ -16,26 +69,11 @@ export const COMPANY_INFO = {
     LinkedIn: "https://www.linkedin.com/",
     Instagram: "https://www.instagram.com/",
   },
-
-  // Add the following properties
-  // 1. Logo: "/path/to/logo.png"
-  // 2. Favicon: "/path/to/favicon.png"
-  // 3. Description: "Company description"
-  // 4. Keywords: "company, description, keywords"
-  // 5. Author: "Author name"
-  // 6. SiteName: "Site name"
-  // 7. Title: "Site title"
-  // 8. Image: "/path/to/image.jpg"
-  // 9. Twitter: "@twitter_handle"
-  // 10. Type: "website"
-  // 11. Robots: "index, follow"
-  // 12. ThemeColor: "#000000"
-
   Logo: "/logo.svg",
   Favicon: "/favicon/favicon.ico",
   Description:
     "Transform your business with our cutting-edge web and mobile app development services. Specializing in React, Next.js, AI-enhanced apps, and cloud solutions, we deliver innovative, scalable, and user-centric digital experiences. From custom software to e-commerce platforms, our expert team brings your vision to life with the latest technologies and best practices in UI/UX design.",
-  Keywords: ["company, description, keywords"],
+  Keywords: seoKeywords,
   URL: "https://alpha-solutions.dev",
   Image: "/logo.svg",
   Twitter: "@twitter_handle",
@@ -55,5 +93,27 @@ export const jsonLdData = {
     COMPANY_INFO.Social.LinkedIn,
     COMPANY_INFO.Social.Instagram,
   ],
-  // ... other properties as needed
+  address: {
+    "@type": "PostalAddress",
+    streetAddress: COMPANY_INFO.Address,
+    addressLocality: "New York",
+    addressRegion: "NY",
+    postalCode: "10001",
+    addressCountry: "US",
+  },
+  telephone: COMPANY_INFO.Phone,
+  email: COMPANY_INFO.Email,
+  image: `${COMPANY_INFO.URL}${COMPANY_INFO.Image}`,
+  priceRange: "$$$",
+  paymentAccepted: "Cash, Credit Card, Invoice",
+  contactPoint: {
+    "@type": "ContactPoint",
+    telephone: COMPANY_INFO.Phone,
+    contactType: "customer service",
+  },
+  geo: {
+    "@type": "GeoCoordinates",
+    latitude: "40.741895",
+    longitude: "-73.989308",
+  },
 };

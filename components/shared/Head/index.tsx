@@ -1,6 +1,6 @@
 import Head from "next/head";
 import React from "react";
-import { COMPANY_INFO } from "@/constants/company-info";
+import { COMPANY_INFO, jsonLdData } from "@/constants/company-info";
 
 type HeadProps = {
   title?: string;
@@ -46,7 +46,7 @@ export const HeadComponent: React.FC<HeadProps> = ({
   );
 };
 
-export const jsonLdData = () => {
+export const JsonLdData = () => {
   return (
     <script
       type="application/ld+json"
