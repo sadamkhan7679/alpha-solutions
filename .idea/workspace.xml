@@ -4,10 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
+<<<<<<< Updated upstream
     <list default="true" id="6ce73afc-e424-4bf7-81d3-650b5cb1d2d2" name="Changes" comment="Logo and Info Update">
       <change beforePath="$PROJECT_DIR$/app/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/layout.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pnpm-lock.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pnpm-lock.yaml" afterDir="false" />
+=======
+    <list default="true" id="2a9c9d9f-0453-4f05-8473-26aef33e7bce" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/app/manifest.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/robots.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/shared/Head/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/layout.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/constants/company-info/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/constants/company-info/index.ts" afterDir="false" />
+>>>>>>> Stashed changes
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,9 +40,16 @@
   }
 }</component>
   <component name="ProjectColorInfo">{
+<<<<<<< Updated upstream
   &quot;associatedIndex&quot;: 6
 }</component>
   <component name="ProjectId" id="2lM7NXi559eDeTdURpIAJuFSiGP" />
+=======
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 6
+}</component>
+  <component name="ProjectId" id="2lQuEU0q6ft6ucwyBNbQbDQqDe6" />
+>>>>>>> Stashed changes
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -40,12 +57,21 @@
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+<<<<<<< Updated upstream
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+=======
+    &quot;git-widget-placeholder&quot;: &quot;design-update&quot;,
+>>>>>>> Stashed changes
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+<<<<<<< Updated upstream
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+=======
+    &quot;nodejs_package_manager_path&quot;: &quot;pnpm&quot;,
+    &quot;npm.dev.executor&quot;: &quot;Run&quot;,
+>>>>>>> Stashed changes
     &quot;prettierjs.PrettierConfiguration.Package&quot;: &quot;C:\\Program Files\\nodejs\\node_modules\\prettier&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;settings.javascript.prettier&quot;,
     &quot;ts.external.directory.path&quot;: &quot;D:\\Web Development\\AlphaSolutions\\website\\alpha-solutions\\node_modules\\typescript\\lib&quot;,
@@ -57,6 +83,7 @@
       <map>
         <entry key="com.intellij.reactbuddy.reactComponents" value="false" />
         <entry key="com.intellij.reactbuddy.reactInspector" value="false" />
+        <entry key="com.intellij.reactbuddy.storybook" value="false" />
       </map>
     </option>
   </component>
@@ -77,9 +104,15 @@
       <created>1724978052838</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
+<<<<<<< Updated upstream
       <updated>1724978052838</updated>
       <workItem from="1724978055276" duration="14201000" />
       <workItem from="1725038794623" duration="61000" />
+=======
+      <updated>1725124510386</updated>
+      <workItem from="1725124512684" duration="12629000" />
+      <workItem from="1725154099370" duration="2941000" />
+>>>>>>> Stashed changes
     </task>
     <task id="LOCAL-00001" summary="Logo and Info Update">
       <option name="closed" value="true" />

@@ -1,6 +1,10 @@
 import React from "react";
 import type { Metadata } from "next";
+<<<<<<< Updated upstream
 import { Inter } from "next/font/google";
+=======
+import { Poppins } from "next/font/google";
+>>>>>>> Stashed changes
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import { Analytics } from "@vercel/analytics/react";
 
@@ -8,12 +12,23 @@ import "./globals.css";
 import { ThemeProvider } from "@/components/shared/Provider";
 import Navbar from "@/components/modules/Navbar";
 import { COMPANY_INFO } from "@/constants/company-info";
+<<<<<<< Updated upstream
 
 const inter = Inter({ subsets: ["latin"] });
+=======
+import { Toaster } from "@/components/ui/toaster";
+import { HeadComponent } from "@/components/shared/Head";
+
+const poppins = Poppins({
+  subsets: ["latin"],
+  display: "swap",
+  weight: ["400", "500", "700", "900"],
+});
+>>>>>>> Stashed changes
 
 export const metadata: Metadata = {
-  title: "Alpha Solutions | Tailored Technology to Drive Your Success",
-  description: "Tailored Technology to Drive Your Success",
+  title: COMPANY_INFO.Title,
+  description: COMPANY_INFO.Description,
 };
 
 export default function RootLayout({
@@ -23,10 +38,18 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
+<<<<<<< Updated upstream
       <head>
         <link rel="icon" href={COMPANY_INFO.Favicon} sizes="any" />
       </head>
       <body className={inter.className}>
+=======
+      {/*<head>*/}
+      {/*<link rel="icon" href={COMPANY_INFO.Favicon} sizes="any" />*/}
+      <HeadComponent />
+      {/*</head>*/}
+      <body className={poppins.className}>
+>>>>>>> Stashed changes
         <ThemeProvider
           attribute="class"
           defaultTheme="dark"
