@@ -1,26 +1,15 @@
 "use client";
-
-import MagicButton from "@/components/ui/MagicButton";
-import Image from "next/image";
 import { COMPANY_INFO } from "@/constants/company-info";
-import { DirectionIcon } from "@/icons/common/directionIcon";
 import { CompanyLogo } from "@/icons/logo/full-logo";
 import React from "react";
-import {
-  Card,
-  CardContent,
-  CardFooter,
-  CardHeader,
-} from "@/components/ui/card";
-import { Label } from "@/components/ui/label";
-import { Input } from "@/components/ui/input";
-import { Textarea } from "@/components/ui/textarea";
-import { Button } from "@/components/ui/button";
+import { Card, CardContent, CardHeader } from "@/components/ui/card";
 import { Typography } from "@/components/shared/Typography";
 import { CTA } from "@/components/shared/CTA";
 import { ChevronRight } from "lucide-react";
 import { motion } from "framer-motion";
 import { ContactForm } from "@/components/modules/Contact/ContactForm";
+import { industriesList } from "@/constants/industries";
+import { SERVICES_LIST } from "@/data/services";
 
 const getCurrentYear = () => {
   return new Date().getFullYear();
@@ -31,84 +20,40 @@ type QuickLink = {
   href: string;
 };
 
-const industriesQuickLinks = [
-  {
-    title: "Healthcare",
-    href: "#healthcare",
-  },
-  {
-    title: "E-commerce",
-    href: "#e-commerce",
-  },
-  {
-    title: "Finance",
-    href: "#finance",
-  },
-  {
-    title: "Education",
-    href: "#education",
-  },
-  {
-    title: "Real Estate",
-    href: "#real-estate",
-  },
-  {
-    title: "Travel",
-    href: "#travel",
-  },
-];
+const industriesQuickLinks = industriesList.map((industry) => ({
+  title: industry.title,
+  href: `/industries/${industry.slug}`,
+}));
 
-const servicesQuickLinks = [
-  {
-    title: "Web Development",
-    href: "#web-development",
-  },
-  {
-    title: "Mobile Development",
-    href: "#mobile-development",
-  },
-  {
-    title: "UI/UX Design",
-    href: "#ui-ux-design",
-  },
-  {
-    title: "Digital Marketing",
-    href: "#digital-marketing",
-  },
-  {
-    title: "SEO",
-    href: "#seo",
-  },
-  {
-    title: "Content Writing",
-    href: "#content-writing",
-  },
-];
+const servicesQuickLinks = SERVICES_LIST.map((service) => ({
+  title: service.title,
+  href: `/services/${service.slug}`,
+}));
 
 const companyQuickLinks = [
   {
     title: "About Us",
-    href: "#about",
+    href: "/about",
   },
   {
     title: "Services",
-    href: "#services",
+    href: "/services",
   },
   {
     title: "Industries",
-    href: "#industries",
+    href: "/industries",
   },
   {
     title: "Projects",
-    href: "#projects",
+    href: "/projects",
   },
   {
     title: "Team",
-    href: "#team",
+    href: "/team",
   },
   {
     title: "Contact",
-    href: "#contact",
+    href: "/contact",
   },
 ];
 
@@ -165,12 +110,12 @@ const Footer = () => {
                 Reach out to us today and let&apos;s discuss how we can help you
                 achieve your goals.
               </p>
-              <a
-                href={`mailto:${COMPANY_INFO.Email}`}
-                className="w-full lg:w-auto"
-              >
-                <CTA title="Let's get in touch" className="w-full lg:w-auto" />
-              </a>
+              {/*<a*/}
+              {/*  href={`mailto:${COMPANY_INFO.Email}`}*/}
+              {/*  className="w-full lg:w-auto"*/}
+              {/*>*/}
+              <CTA title="Let's get in touch" className="w-full lg:w-auto" />
+              {/*</a>*/}
             </div>
           </div>
           <div className="col-span-6 lg:col-span-2 py-10 lg:py-0">
@@ -189,7 +134,7 @@ const Footer = () => {
       </div>
 
       <div
-        className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 place-items-start md:place-items-center lg:place-items-end py-10 app-container"
+        className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 place-items-start md:place-items-center lg:place-items-start place-content-center py-10 app-container"
         style={{
           background: "url('/images/banners/footer-bg.svg')",
           backgroundSize: "cover",
@@ -205,16 +150,16 @@ const Footer = () => {
           </Typography>
 
           <Typography variant="p" className="text-md text-white">
-            Address: 1234 Street Name, City Name, United States
+            {COMPANY_INFO.Address}
           </Typography>
         </div>
-        <div>
+        <div className="w-full flex justify-end">
           <FooterLinks title="Industries" links={industriesQuickLinks} />
         </div>
-        <div>
+        <div className="w-full flex justify-end">
           <FooterLinks title="Services" links={servicesQuickLinks} />
         </div>
-        <div>
+        <div className="w-full flex justify-end">
           <FooterLinks title="Company" links={companyQuickLinks} />
         </div>
       </div>

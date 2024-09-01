@@ -7,8 +7,6 @@ import Industries from "@/components/modules/Home/Industries";
 import Projects from "@/components/modules/Home/Projects";
 import TeamList from "@/components/modules/Home/Team";
 import ClientsTestimonials from "@/components/modules/Home/ClientFeedbacks";
-import KeyHighlights from "@/components/modules/Home/KeyHighlights";
-import Footer from "@/components/modules/Home/Footer";
 
 const PageSections = [
   // {
@@ -71,10 +69,10 @@ const PageSections = [
   //   id: "contact",
   //   Component: () => <h1>CONTACT US</h1>,
   // },
-  {
-    id: "footer",
-    Component: Footer,
-  },
+  // {
+  //   id: "footer",
+  //   Component: Footer,
+  // },
 ];
 
 const Home = () => {
@@ -88,31 +86,6 @@ const Home = () => {
           <Component />
         </div>
       ))}
-
-      {/*<Hero />*/}
-      {/*<ServicesList />*/}
-      {/*<TechStack />*/}
-      {/*/!*<ExperienceTimeline />*!/*/}
-      {/*<DevelopmentApproach />*/}
-      {/*/!*<Industries />*!/*/}
-      {/*/!*<Approach />*!/*/}
-      {/*<Projects />*/}
-      {/*<TeamList />*/}
-      {/*<ClientsTestimonials />*/}
-      {/*<KeyHighlights />*/}
-      {/*/!*<h1>CONTACT US</h1>*!/*/}
-      {/*/!*<h1>FOOTER</h1>*!/*/}
-
-      {/*/!*<FloatingNav navItems={navItems} />*!/*/}
-      {/*/!*<Hero />*!/*/}
-      {/*/!*<ServicesList />*!/*/}
-      {/*/!*<TeamList />*!/*/}
-      {/*/!*<Grid />*!/*/}
-      {/*/!*<RecentProjects />*!/*/}
-      {/*/!*<Clients />*!/*/}
-      {/*/!*<Experience />*!/*/}
-      {/*/!*<Process />*!/*/}
-      {/*/!*<Footer />*!/*/}
     </div>
   );
 };

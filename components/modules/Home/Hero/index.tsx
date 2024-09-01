@@ -72,7 +72,7 @@ const HeroSection: FC<HeroSectionProps> = () => {
               Solutions
             </Typography>
             <Typography
-              variant="h2"
+              variant="h1"
               className="text-primary-dark mt-5 mb-5 md:mb-16"
             >
               Crafting captivating digital experiences that engage, inspire, and

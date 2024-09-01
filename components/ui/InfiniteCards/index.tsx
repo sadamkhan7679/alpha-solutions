@@ -3,6 +3,7 @@
 import { cn } from "@/utils/root";
 import React, { useEffect, useState } from "react";
 import Image from "next/image";
+import { CircleUserRound } from "lucide-react";
 
 export const InfiniteMovingCards = ({
   items,
@@ -62,11 +63,11 @@ export const InfiniteMovingCards = ({
   const getSpeed = () => {
     if (containerRef.current) {
       if (speed === "fast") {
-        containerRef.current.style.setProperty("--animation-duration", "20s");
-      } else if (speed === "normal") {
-        containerRef.current.style.setProperty("--animation-duration", "40s");
-      } else {
         containerRef.current.style.setProperty("--animation-duration", "80s");
+      } else if (speed === "normal") {
+        containerRef.current.style.setProperty("--animation-duration", "160s");
+      } else {
+        containerRef.current.style.setProperty("--animation-duration", "240s");
       }
     }
   };
@@ -105,10 +106,13 @@ export const InfiniteMovingCards = ({
               <span className=" relative z-20 text-sm md:text-lg leading-[1.6] text-white font-normal">
                 {item.quote}
               </span>
-              <div className="relative z-20 mt-6 flex flex-row items-center">
+              <div className="relative z-20 mt-6 flex flex-row items-center text-white">
                 {/* add this div for the profile img */}
                 <div className="mr-3 w-20 h-20 relative">
-                  <Image src="/profile.svg" alt="profile" fill loading="lazy" />
+                  <CircleUserRound
+                    className="absolute w-full h-full"
+                    color="#fff"
+                  />
                 </div>
                 <span className="flex flex-col gap-1">
                   {/* change text color, font-normal to font-bold, text-xl */}

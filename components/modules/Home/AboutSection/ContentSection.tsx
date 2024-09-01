@@ -103,7 +103,7 @@ const ContentSection = ({
             src={image}
             alt={`About Section - ${sectionTitle}`}
             className="rounded-lg"
-            layout="fill"
+            fill
           />
         </motion.div>
       </div>

@@ -9,12 +9,9 @@ import { ThemeProvider } from "@/components/shared/Provider";
 import Navbar from "@/components/modules/Navbar";
 import { COMPANY_INFO } from "@/constants/company-info";
 import { Toaster } from "@/components/ui/toaster";
-import {
-  generateMetadata,
-  HeadComponent,
-  JsonLdData,
-} from "@/components/shared/Head";
+import { generateMetadata, JsonLdData } from "@/components/shared/Head";
 import { GoogleAnalytics, GoogleTagManager } from "@next/third-parties/google";
+import Footer from "@/components/modules/Home/Footer";
 
 const inter = Inter({ subsets: ["latin"], display: "swap" });
 const poppins = Poppins({
@@ -38,9 +35,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <head>
-        <title>{COMPANY_INFO.Title}</title>
-      </head>
+      {/*<head>*/}
+      {/*  <title>{COMPANY_INFO.Title}</title>*/}
+      {/*</head>*/}
       <body className={poppins.className}>
         <GoogleTagManager
           gtmId={process.env.NEXT_PUBLIC_GOOGLE_TAG_MANAGER_ID as string}
@@ -62,6 +59,7 @@ export default function RootLayout({
             <div className="flex flex-col items-center justify-center w-full">
               {children}
             </div>
+            <Footer />
           </main>
         </ThemeProvider>
         <SpeedInsights />

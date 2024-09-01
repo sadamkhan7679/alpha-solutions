@@ -74,7 +74,7 @@ export const COMPANY_INFO = {
   Description:
     "Transform your business with our cutting-edge web and mobile app development services. Specializing in React, Next.js, AI-enhanced apps, and cloud solutions, we deliver innovative, scalable, and user-centric digital experiences. From custom software to e-commerce platforms, our expert team brings your vision to life with the latest technologies and best practices in UI/UX design.",
   Keywords: seoKeywords,
-  URL: "https://alpha-solutions.dev",
+  URL: "https://www.alpha-solutions.dev",
   Image: "/logo.svg",
   Twitter: "@twitter_handle",
   Type: "website",

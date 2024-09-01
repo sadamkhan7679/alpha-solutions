@@ -21,7 +21,8 @@ const Industries = () => {
         </span>
       }
       description={industriesServedSection.description}
-      container={true}
+      headingsContainer={false}
+      childrenContainer={true}
       className="mt-8 mb-40"
     >
       {/*<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 py-10">*/}
