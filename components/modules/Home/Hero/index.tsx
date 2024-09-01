@@ -83,7 +83,10 @@ const HeroSection: FC<HeroSectionProps> = () => {
               Innovations
             </Typography>
           </div>
-          <CTA title={"Get Started"} className="w-full lg:w-1/2 h-12" />
+          <CTA
+            title={"Get Started"}
+            className="w-full mt-10 md:mt-0 lg:w-1/2 h-12"
+          />
         </motion.div>
       </div>
       <motion.div
@@ -91,7 +94,7 @@ const HeroSection: FC<HeroSectionProps> = () => {
         {...getAnimation("left")}
       >
         <div
-          className={cn("w-full h-full md:w-4/5 md:h-4/5")}
+          className={cn("w-full h-full md:w-4/5 md:h-4/5 hidden md:block")}
           style={{
             backgroundImage: `url('/assets/hero-banner/6.png')`,
             backgroundSize: "contain",
