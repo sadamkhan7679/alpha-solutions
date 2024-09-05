@@ -150,7 +150,10 @@ const Footer = () => {
           </Typography>
 
           <Typography variant="p" className="text-md text-white">
-            {COMPANY_INFO.Address}
+            Address: {COMPANY_INFO.Address}
+          </Typography>
+          <Typography variant="p" className="text-md text-white">
+            Phone: {COMPANY_INFO.Phone}
           </Typography>
         </div>
         <div className="w-full flex justify-end">

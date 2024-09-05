@@ -51,6 +51,9 @@ export const seoKeywords = [
   "Third-party API development",
 ];
 
+// 7003 Dunbarton Dr
+// Sugar Land, TX 77479
+// (281) 224.0786
 export const COMPANY_INFO = {
   Name: "Alpha Solutions",
   ShortName: "Alpha",
@@ -60,8 +63,8 @@ export const COMPANY_INFO = {
   ThemeColor: "#000000",
   Title: "Alpha Solutions | Expert Web & Mobile App Development",
   Tagline: "Tailored Technology to Drive Your Success",
-  Address: "1234 Main St, New York, NY 10001",
-  Phone: "+1 (123) 456-7890",
+  Address: "7003 Dunbarton Dr, Sugar Land, TX 77479",
+  Phone: "+1 (281) 224-0786",
   Email: "support@alpha-solutions.dev",
   Social: {
     Facebook: "https://www.facebook.com/",
