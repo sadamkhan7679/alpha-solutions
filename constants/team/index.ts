@@ -15,11 +15,11 @@ export const TEAM_MEMBERS: TeamMember[] = [
       "Ansar is a tech wizard with a knack for solving complex problems. He leads our development team, ensuring that our projects are delivered on time and to the highest standards.",
     image: "/team/ansar-khan.png",
   },
-  {
-    name: "Sadam Khan",
-    title: "Software Development Manager",
-    description:
-      "Sadam is a software development expert with a passion for building cutting-edge solutions. He oversees our development projects, ensuring that our team delivers top-quality work every time.",
-    image: "/team/sadam-khan.jpg",
-  },
+  // {
+  //   name: "Sadam Khan",
+  //   title: "Software Development Manager",
+  //   description:
+  //     "Sadam is a software development expert with a passion for building cutting-edge solutions. He oversees our development projects, ensuring that our team delivers top-quality work every time.",
+  //   image: "/team/sadam-khan.jpg",
+  // },
 ];
