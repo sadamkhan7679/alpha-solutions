@@ -8,8 +8,22 @@ section {
     scroll-margin-top: 120px; /* This ensures correct scroll position for modern browsers */
 }
 
+
 @layer base {
     :root {
+
+        /*!* Color Scheme *!*/
+        /*--primary-light: #189FF9;*/
+        /*--primary: #023E8A;*/
+        /*--primary-dark: #023E8A;*/
+        /*--primary-foreground: #fff;*/
+
+        /*--secondary-light: #fb8500;*/
+        /*--secondary: #fb8500;*/
+        /*--secondary-dark: #F4F4F5;*/
+        /*--secondary-foreground: #fff;*/
+
+
         --background: #FFFFFF;
         --foreground: #09090B;
 
@@ -200,8 +214,8 @@ section {
     }
 
 
-    .highlighted-text {
-        @apply text-primary dark:text-purple mr-2
+    .bg-hero-gradient {
+        @apply bg-gradient-to-r from-slate-900 to-zinc-900
     }
 }
 

@@ -49,11 +49,11 @@ export default function RootLayout({
             // className="relative bg-black-100 flex justify-center items-center flex-col mx-auto sm:px-10 px-5 overflow-clip"
             className="relative bg-white dark:bg-black-100 overflow-clip min-h-screen"
           >
-            <Navbar />
+            {/*<Navbar />*/}
             <div className="flex flex-col items-center justify-center w-full">
               {children}
             </div>
-            <Footer />
+            {/*<Footer />*/}
           </main>
         </ThemeProvider>
         <SpeedInsights />
